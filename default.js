@@ -25,11 +25,6 @@ var on = require('./server-events'),
 function processRequest(req, res) {
 	// normalize the file path to remove . and ..
 	var reqPath = path.normalize(req.path);
-	// if it's David Bacisin Photography, direct to the subfolder
-	if (req.hostname.search('davidbacisinphotography.com') >= 0 || 
-		req.hostname.search('dbp.localhost') >= 0) {
-		reqPath = '/photography' + reqPath;
-	}
 	if (reqPath.search(/^([\\\/][-a-zA-Z0-9]+)*[\\\/]?$/) < 0 ) {
 		on.error("Illegal request path <" + reqPath + ">. Aborting request.");
 		on.notFound(reqPath, res);

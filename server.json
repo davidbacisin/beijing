@@ -1,25 +1,15 @@
 {
 	"redirects": {
-		"design.localhost":	{
-			"^/about/?$": "/#about",
-			"^/work/$": "/work",
-			"^/blog/$": "/blog",
-			"^/research/waterfall": "/blog/Gesture-and-Sales",
+		"localhost": {
 			"^/m(obile)?/?": "/"
 		},
 		"davidbacisin.com":	{
-			"^/about/?$": "/#about",
-			"^/work/$": "/work",
-			"^/blog/$": "/blog",
-			"^/research/waterfall": "/blog/Gesture-and-Sales",
 			"^/m(obile)?/?": "/"
-		},
-		"dbp.localhost": {}
+		}
 	},
 	"urlscripts": {
 		"^/assets/": "./asset",
 		"/(sitemap\\.xml|robots\\.txt|google[0-9a-f]+\\.html)$": "./special",
-		"^/work/resume$": "./resume",
 		"^.*$": "./default"
 	}
 }

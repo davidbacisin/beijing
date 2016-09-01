@@ -163,6 +163,7 @@ class ScssProcessor {
 	constructor() {
 		this._timeout = 0;
 		this.secondsToWaitBeforeCompile = 10;
+		this.cssPath = "/assets/css";
 
 		ScssProcessor.postcss = require('postcss');
 		ScssProcessor.autoprefixer = require('autoprefixer');
@@ -197,7 +198,7 @@ class ScssProcessor {
 				"-t", "compressed",
 				"--precision", "3",
 				"--cache-location", "tmp/sass-cache",
-				"--update", "src/assets/css:dist/assets/css"
+				"--update", (program.toSrcPath(this.cssPath) + ":" + program.toDstPath(this.cssPath))
 			]);
 		if (program.verbose)
 			sass.stdout.on("data", chunk => { console.log(chunk.toString()) });
@@ -264,6 +265,7 @@ class JsProcessor {
 }
 
 program.loadConfiguration = function() {
+	// we need the config before we do anything else, so make it sync
 	let config = JSON.parse(fs.readFileSync("developer.json"));
 	program.src = config.source;
 	program.dst = config.destination;
@@ -292,7 +294,7 @@ program.start = function() {
 			program.getProcessor(path).process(event, path);
 		});
 	
-	// watch the XSLT template for changes
+	// TODO: watch the XSLT template for changes
 	/*program.templateWatcher = chokidar.watch(program.template)
 		.on("change", (filename, fileStats) => {
 			program.xsltLastModified = fileStats.mtime;

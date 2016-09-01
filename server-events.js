@@ -12,11 +12,6 @@ function onError(message, exception, response) {
 function onNotFound(path, response) {
 	console.log("URL not found: <%s>", path);
 	var errorPagePath = "./dist/error.xml";
-	// if on photography site
-	if (path.search(/^(\.\/dist)?\/photography/)==0){
-		// send photography error page
-		errorPagePath = "./dist/photography/error.xml";
-	}
 	fs.readFile(errorPagePath, { encoding: 'utf8' }, function (err, data) {
 		if (data) {
 			response.status(404)

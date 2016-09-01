@@ -13,7 +13,7 @@ function processRequest(req, res) {
 	// continue to validate and parse the requested path
 	var fileExtension = path.extname(req.path);
 	if (fileExtension && 
-		fileExtension.match(/\.(jpg|png|gif|svg|js|css|otf|ttf|eot|woff|map|pdf)/)) {
+		fileExtension.match(/\.(jpg|png|gif|svg|js|css|otf|ttf|eot|woff|woff2|map|pdf)/)) {
 		// set the mime type
 		res.type(fileExtension);
 		// set the caching headers

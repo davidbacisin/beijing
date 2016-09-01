@@ -1,10 +1,10 @@
 {
-  "name": "davidbacisin",
-  "version": "1.2.0",
-  "description": "David Bacisin's website, including a portfolio and blog.",
+  "name": "davidbacisin-beijing",
+  "version": "1.0.0",
+  "description": "David Bacisin's website about Beijing 2016",
   "author": {
     "name": "David Bacisin",
-    "email": "david.bacisin@case.edu"
+    "email": "david@davidbacisin.com"
   },
   "engines": {
     "node": ">= 4.4.0",
@@ -30,6 +30,6 @@
   "private": true,
   "main": "server.js",
   "scripts": {
-    "watch": "node developer -s src -d dist"
+    "watch": "node developer"
   }
 }

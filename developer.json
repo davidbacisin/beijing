@@ -2,7 +2,6 @@
 	"source": "src",
 	"destination": "dist",
 	"templates": {
-		"^/recipes/": "recipe",
-		"^.*$": "default"
+		"^.*$": "beijing"
 	}
 }

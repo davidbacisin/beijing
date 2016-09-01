@@ -47,10 +47,10 @@ var MainServer = function() {
 		if (self.isInitialized) return;
 		//  Set the environment variables we need.
         self.ipaddress = process.env.OPENSHIFT_NODEJS_IP;
-        self.port      = process.env.OPENSHIFT_NODEJS_PORT || 3280;
+        self.port      = process.env.OPENSHIFT_NODEJS_PORT || 4765;
 
         if (typeof self.ipaddress === "undefined") {
-            //  Log errors on OpenShift but continue w/ 127.0.0.1 - this
+            //  Show warning but continue with 127.0.0.1 - this
             //  allows us to run/test the app locally.
             console.warn('No OPENSHIFT_NODEJS_IP var, using 127.0.0.1');
             self.ipaddress = "127.0.0.1";
@@ -58,13 +58,6 @@ var MainServer = function() {
 		
 		// Set up exit code
 		process.on('exit', self.onExit);
-		
-		// Handle signals. Removed 'SIGPIPE' from the list - bug 852598.
-        /*['SIGHUP', 'SIGINT', 'SIGQUIT', 'SIGILL', 'SIGTRAP', 'SIGABRT',
-         'SIGBUS', 'SIGFPE', 'SIGUSR1', 'SIGSEGV', 'SIGUSR2', 'SIGTERM'
-        ].forEach(function(element, index, array) {
-            process.on(element, function() { self.onSignal(element); });
-        });*/
 		
 		// Set up express server
 		self.app = express();
@@ -89,7 +82,7 @@ var MainServer = function() {
 		self.app.use(cookieParser());
 		
 		// allow parsing of POST requests
-		self.app.use(bodyParser.urlencoded({ extended: false }));
+		//self.app.use(bodyParser.urlencoded({ extended: false }));
 
 		// request processing
 		self.app.all(/.*/, function (req, res) {
