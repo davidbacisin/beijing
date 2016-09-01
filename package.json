@@ -1,0 +1,35 @@
+{
+  "name": "davidbacisin",
+  "version": "1.2.0",
+  "description": "David Bacisin's website, including a portfolio and blog.",
+  "author": {
+    "name": "David Bacisin",
+    "email": "david.bacisin@case.edu"
+  },
+  "engines": {
+    "node": ">= 4.4.0",
+    "npm": ">= 1.0.0"
+  },
+  "dependencies": {
+    "body-parser": "1.8.1",
+    "cookie-parser": "1.3.4",
+    "express": "4.8.8",
+    "mysql": "2.5.0",
+    "watch": "0.11.0",
+    "xmldom": "0.1.19",
+    "xpath": "0.0.7"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "chokidar": "^1.5.2",
+    "commander": "^2.8.1",
+    "glob": "^5.0.6",
+    "postcss": "^5.0.21",
+    "uglify-js": "^2.6.2"
+  },
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "watch": "node developer -s src -d dist"
+  }
+}
