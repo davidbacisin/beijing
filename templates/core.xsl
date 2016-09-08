@@ -21,24 +21,12 @@
 	<xsl:text>&#xa0;</xsl:text>
 </xsl:template>
 
-<xsl:template match="apos">
-	<xsl:text>&#x2019;</xsl:text>
-</xsl:template>
-
 <xsl:template match="ndash">
 	<xsl:text>&#x2013;</xsl:text>
 </xsl:template>
 
 <xsl:template match="mdash">
 	<xsl:text>&#x200a;&#x2014;&#x200a;</xsl:text>
-</xsl:template>
-
-<xsl:template match="eacute">
-	<xsl:text>&#xe9;</xsl:text>
-</xsl:template>
-
-<xsl:template match="ellipsis">
-	<xsl:text>&#x2026;</xsl:text>
 </xsl:template>
 
 <xsl:template match="email">
@@ -57,78 +45,6 @@
 </div>
 </xsl:template>
 
-<xsl:template match="nav-main">
-	<nav id="nav-main">
-		<a href="/" title="Home"><label for="nav-menu-toggle"><img id="logoHeader" src="/assets/images/davidbacisin.min.svg" alt="David Bacisin" /></label></a>
-		<input id="nav-menu-toggle" type="checkbox" />
-		<ul id="nav-menu">
-			<xsl:attribute name="class">
-				<xsl:choose>
-					<xsl:when test="@collapsed = 'false'">
-						<xsl:text></xsl:text>
-					</xsl:when>
-					<xsl:otherwise>
-						<xsl:text>collapsed</xsl:text>
-					</xsl:otherwise>
-				</xsl:choose>
-			</xsl:attribute>
-			<li><a href="/#about">About</a></li>
-			<li><a href="/work">Work</a></li>
-			<li><a href="/blog">Blog</a></li>
-		</ul>
-	</nav>
-</xsl:template>
-
-<xsl:template match="article-main">
-	<main class="article-main" property="articleBody">
-		<xsl:apply-templates select="article-header" />
-		<xsl:apply-templates select="child::node()[not(local-name()='article-header' or local-name()='footnotes' or local-name()='article-footer')]" />
-		<xsl:call-template name="share" />
-		<xsl:apply-templates select="footnotes" />
-		<xsl:apply-templates select="article-footer" />
-	</main>
-</xsl:template>
-
-<xsl:template match="article-header">
-	<header class="article-header">
-		<xsl:if test="img">
-			<div class="article-image-container">
-				<img class="article-image" property="image" width="100%">
-					<xsl:attribute name="src"><xsl:value-of select="img/@src" /></xsl:attribute>
-				</img>
-			</div>
-		</xsl:if>
-		<h1 property="headline" class="headline"><xsl:apply-templates select="headline/node()" /></h1>
-		<h2 class="byline">
-			<xsl:text>by </xsl:text>
-			<span property="author"><xsl:apply-templates select="byline/node()" /></span>
-			<xsl:text>, published </xsl:text>
-			<time property="datePublished"><xsl:value-of select="date[1]" /></time>
-			<xsl:if test="count(date) > 1">
-        <xsl:text>, last updated </xsl:text>
-        <time property="dateModified"><xsl:value-of select="date[last()]" /></time>
-			</xsl:if>
-		</h2>
-		
-		<p class="description" property="description">
-			<xsl:apply-templates select="desc/node()" />
-		</p>
-	</header>
-</xsl:template>
-
-<xsl:template match="article-footer">
-	<footer class="article-footer">
-		<xsl:apply-templates select="@*|node()" />
-		
-		<ul id="nav-footer">
-			<li><a href="/#about">About</a></li>
-			<li><a href="/work">Work</a></li>
-			<li><a href="/blog">Blog</a></li>
-		</ul>
-		<xsl:call-template name="copyright-notice" />
-	</footer>
-</xsl:template>
-
 <!-- for style elements -->
 <xsl:template match="style">
 	<style>
@@ -141,11 +57,10 @@
 
 <!-- Main page template -->
 <xsl:template name="MainPage">
-<!-- The HTML element should be passed -->
+<!-- The HTML element should be passed as a param -->
 <xsl:param name="html" />
 
-<html vocab="http://schema.org/"
-	xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<html vocab="http://schema.org/" xml:lang="en">
 	<!-- typeof attribute on root html element -->
 	<xsl:choose>
 		<xsl:when test="string-length($html/@typeof)">
@@ -230,8 +145,8 @@
 		<link rel="icon" type="image/png" href="/assets/images/favicon-32x32.png" sizes="32x32" />
 		<meta name="msapplication-TileColor" content="#00a300" />
 		<meta name="msapplication-TileImage" content="/assets/images/mstile-144x144.png" />
-		<!-- common stylesheet, followed by stylesheets added in the head -->
-		<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+		<!-- stylesheets -->
+		<link rel="stylesheet" type="text/css" href="/assets/css/beijing.css" />
 		<xsl:copy-of select="$html/head/link[@rel='stylesheet']" />
 		<!-- publisher -->
 		<link rel="publisher" href="//plus.google.com/106137059548724435394/" />
@@ -249,12 +164,9 @@
 		
 		<!-- process all body content -->
 		<xsl:apply-templates select="$html/body/node()" />
-		
-		<xsl:processing-instruction name="server">googleAnalytics</xsl:processing-instruction>
 	</body>
 	<!-- end html body -->
 </html>
 </xsl:template>
 
-
-</xsl:stylesheet>
+	</xsl:stylesheet>

@@ -1,0 +1,81 @@
+/* _variables.scss */
+
+/* No selectors are allowed in this file */
+
+$colorRed:					#be2239;
+$colorYellow:				#ff7;
+$colorBlue:					#065e6d;
+$colorGraphite:				#222;
+$colorSnow:					#fcf9fb;
+
+$colorForeground:			$colorGraphite;
+$colorHeading:				$colorForeground;
+$colorHeadingSubtle:		lighten($colorHeading, 40%);
+$colorBackground:			$colorSnow;
+$colorBackgroundInverted:	hsl(hue($colorBackground), saturation($colorBackground), 100% - lightness($colorBackground));
+
+$fontStackContent:			"Palatino Linotype", Palatino, Palladio, "URW Palladio L", serif; // Vollkorn
+$fontStackHeading:			$fontStackContent;
+
+$widthMainColumn:			26em;
+
+/****** mixins ******/
+$font-size: (
+	xs:		18px,
+	sm:		19px,
+	md:		20px,
+	lg:		21px,
+	xl:		22px,
+	print:	12pt
+);
+@mixin media($type){
+	@if $type == print {
+		@media print { @content; }
+	}
+	@else if $type == xs {
+		@content;
+	}
+	@else if $type == xs-only {
+		@media (max-width: #{floor((26 + 2 * 1.618) * map-get($font-size, xs))}) { @content; }
+	}
+	@else {
+		@media (min-width: #{floor((26 + 2 * 1.618) * map-get($font-size, $type))}) { @content; }
+	}
+}
+
+/* for managing critical-path and noncritical-path CSS */
+$compile-context:			home !default;
+$compile-critical-only:		true !default;
+
+@mixin context($cx){
+	@if ($compile-context == $cx) and ($compile-critical-only) {
+		@content;
+	}
+	@else if (not $compile-context == $cx) and (not $compile-critical-only) {
+		@content;
+	}
+	@else {
+		// nothing
+	}
+}
+
+/****** placeholders ******/
+%width-limit {
+	margin: 1.4em 0.5em;
+	@include media(sm){
+		margin: 1.2em auto;
+		width: $widthMainColumn;
+		max-width: 100%;
+	}
+}
+
+%underlap-gradient-top-edge {
+	background-image: linear-gradient(to bottom, rgba(#000,0.7), transparent 0.618rem);
+}
+%underlap-gradient-bottom-edge {
+	background-image: linear-gradient(to top, rgba(#000,0.7), transparent 1.618rem);
+}
+%underlap-gradient-both-edges {
+	background-image: linear-gradient(to bottom, rgba($colorBackgroundInverted,0.7), transparent 0.618rem),
+					  linear-gradient(to top, rgba($colorBackgroundInverted,0.7), transparent 1.618rem);
+}

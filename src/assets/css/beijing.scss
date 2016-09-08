@@ -1,0 +1,192 @@
+/* main.scss */
+
+@import "variables";
+@import "fonts";
+
+html {
+	text-rendering: optimizeLegibility;
+	font-variant-ligatures: common-ligatures discretionary-ligatures contextual;
+	-webkit-font-smoothing: subpixel-antialiased;
+	
+	@each $msize, $fsize in $font-size {
+		@include media($msize) {
+			font-size: $fsize;
+		}
+	}
+}
+
+html, body {
+	margin:0;
+	padding:0;
+}
+
+body,
+input,
+button {
+	font-family: $fontStackContent;
+	line-height: 1.6;
+	color: $colorForeground;
+	background-color: $colorBackground;
+}
+
+section { // IE doesn't recognize some HTML5 elements. Make sure they're blocks.
+	display: block;
+}
+
+p {
+	@extend %width-limit;
+	
+	padding: 0;
+}
+
+a {
+	&:link,
+	&:visited,
+	&:hover,
+	&:focus,
+	&:active {
+		color: inherit;
+		text-decoration: none;
+		border-bottom: 1px solid currentColor;
+	}
+}
+
+q:before,
+blockquote:before {
+	content: '\201c';
+}
+q:after,
+blockquote:after {
+	content: '\201d';
+}
+
+/* manually specify sup and sub positions
+so that it does not affect line-height */
+sup, sub {
+	position: relative;
+	vertical-align: baseline;
+	top: -0.6em;
+}
+sub {
+	top: 0.6em;
+}
+
+table {
+	margin: 1em auto;
+}
+
+/* social media icons */
+.si-container {
+  text-align: center;
+}
+.si {
+  display: inline-block;
+  width: 1.618em;
+  height: 1.618em;
+  margin: 0.309em;
+  background-image: url(/assets/images/si.min.svg);
+  background-repeat: no-repeat;
+  background-size: auto 1.6em;
+  transition: opacity 200ms ease;
+  opacity: 0.5;
+
+  &:hover {
+	opacity: 1;
+  }
+
+}
+.si-facebook {
+  background-position: 0 0;
+}
+.si-google {
+  background-position: -2.618em 0;
+}
+.si-twitter {
+  background-position: -5.236em 0;
+}
+
+/* other styles */
+section {
+	padding: 0 0 2em;
+	
+	&:after {
+		content: ' ';
+		display: block;
+		padding-bottom: 25%;
+	}
+	
+	> svg {
+		margin-top: -25%;
+	}
+	
+	> h2 {
+		padding-top: 2em;
+	}
+	
+	&.red,
+	&.blue,
+	&.graphite {
+		color: $colorSnow;
+	}
+	
+	&.red { background: $colorRed; }
+	&.red > svg { color: $colorRed; }
+	
+	&.blue { background: $colorBlue; }
+	&.blue > svg { color: $colorBlue; }
+	
+	&.yellow { background: $colorYellow; }
+	&.yellow > svg { color: $colorYellow; }
+	
+	&.graphite { background: $colorGraphite; }
+	&.graphite > svg { color: $colorGraphite; }
+}
+
+.gallery {
+	@extend %width-limit;
+	
+	border: 1px dashed currentColor;
+	box-sizing: border-box;
+	padding: 0;
+	list-style: none;
+		
+	li {
+		margin: 1em 1.2em 1.2em;
+	}
+	
+	&.js {
+		border: none;
+		
+		/* this max width ensures 3 columns of images on large screens 
+		as well as screen as narrow as 320px. On the rare even smaller 
+		screens, the floated li's will collapse into two (not as pretty
+		but functional) 2 columns  */
+		max-width: 16.7em;
+		
+		&:after {
+			content: ' ';
+			display: block;
+			clear: both;
+		}
+		
+		// the span.caption is just for data storage when there is javascript
+		.caption {
+			display: none;
+		}
+		
+		/* make a grid of thumbnails */
+		li {
+			float: left;
+			width: 5em;
+			height: 5em;
+			margin: 0.277em;
+		}
+	}
+}
+
+.gallery-fig {
+	@extend %width-limit;
+}
+
+@import "nav";
+@import "headings";

@@ -1,0 +1,14 @@
+/* forms */
+form {
+	@extend %width-limit;
+}
+
+input, button {
+	margin: 0 0 0 0.309rem;
+	padding: 0.309rem;
+	border: 1px solid $colorFormBorder;
+}
+
+input[type="radio"] {
+	width: 2rem;
+}

@@ -1,0 +1,46 @@
+/* _headings.scss */
+
+h1, h2, h3, h4 {
+	@extend %width-limit;
+	
+	//font-family: $fontStackHeading;
+	line-height: 1.54;
+	font-weight: normal;
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+	// side margins are set in %width-limit
+	page-break-after: avoid;
+}
+
+h1 {
+	font-size: 2em;
+}
+h2 {
+	font-size: 1.6em;
+}
+h3 {
+	font-size: 1.3em;
+}
+h4 {
+	font-size: 1em;
+	font-weight: 600;
+}
+
+/* reduce spacing between headings and paragraphs */
+h2 + h3,
+h2 + p,
+h3 + h4,
+h3 + p,
+h4 + p {
+	margin-top: 0.5em;
+	page-break-before: avoid;
+}
+
+/* for fancy things */
+.text-big {
+	font-size: 2em !important;
+}
+.text-center {
+	text-align: center;
+}

@@ -1,5 +1,6 @@
 var express = require('express'),
-	bodyParser = require('body-parser'),
+	compression = require('compression'),
+	//bodyParser = require('body-parser'),
 	cookieParser = require('cookie-parser'),
 	fs = require('fs'),
 	on = require('./server-events'),
@@ -77,6 +78,9 @@ var MainServer = function() {
 
 		// load the server configuration
 		self.loadConfiguration(self.configPath);
+		
+		// enable compression
+		self.app.use(compression());
 		
 		// enable parsing of cookies 
 		self.app.use(cookieParser());

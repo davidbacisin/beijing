@@ -39,15 +39,17 @@ class DefaultProcessor {
 		switch(event) {
 			case "add":
 			case "change":
+				DefaultProcessor.copyFile(p);
+				break;
 			case "unlink":
-				//console.log("Not implemented: default processor");
+				console.log("Not implemented: default processor unlink");
 				break;
 		}
 	}
 	
 	static copyFile(path) {
-		var srcPath = toSrcPath(path),
-			distPath = toDistPath(path);
+		var srcPath = program.toSrcPath(path),
+			distPath = program.toDstPath(path);
 		var readStream = fs.createReadStream(srcPath);
 		readStream.on("error", function(err) {
 			console.log("Failed to read for copying: " + srcPath);
@@ -163,7 +165,6 @@ class ScssProcessor {
 	constructor() {
 		this._timeout = 0;
 		this.secondsToWaitBeforeCompile = 10;
-		this.cssPath = "/assets/css";
 
 		ScssProcessor.postcss = require('postcss');
 		ScssProcessor.autoprefixer = require('autoprefixer');
@@ -194,11 +195,12 @@ class ScssProcessor {
 	}
 	
 	static runSass() {
+		var cssDir = "/assets/css";
 		var sass = spawn("sass", [
 				"-t", "compressed",
 				"--precision", "3",
 				"--cache-location", "tmp/sass-cache",
-				"--update", (program.toSrcPath(this.cssPath) + ":" + program.toDstPath(this.cssPath))
+				"--update", (program.toSrcPath(cssDir) + ":" + program.toDstPath(cssDir))
 			]);
 		if (program.verbose)
 			sass.stdout.on("data", chunk => { console.log(chunk.toString()) });
@@ -213,7 +215,7 @@ class ScssProcessor {
 	static runPostCSS() {
 		/* load the css for reading. Use separate fd's for reading and 
 		 * writing in case there is an error */
-		var csspath = "dist/assets/css/main.css",
+		var csspath = "dist/assets/css/beijing.css",
 			fileoptions = { encoding: "utf8" };
 		var css = fs.readFileSync(csspath, fileoptions);
 		ScssProcessor._postcss.process(css).then(result => {
