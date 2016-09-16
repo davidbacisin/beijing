@@ -4,6 +4,8 @@
 		<meta name="description" content="" />
 	</head>
 	<body>
+		<script><![CDATA[document.body.className = "js";]]></script>
+		
 		<t:nav />
 
 	<div style="padding-bottom:25%"></div>
@@ -91,8 +93,8 @@
 		<t:svg name="car.min.svg" />
 	
 		<h2>Crosstown traffic</h2>
-		<img src="/beijing/traffic.jpg" />
-		<p>Beijing has the craziest traffic I’ve ever experienced: 6 lanes 
+		<t:image src="traffic-1200.jpg" alt="Traffic across 8 lanes" />
+		<p>Beijing has the craziest traffic I’ve ever experienced: 4 lanes 
 		each direction, packed with cars, trucks, taxis, motorbikes, 
 		rickshaws, bicycles…and they all weave through each other with a 
 		bit of horn-honking, yelling, but rarely any collisions. It seemed 
@@ -208,16 +210,16 @@
 		of the curiosities in the palaces.</p>
 		
 		<t:image-gallery id="igFC">
-			<t:image src="forbidden-walls.jpg">Some of the walls were 
+			<t:image src="forbidden-walls-1200.jpg">Some of the walls were 
 			incredibly high, plastered and painted red. This may have 
 			something to do with the fact that the palace was once 
 			forbidden.</t:image>
-			<t:image src="lion-statue.jpg">All over Beijing, I saw many 
+			<t:image src="forbidden-lion-1200.jpg">All over Beijing, I saw many 
 			doorways with lion statues on either side. In general, larger
 			statues show greater wealth, but the drooping ears 
-			on these lions also indicate that you are entering an area 
+			on this lion also indicates that you are entering an area 
 			where politics must not be discussed.</t:image>
-			<t:image src="giant-pots.jpg">The Forbidden City has 308 of 
+			<t:image src="giant-pots-1200.jpg">The Forbidden City has 308 of 
 			these massive bronze (and some copper) pots. We had a fun time 
 			hypothesizing how they could have been used: that they 
 			held ice in the summer, fire in the winter, or that they 
@@ -225,27 +227,23 @@
 			water<mdash/>but the official sign says they held water for 
 			fighting fires. Good, considering the wood construction of 
 			the palaces.</t:image>
-			<t:image src="raised-thresholds.jpg">Most of the gates and 
-			doorways had raised wooden thresholds which I hear are bad 
-			luck to step on. I wonder how I’d get around if I were in a 
-			wheelchair or on crutches.</t:image>
-			<t:image src="painted-ceiling.jpg">I received many funny looks 
+			<t:image src="painted-ceiling-1200.jpg">I received many funny looks 
 			when I looked at or took pictures of ceilings, so it may not 
 			be all that culturally acceptable<mdash/>but the ceilings 
 			were beautifully painted with bright primary colors and 
 			some even gilded.</t:image>
-			<t:image src="throne-room.jpg">A number of rooms could not 
+			<t:image src="crowd-around-1200.jpg">A number of rooms could not 
 			be entered, and instead people crowd around the railing to 
 			peer in<mdash/>and make good use of their selfie sticks. 
 			A few times I joined the fray to take a picture. I felt 
 			like I was in a writhing solid mass of people.</t:image>
-			<t:image src="forbidden-garden.jpg">After pushing through 
+			<t:image src="forbidden-garden-1200.jpg">After pushing through 
 			a crowd to see inside a room, the palace gardens were a 
 			relief. There were still a lot of people, but the trees and 
 			remarkable stone statues hid some of them from view. The 
 			gardens are reportedly where there were more romantic 
 			happenings.</t:image>
-			<t:image src="moat.jpg">A 52-meter wide moat surrounds the palace 
+			<t:image src="forbidden-moat-1200.jpg">A 52-meter wide moat surrounds the palace 
 			complex, and if you manage to make it past the 
 			crocodiles (which I’m really just making up<mdash/>or am I?)
 			then there is a 7.9-meter wall for you to climb. Good luck.</t:image>
@@ -287,6 +285,8 @@
 		painted covered walkway that stretches 728 meters, with over 
 		14,000 paintings on its wooden beams (I wonder who counted?).</p>
 		
+		<t:image src="long-corridor-1200.jpg" />
+		
 		<p>We had bought the extra ticket for the Temple of the 
 		Fragrant Buddha, and despite not really wanting to climb 
 		Longevity Hill again, we reasoned that it’s not often that 
@@ -295,19 +295,24 @@
 		very large wooden statue of Buddha, as well as an excellent 
 		view of Kunming Lake and Beijing.</p>
 		
+		<t:image src="fragrant-buddha-1200.jpg">The Temple of the 
+		Fragrant Buddha</t:image>
+		
 		<p>Being tired and sweaty from climbing a mountain twice, we 
 		didn’t explore too much more of the Summer Palace. We wandered 
 		around the base of Longevity Hill, through various palaces and 
 		gardens.</p>
 		
 		<t:image-gallery>
+			<t:image src="fragrant-buddha-p.jpg" class="p"></t:image>
 			<t:image src="rock-statues.jpg"></t:image>
 			<t:image src="giant-bonsai.jpg"></t:image>
 			<t:image src="kunming-lake.jpg"></t:image>
 		</t:image-gallery>
 	</section>
 	
-	<h2>Transportation: Rickshaw</h2>
+	<section>
+		<h2>Transportation: Rickshaw</h2>
 		<p>Ken and I were headed to meet Chen, Ge, and Mandy for dinner.
 		After a long day of walking on the hottest day yet, we decided 
 		to catch a cab once off the subway<mdash/>but several cabbies 
@@ -321,7 +326,9 @@
 		dropped us off, right in front of the restaurant! (Who puts a 
 		restaurant down an alley? A lot of places in China, that’s for 
 		sure!) We tipped him an extra 10.</p>
+	</section>
 		
+	<section class="dust">
 		<h2>Life in a Hutong</h2>
 		<p>Speaking of alleys, the Chinese word for alley is hutong. 
 		But <em>hutong</em> means much more than that: the alleys are 
@@ -381,25 +388,379 @@
 			<t:image src="hutong-bicycle.jpg"></t:image>
 			<t:image src="hutong-ac.jpg"></t:image>
 			<t:image src="hutong-wires.jpg"></t:image>
+			<t:image src="hutong-roof-age.jpg"></t:image>
+			<t:image src="hutong-contrast.jpg"></t:image>
+			<t:image src="hutong-construction.jpg"></t:image>
+			<t:image src="hutong-near-798.jpg"></t:image>
+			
+			<t:image src="raised-thresholds.jpg">Most of the gates and 
+			doorways had raised wooden thresholds which I hear are bad 
+			luck to step on. I wonder how I’d get around if I were in a 
+			wheelchair or on crutches.</t:image>
 		</t:image-gallery>
 		
-		<h2>Transportation: Chairlift and Toboggan</h2>
+		<p>Conclusion: hutongs in China don’t live up to the bad 
+		reputation of alleys in the States. People there are friendly 
+		and tend to keep to themselves, and while the alleys may be a 
+		little crowded with junk and traffic, the rich culture of the 
+		hutong makes for a warm and fuzzy, homey feeling.</p>
+	</section>
 		
+	<section class="graphite">
 		<h2>The Great Wall at Mutianyu</h2>
+		<p>The second Sunday, we had most of the day off from the 
+		design program, making it the day to check out the Great Wall. 
+		Ken and I had left the Saturday night out after KTV (karoake)
+		so that we could wake up at 7:00 for a full day of adventuring.
+		While most of the others slept in, we met up with Mandy and 
+		Jenny, who had nicely arranged for a carpool to Mutianyu, a 
+		section of the Great Wall that is a little further from Beijing
+		but as a result, less crowded.</p>
 		
-		<h2>Transportation: van and bus</h2>
+		<t:image src="mutianyu-entrance.jpg">The welcome center and 
+		ticket booths for the Mutianyu section of the Great Wall</t:image>
 		
-		<h2>Interlude</h2>
+		<p>With tickets in hand, we walked past all of the gift shops
+		(and a Burger King) to catch a bus. The bus careened up a 
+		switchback road to drop us off about a mile closer to the base 
+		of the mountain. We chuckled about the herd of people
+		wearing bamboo hats, assuming they were part of a tour group.</p>
+		
+		<p>There are two ways up the mountain: stairs and chairlift. 
+		I had just recovered from a bout of food poisoning three days 
+		before, but I <em>was</em> feeling pretty darn good this 
+		morning<mdash/>and since the others wanted to hike up, I thought,
+		sure, I’m athletic, I’ll be able to handle it. And handle it I 
+		did, much better than a number of other tourists. The weather 
+		was hot, above 90⁰F and humid, so the four of us were soaked 
+		with sweat not even a third of the way up. My 1.5-liter water 
+		bottle I had bought that morning sure came in handy today, as 
+		halfway up, Jenny paid three times more for a bottle a third 
+		the size. But finally, after weaving through dense forest with 
+		an occasional view of the beatiful valley below, we made it to 
+		The Wall.</p>
+		
+		<t:image src="great-wall-brick.jpg"></t:image>
+		
+		<p>The stones were huge. We climbed thirty or so more stairs to 
+		get to the walkway along the top<mdash/>from which we could see 
+		the entire valley on either side, lush with vegetation, and 
+		mountains in the distance. We strolled along the uneven square-ish
+		cobbles, peeking through crenellations and exploring several 
+		towers. The Wall just kept going; we would walk to the next 
+		tower, and then the next, and still you can see the wall zig-zagging
+		across the mountain-top, continuing beyond the horizon.</p>
+		
+		<p class="text-big" style="max-width:6em">
+			<span style="display:block;">yī</span>
+			<span style="display:block;padding-left:20%">èr</span>
+			<span style="display:block;padding-left:10%">sān</span>
+			<span style="display:block;text-align:right">qiézi!</span>
+		</p>
+		
+		<p>Many, many times we heard <q>Yī, èr, sān, qiézi,</q> which 
+		literally translates to <q>One, two, three, eggplant,</q> 
+		whenever people were taking group photos. Just like the word 
+		<q>cheese</q> in English, <q>qiézi</q> (roughly chee ET zeh) 
+		makes you show your smile when you say it.</p>
+		
+		<p>To get down from the wall, you can walk, take the chairlift, 
+		or <em>ride a toboggan</em>. We walked down, which was much 
+		easier than going up, but we caught a few entertaining glimpses
+		of the shiny stainless-steel toboggan chute. The toboggans 
+		appeared to be very minimal, and the signs that we could see 
+		through the trees suggested that passengers needed to use a 
+		hand brake around curves.</p>
+		
+		<t:image src="toboggan-1200.jpg"></t:image>
+		
+		<p>Unfortunately, I didn't learn much more history than I 
+		already knew (built to keep out invading forces), but my visit 
+		to the Great Wall gave the perspective of how incredibly huge it 
+		was, and some empathy for its builders and even the workers who 
+		still climb up it everyday.</p>
+		
+		<t:image-gallery id="gwIG">
+			<t:image src="great-wall-1200.jpg"></t:image>
+			<t:image src="mountain-1200.jpg"></t:image>
+			<t:image src="inside-tower-1200.jpg"></t:image>
+		</t:image-gallery>
+	</section>
+	
+	<section>
+		<h2>Back to Beijing</h2>
+		<p>The Great Wall was not our only adventure that day: while 
+		our friends had set up the carpool to Mutianyu, there was no 
+		plan for getting back. After learning from the Welcome Center 
+		staff that the next bus would be a while, we wandered out and 
+		soon encountered an older man soliciting rides into town. Mandy 
+		and Jenny spoke with him (Ken and I clueless to what was 
+		happening), and soon enough we were climbing into the back of a 
+		small van. Before we pulled onto the road, the driver shouted for 
+		and negotiated with another passenger, who took the front seat.</p>
+		
+		<p>The ride was certainly fast. Our driver raced through the 
+		countryside, passing cars on the left <em>and</em> the 
+		right<mdash/>and once slamming on the brakes while passing 
+		using the <q>bike</q> lane because, well, there was a farmer 
+		chugging along with a cargo tricycle. But, we made it into town,
+		paid the driver his 40<nbsp/>yuan, and we got off on the side of 
+		the road. He pointed to the other side of the street, telling us 
+		that the crowd there was waiting for the bus.</p>
+		
+		<p>Despite not a single sign for a bus stop, we waited for 
+		about 15 minutes and sure enough, a public bus arrived! Being 
+		mid-afternoon on a Sunday (or just being in Beijing) meant that 
+		our bus got stuck in traffic for two hours on the Jingcheng 
+		Expressway. Finally, miraculously, after walking about three 
+		kilometers from the bus stop, we made it to a subway station.
+		Just over three hours after leaving the Great Wall, we made it 
+		back to Zhonguancun.</p>
+	</section>
+	
+	<section>
+		<h2>Interlude: The Basics</h2>
+		
+		<div class="">
+		<h3>Food</h3>
+		<p>I tried a lot of food while in China. Most of it was delicious,
+		some of it was not. </p>
+		
+		lots of pictures of food
+		typical meal?
+		
+		<t:image-gallery id="f1IG">
+			<t:image src="congee-buns-1200.jpg">A traditional Chinese 
+			breakfast of rice porridge (congee) and steamed buns. I’m 
+			sad I didn’t try this until the last day, because it was a 
+			pretty good way to start a day.</t:image>
+			<t:image src="cheap-lunch-1200.jpg">Michael and I went 
+			upstairs to the food court in the mall where our design 
+			program was being held. After wandering past at least 
+			30 restaurants, we got to the end of the hallway and 
+			decided, hey, let’s eat here. It was very cheap and greasy, 
+			but decent for our first attempt at ordering food.</t:image>
+			<t:image src="nanjing-food-1200.jpg">After coming back 
+			from the Great Wall, Mandy and Jenny </t:image>
+			<t:image src="szechuan-food-1200.jpg"></t:image>
+			<t:image src="japanese-food-1200.jpg"></t:image>
+			<t:image src="bibimbap-1200.jpg"></t:image>
+		</t:image-gallery>
+		
+		<p>One night, Jenny and Claire took us design mentors and faculty
+		out for a fancy dinner of traditional Beijing food. It was a 
+		beautifully decorated restaurant most of which were very good 
+		and deserve to be in their own gallery, below.</p>
+		
+		<t:image-gallery id="f2IG">
+			<t:image src="beef-tendon-1200.jpg">Not so pleasant</t:image>
+		</t:image-gallery>
+		</div>
+		
+		<div class="blue">
+		<h3>Water</h3>
+		<p><q>Don’t drink the water!</q> my family told me before I left.</p>
+		
+		<p><q>Do you know not to drink the tap water?</q> the design 
+		program organizers told me when I arrived.</p>
+		
+		<p>One of the most frustrating parts of my experience in China 
+		was the fact that the tap water just isn’t safe to drink. 
+		The reason? It contains a mix of bacteria and heavy metals. 
+		Some people drink boiled tap water, but boiling doesn’t take 
+		care of the heavy metals, so I spent a considerable amount of 
+		time and money going to the store to buy bottled water. I was 
+		quite happy when I discovered the 1.5 liter bottles, which are 
+		a little big to carry around but well worth the saved money 
+		and effort: I drank about 2 liters total per day, meaning I had 
+		to only buy one or two 1.5 L bottles at 3.5 yuan each each day.
+		Before I had discovered the big bottles, I was going through 
+		about 4 bottles at 2.5 yuan each.</p>
+		
+		<t:image src="water-bottles-1200.jpg"></t:image>
+		
+		<p>I never buy bottled water in the States because one, it costs 
+		anywhere from 300 to 2000 times more than tap water; two, the 
+		tap water in northeast Ohio regularly exceeds health and safety 
+		standards; and three, all of those extra bottles are extremely 
+		wasteful, even if they are recycled (recycling helps, but still 
+		wastes a lot of energy!). Having worked on several environmental 
+		sustainability projects in the past, I felt like I was just 
+		<em>slaughtering</em> the environment with how many bottles I 
+		bought in China. Sob.</p>
+		</div>
+		
+		<div class="dust">
+		<h3>Smog</h3>
+		<p>On that note, the smog was probably tied for the most
+		frustrating part of my experience. I could see it when I arrived
+		through the window, but I didn’t smell it 
+		until I finally got out of the air conditioning. The air felt 
+		heavy to breathe, and it was <em>sweet</em>, sweet in a way 
+		you don’t ever want it to be, sweet with a mix of car exhaust 
+		and cigarette smoke. That first few days were probably the worst
+		out of my three weeks there, since a rainstorm on the fourth day 
+		cleared up the sky quite a bit.</p>
+		
+		<t:image src="sun-smog-1200.jpg">The evening sun as seen through
+		smog</t:image>
+		
+		<p>Beijing is particularly prone to dense smog because the city 
+		is surrounded by a mountain range that tends to block the 
+		wind<mdash/>not to mention the population over 20 million and 
+		traffic jams caused by the roughly 6 million registered cars. 
+		Very few people wear breathing masks, and even I started to get 
+		used to breathing the air after a few days. I’d rather not 
+		think about all the pollution I inhaled.</p>
+		</div>
+		
+		<div>
 		<h3>Money</h3>
-		<h3>Food and water</h3>
-		<h3>Land of 10,000 bicycles</h3>
-		
+		<t:image src="money-1200.jpg"></t:image>
+		<p>The currency of the People’s Republic of China is the 
+		renminbi, meaning <q>people’s currency</q> and abbreviated 
+		<abbr title="renminbi">RMB</abbr>. The <em>yuan</em> (元) is the 
+		base unit; there are 10<nbsp/>jiao (角) to 1<nbsp/>yuan; and 
+		there are 10<nbsp/>fen (分) to 1<nbsp/>jiao. I never saw any 
+		prices or coins in fen, probably because they have so little 
+		value. Today, the exchange rate fluctuates between 6 to 7 yuan 
+		per 1<nbsp/>United States dollar<mdash/>but the cost of living 
+		in China is also considerably lower.
+		A regular 18-ounce bottle of water was typically priced at 2 or 
+		3<nbsp/>yuan, 30 to 46 US cents.</p>
+		</div>
+	</section>
+	
+	<section class="dust">
+		<h2>798 Arts District</h2>
+	</section>
+	
+	<section class="blue">
 		<h2>Olympic parks</h2>
+		<p>Beijing hosted the 2008 Summer Olympics. What happens to a 
+		more than $2 billion USD Olympic complex 8 years after the games
+		are over? I spent two days exploring the <q>remains.</q></p>
 		
+		<p>But it turns out that the complex is less of a corpse and 
+		more of a tourist attraction. On the first day I was there, 
+		a Wednesday <!--TODO confirm-->, there were hundreds of other 
+		tourists from all over China (plus a handful of foreigners). 
+		The Bird’s Nest stadium, pictured below, was open for tours 
+		(for a price of 50 yuan), and has occasionally been used to host 
+		sporting events and concerts.</p>
+		
+		<t:image src="birds-nest.jpg">The Beijing National Stadium was 
+		designed by architecture firm Herzog &amp; de Meuron, with 
+		consulting by artist Ai Weiwei. Its appearance earns it the
+		nickname, <q>The Bird’s Nest.</q></t:image>
+		
+		<p>We walked across the vast expanse of asphalt, over to the 
+		aquatic center, nicknamed <q>The Water Cube.</q> The
+		blue plastic façade makes the building look like a square blob 
+		of soup bubbles, and the plastic panels are translucent to let 
+		through light. The building has been transformed into a water 
+		park, but we didn’t go inside to check it out. If you, like us, 
+		forgot to bring a bathing suit while checking out the Olympic 
+		parks, plenty of vendors in the park have some for sale.</p>
+		
+		<t:image src="water-cube.jpg">The Beijing National Aquatic 
+		Center, or Water Cube, now contains a water park open to the 
+		public.</t:image>
+		
+		<p>Heading further north, we wandered past a few more (less 
+		architectually-interesting) buildings, under the very cool 
+		lamp posts, checked out the public art, and gazed up at the 
+		Ling Long pagoda.</p>
+		
+		<t:image-gallery id="ogIG">
+			<t:image src="olympic-lamps.jpg"></t:image>
+			<t:image src="olympic-statue.jpg"></t:image>
+			<t:image src="ling-long-pagoda.jpg">Used to hold the 
+			broadcast television crews</t:image>
+		</t:image-gallery>
+		
+		<p>A little more than a week after visiting the Olympic Green,
+		I decided to spend a morning exploring Olympic Forest Park, a 
+		680-hectare garden park. It was cloudy that day, and at one 
+		point drizzly, so I suspect it was less popular than usual.
+		I, however, had a very enjoyable time wandering around by 
+		myself.</p>
+		
+		<p>Along the edge of the large, south lake of the park, a few 
+		people were feeding the koi fish<mdash/>and what a strange 
+		sight that was! Hundreds of fish swarmed all into one spot, 
+		some of them rising much further above the surface of the water 
+		than I ever would have expected.</p>
+		
+		<t:image src="crazy-koi.jpg">Koi swarm near the edge of the 
+		lake, where people were tossing food pellets.<!-- TODO confirm --></t:image>
+		
+		<p>After recovering from my shock at the fish frenzy, I started 
+		walking around the lake when the dull whirring sound that I had 
+		been hearing could no longer be considered <q>dull.</q> Turning 
+		down one path, it sounded like a million insects chirping, 
+		singing, shrieking? The whirr was loud enough to be painful, yet 
+		encompassing in a peaceful solitude away from the bustle of 
+		the city. I suspect they were cicadas, but I could never spot 
+		one while hearing the sound. Several sections of trees throughout 
+		the park would whirr with gusto.</p>
+		
+		<t:image src="cicada.jpg">I did manage to catch a photo of this 
+		cicada, though I didn’t hear any whirring at the time.</t:image>
+
+		<p>After about a half hour, I had kept noticing all sorts of 
+		prohibitory signs that were simultaneously intrusive and
+		entertaining. They said things like, <q>No climbing,</q> 
+		<!--TODO look up park signs-->.</p>
+		
+		<p>As the drizzle subsided, I decided to climb the hill that 
+		overlooked the lake. Why not, with a name like <!-- TODO name of hill -->.
+		Unlike the highly-maintained areas that I had just walked through,
+		the path up the hill was left to be (slightly) more wild.
+		The aroma of pine trees washed over me as a passed through a 
+		grove, and I stopped at the first landing for a short time to 
+		look over the lake<mdash/>but, the trees were too tall to see 
+		over and I didn’t want to disturb the woman doing yoga, so I 
+		continued up the path. By the top, I was even sweatier than I 
+		had been at the Great Wall, though well-worth the view of the 
+		Olympic Green and city beyond.</p>
+		
+		<t:image src="olympic-vista.jpg">A hazy view from the top of 
+		a hill in Olympic Forest Park.</t:image>
+		
+		<p>Wanting to finish walking around the lake, I headed back 
+		toward the subway stop, getting slightly lost in the extensive
+		serpentine paths of the park. At one point, I crossed paths with 
+		a mother and her son<mdash/>and after about a minute of them 
+		conversing in Chinese while I took pictures of the scenery, he 
+		ran over to me to say <q>Hello!</q> His (English) name was Jack 
+		and he was 8 years old; and I think he was excited to practice 
+		his English with a foreigner. It was a great way to end my 
+		adventure.</p>
+		
+		<p>The Olympic Green and Forest Park are accessible off of 
+		4<nbsp/>stops on line<nbsp/>8 of the subway. While the sports 
+		complex offers interesting architecture and entertainment, 
+		the huge park, sometimes called the <q>lung</q> of Beijing, 
+		is a pleasant respite from the concrete and steel jungle of the 
+		dense city.</p>
+	</section>
+	
+	<section class="yellow">
 		<h2>Transportation: taxi</h2>
+		ordering a taxi by myself
+		120 yuan to the airport
 		
+		traveler's tip: be wary of people at the airport who try to help you
+	</section>
+	
+	<section>
 		<h2>Zaijian, Beijing!</h2>
+		general feelings
+	</section>
 		
-		<script src="/assets/js/image-gallery.min.js"></script>
+	<!-- estimated 2.5 hours more of drafting -->
+		
+	<script src="/assets/js/image-gallery.min.js"></script>
 	</body>
 </html>

@@ -35,7 +35,7 @@
 	<!-- 
 	Ultimately, javascript should construct a gallery like this:
 	
-	<figure class="gallery" id="{@id}-fig">
+	<figure class="image-fig" id="{@id}-fig">
 		<img src="/assets/images/{@src-res}" />
 		<figcaption>
 			Image caption...
@@ -52,6 +52,16 @@
 	</ul>
 
 	-->
+</xsl:template>
+
+<xsl:template match="t:image">
+	<figure class="image-fig">
+		<div class="image-container"></div>
+		<xsl:if test="text() != ''">
+			<figcaption><xsl:apply-templates select="./node()" /></figcaption>
+		</xsl:if>
+		<a class="image-link" target="_blank" href="/assets/images/{@src}">View image</a>
+	</figure>
 </xsl:template>
 
 <xsl:template match="html">
