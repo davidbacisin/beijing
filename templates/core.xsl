@@ -162,6 +162,8 @@
 		<!-- copy body attributes -->
 		<xsl:copy-of select="$html/body/@*" />
 		
+		<script><![CDATA[document.body.className = "js";]]></script>
+		
 		<!-- process all body content -->
 		<xsl:apply-templates select="$html/body/node()" />
 	</body>
