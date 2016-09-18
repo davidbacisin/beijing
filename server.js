@@ -58,6 +58,11 @@ var MainServer = function() {
 		self.app.get('/sitemap.xml', on.sitemap);
 		self.app.get('/robots.txt', on.robots);
 		//self.app.get('/google[0-9a-f]+.html', on.googleSiteAuth);
+		
+		// simple status page for HAProxy pings
+		self.app.get('/status', (req, res) => {
+			res.send('Alive');
+		});
 
 		self.isInitialized = true;
 	};
