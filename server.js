@@ -87,34 +87,21 @@ var MainServer = function() {
 		
 		// allow parsing of POST requests
 		//self.app.use(bodyParser.urlencoded({ extended: false }));
-
+		
 		// request processing
-		self.app.all(/.*/, function (req, res) {
-			// check for redirects on that server
-			if (self.config.redirects.has(req.hostname) &&
-				(dest = self.config.redirects.get(req.hostname).find(req.path))){
-				res.redirect(dest);
-			}
-			else if (script = self.config.urlscripts.find(req.path)){
-				// console.log("Processing <%s> via <%s>", req.path, script);
-				try {
-					mod = require(script);
-					mod.processRequest(req, res);
-				}
-				catch (e) {
-					if (e.code == e.MODULE_NOT_FOUND) {
-						on.error("Could not load module", e, res);
-					}
-					else {
-						on.error("Could not process request", e, res);
-					}
-				}
+		self.app.get('/assets/:type/:name', on.asset);
+		self.app.get('/page/:pageId', function (req, res) {
+			var pageId = parseInt(req.params.pageId);
+			if (pageId >= 1 && pageId <= 5) {
+				on.page("/" + pageId.toString(), req, res);
 			}
 			else {
-				// otherwise we don't know what to do!
 				on.notFound(req.path, res);
 			}
 		});
+		self.app.get('/sitemap.xml', on.sitemap);
+		self.app.get('/robots.txt', on.robots);
+		//self.app.get('/google[0-9a-f]+.html', on.googleSiteAuth);
 
 		self.isInitialized = true;
 	};
