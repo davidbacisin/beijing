@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var express = require('express'),
 	compression = require('compression'),
 	//bodyParser = require('body-parser'),
