@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var express = require('express'),
 	compression = require('compression'),
 	//bodyParser = require('body-parser'),
@@ -118,3 +119,7 @@ var MainServer = function() {
 var mainServer = new MainServer();
 mainServer.initialize();
 mainServer.start();
+
+/* TODO
+ * caching
+ */
