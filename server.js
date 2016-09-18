@@ -10,35 +10,6 @@ var MainServer = function() {
 	var self = this;
 	
 	self.isInitialized = false;
-	
-	// server configuration
-	self.config = {};
-	self.configPath = 'server.json';
-	
-	self.loadConfiguration = function(filename) {
-		fs.readFile(filename, function (err, data) {
-			if (err) {
-				on.error("Could not read configuration file");
-			}
-			else {
-				try {
-					onConfigurationChange(JSON.parse(data));
-				}
-				catch (e){
-					on.error("Could not parse JSON data", e);
-				}
-			}
-		});
-		
-		function onConfigurationChange(configData) {
-			// convert select entries into Maps and RegexMaps
-			self.config.urlscripts = new RegexMap(configData.urlscripts);
-			self.config.redirects = new Map();
-			for (var domain of Object.keys(configData.redirects)) {
-				self.config.redirects.set(domain, new RegexMap(configData.redirects[domain]));
-			}
-		}
-	};
 
 	self.onExit = function() {
 
@@ -63,21 +34,6 @@ var MainServer = function() {
 		// Set up express server
 		self.app = express();
 		self.app.disable('x-powered-by');
-		
-		// watch the configuration file
-		fs.watch(self.configPath, function (event, filename) {
-			switch (event) {
-				case "rename":
-					this.close();
-					break;
-				case "change":
-					self.loadConfiguration(filename);
-					break;
-			}
-		});
-
-		// load the server configuration
-		self.loadConfiguration(self.configPath);
 		
 		// enable compression
 		self.app.use(compression());
@@ -121,4 +77,6 @@ mainServer.start();
 
 /* TODO
  * caching
+ * redirects
+ * remove SQL package
  */
