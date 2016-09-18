@@ -2,9 +2,12 @@
 <xsl:stylesheet version="1.0"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	
-<xsl:variable name="siteDomain">www.davidbacisin.com</xsl:variable>
+<xsl:param name="siteDomain">www.davidbacisin.com</xsl:param>
 <xsl:param name="path"></xsl:param>
-<xsl:param name="url">http://<xsl:value-of select="$siteDomain" /><xsl:value-of select="$path" /></xsl:param>
+<xsl:param name="url"><xsl:choose>
+	<xsl:when test="$url!=''"><xsl:value-of select="$url" /></xsl:when>
+	<xsl:otherwise>http://<xsl:value-of select="$siteDomain" /><xsl:value-of select="$path" /></xsl:otherwise>
+</xsl:choose></xsl:param>
 
 <!-- Output method must be xml so that processing instructions are generated correctly -->
 <xsl:output method="xml" 
@@ -35,14 +38,6 @@
 
 <xsl:template match="copyright-notice" name="copyright-notice">
 	<xsl:text>&#xa9; 2016 David Bacisin</xsl:text>
-</xsl:template>
-
-<xsl:template match="share" name="share">
-<div class="si-container">
-<a class="si si-facebook" href="https://facebook.com/sharer.php?u={$url}" target="_blank" title="Share on Facebook" aria-label="Share on Facebook"></a>
-<a class="si si-google" href="https://plus.google.com/share?url={$url}" target="_blank" title="Share on Google+" aria-label="Share on Google Plus"></a>
-<a class="si si-twitter" href="https://twitter.com/intent/tweet?url={$url}&amp;via=DavidBacisin" target="_blank" title="Share on Twitter" aria-label="Share on Twitter"></a>
-</div>
 </xsl:template>
 
 <!-- for style elements -->

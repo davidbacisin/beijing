@@ -3,6 +3,17 @@
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 	xmlns:t="http://www.davidbacisin.com/"
 	exclude-result-prefixes="t">
+	
+
+<xsl:variable name="siteDomain">beijing.davidbacisin.com</xsl:variable>
+<xsl:param name="path"></xsl:param>
+<xsl:param name="url"><xsl:text>http://</xsl:text><xsl:value-of select="$siteDomain" />
+<xsl:choose>
+	<xsl:when test="$path='/1'"><xsl:text>/</xsl:text></xsl:when>
+	<xsl:when test="number(substring($path, 2)) &gt; 1"><xsl:text>/page</xsl:text><xsl:value-of select="$path"/></xsl:when>
+	<xsl:otherwise><xsl:value-of select="$path"/></xsl:otherwise>
+</xsl:choose>
+</xsl:param>
 
 <xsl:include href="core.xsl" />
 

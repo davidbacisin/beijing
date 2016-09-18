@@ -46,9 +46,12 @@ var MainServer = function() {
 		
 		// request processing
 		self.app.get('/assets/:type/:name', on.asset);
+		self.app.get('/', (req, res) => {
+			on.page('/1', req, res);
+		});
 		self.app.get('/page/:pageId', function (req, res) {
 			var pageId = parseInt(req.params.pageId);
-			if (pageId >= 1 && pageId <= 5) {
+			if (pageId >= 1 && pageId <= 3) {
 				on.page("/" + pageId.toString(), req, res);
 			}
 			else {
@@ -83,5 +86,4 @@ mainServer.start();
 /* TODO
  * caching
  * redirects
- * remove SQL package
  */
