@@ -4,6 +4,7 @@ var express = require('express'),
 	cookieParser = require('cookie-parser'),
 	fs = require('fs'),
 	on = require('./server-events'),
+	analytics = require("./lib/analytics"),
 	RegexMap = require('./lib/RegexMap');
 	
 var MainServer = function() {
@@ -43,6 +44,9 @@ var MainServer = function() {
 		
 		// allow parsing of POST requests
 		//self.app.use(bodyParser.urlencoded({ extended: false }));
+		
+		// track request
+		self.app.use(analytics.middleware("UA-60957549-3"));
 		
 		// request processing
 		self.app.get('/assets/:type/:name', on.asset);
