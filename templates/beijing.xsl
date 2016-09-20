@@ -75,6 +75,13 @@
 	</figure>
 </xsl:template>
 
+<xsl:template match="t:tip">
+	<aside>
+		<h4>Traveler’s Tip.</h4><xsl:text> </xsl:text>
+		<xsl:apply-templates select="./node()" />
+	</aside>
+</xsl:template>
+
 <xsl:template match="html">
 	<xsl:call-template name="MainPage">
 		<xsl:with-param name="html" select="." />

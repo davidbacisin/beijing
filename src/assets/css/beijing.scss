@@ -106,6 +106,19 @@ table {
 }
 
 /* other styles */
+aside {
+	@extend %width-limit;
+	
+	box-sizing: border-box;
+	padding: 1em 3em;
+	
+	> h4 {
+		display: inline;
+		font-style: italic;
+		font-size: 1em;
+	}
+}
+
 .red,
 .blue,
 .graphite {
@@ -153,6 +166,11 @@ a.image-link {
 
 figure {
 	@extend %width-limit;
+}
+
+figcaption {
+	text-align: center;
+	font-style: italic;
 }
 
 .js .image-container {

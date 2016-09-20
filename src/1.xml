@@ -14,27 +14,30 @@
 		<p>It is 3:23 pm. I’ve just gotten off a 12 ½ hour flight from 
 		Chicago, after learning what a <q>short-checked bag</q> is and 
 		stepping onto a Boeing<nbsp/>747 for the first time. I had spent
-		an hour and a half waiting for my luggage to show up from my 
+		an hour and a half in Chicago waiting for my luggage to show up from my 
 		Cleveland flight, grabbed a quarter-pounder with cheese for 
 		lunch from McDonald’s, and gotten my visa approved with a 
-		DOCS<nbsp/>OK stamp at the gate. Now that I was here, I had no 
-		idea where to go, but I let my aching legs follow the crowd of
+		<q>DOCS<nbsp/>OK</q> stamp at the gate. Now that I was here, 
+		in Beijing, I had no idea where to go, but I let my aching legs follow the crowd of
 		people along hundreds of meters of terminal walkway.</p>
 		
-		<p>I wondered how the plane could see to land as I looked out 
-		the expansive windows of Beijing Capital: the outside air was 
-		yellowish-white with smog. Still walking, walking, looking for a 
-		sign with English<mdash/>and finally the ceiling swelled upward
-		and there were the lines. I scanned the signs. Chinese nationals, 
-		no, diplomatic, no, immigration, possibly, transits out of this 
-		terminal, no, transits out a different terminal, still no, no 
-		more planes right now please<mdash/>so I got in the long line 
-		for immigration. I filled out the immigration card, posed for a
-		picture, and got stamped through.</p>
+		<t:image src="docs-ok.jpg">Boarding pass with DOCS OK stamp</t:image>
+		
+		<p>As I looked out the expansive windows of Beijing Capital, I 
+		wondered how the plane could see to land: the outside air was 
+		yellowish-white with smog. Still walking, walking, looking for  
+		some indication of what to do next; finally the ceiling 
+		swelled upward, and there were the lines. I scanned the signs: 
+		Chinese nationals, no, diplomatic, no, immigration, possibly, 
+		transits out of this terminal, no, transits out a different 
+		terminal, still no, no more planes right now, please<mdash/>so 
+		I got in the long line for immigration. I filled out the 
+		immigration card, posed for a picture, and got stamped through.
+		Success!</p>
 		
 		<t:tip>US Citizens must apply in advance for a Chinese visa. This 
 		could take a week or two, and I would recommend applying even a 
-		month before you leave to avoid expidite fees.</t:tip>
+		month before you leave to avoid expedite fees.</t:tip>
 		
 		<p>Once again wandering and wondering, I spotted a sign that said 
 		<q>Baggage claim: Take train to T3.</q> Train? TRAIN?
@@ -46,52 +49,47 @@
 		a driver to sit, and then arrived at Terminal 3. There was a 
 		disturbing lack of signs for baggage claim.</p>
 		
-		<p>I once again followed the crowd, this time into another huge 
+		<p>Following the crowd, I entered a huge 
 		room with the largest and longest bag carousels I had ever 
-		seen<mdash/>not that I’ve seen all that many. After 15 minutes 
-		I spotted my bag and yanked it from the pile, and headed over to
-		something that looked like an exit…but only sort of. It said 
-		customs, but not a lot of people were going through it<mdash/>I 
-		read the signs and glanced around, and there, a hundred meters 
-		away on the other side of the room, was the very large customs 
-		signs, with a much longer line of people. I rolled over, 
-		double-checked the signs to make sure I had nothing to declare, 
+		seen. After 15 minutes I spotted my bag and yanked it from the 
+		pile, then headed over to something that looked like an exit…but 
+		only sort of. It said <q>Customs,</q> but not a lot of people were 
+		going through it<mdash/>I read the signs again and glanced 
+		around, and there, a hundred meters away on the other side of 
+		the room, were the <em>very large</em> <q>Customs</q> signs, with a 
+		much longer line of people. I rolled my luggage over, 
+		double-checked that I had nothing to declare, 
 		and then stepped through the metal detectors and sent my 
-		baggage through the X-ray scanner. Getting no response from the 
-		security personnel (was it OK to go?) I loitered a few seconds 
-		and then decided to continue on, through a maze of hallways 
-		until<mdash/></p>
+		baggage through the X-ray scanner. With no response from the 
+		security personnel (was it OK to go? Yes? No?), I loitered a 
+		few seconds and then decided to continue on, through a maze of 
+		hallways until<mdash/></p>
 		
 		<p>Railings groaned as they held back hundreds of people, like 
-		levees in a hurricane. As I walked I saw faces, signs, more faces and more 
-		signs, but no one I recognized and none with my name. I was 
-		supposed to call the person<mdash/>whom I’d never met<mdash/>who
-		was to pick me up from the airport, but I certainly didn’t have 
-		cell service. Finally, as I came to the end of the parted sea,
-		I heard someone say,</p>
+		levees in a flood. I saw faces, signs, more faces and more 
+		signs, but no one I recognized and none holding my name. I was 
+		supposed to call someone named Chen<mdash/>whom I’d never 
+		met<mdash/>who was to pick me up from the airport, but I 
+		certainly didn’t have cell service. Finally, as I came to the 
+		end of the parted sea, I heard someone say,</p>
 		
 		<p><q>David?</q></p>
 		
 		<p>I looked up and saw one familiar face, a face I had seen only 
 		once before in a picture from a conference call: Michael. Michael
 		introduced me to the person standing next to him, Jesse, who 
-		was the one picking the both of us Americans from the 
-		airport<mdash/>a last minute change, since I was originally 
-		supposed to meet with Chen. C’est la vie.</p>
+		had replaced Chen at the last minute. C’est la vie.</p>
 		
 		<p>Jesse led us to his car, and his driver<mdash/>yes, this 
 		Chinese twentysomething had a driver<mdash/>shimmied us through 
 		traffic to our destination: the Haidian district.</p>
-		
-		<p>The next day I find out that Jesse has a driver because his 
-		family works in the government. Oh, I see….</p>
 	</section>
 		
 	<section class="yellow">
 		<t:svg name="car.min.svg" />
 	
 		<h2>Crosstown traffic</h2>
-		<t:image src="traffic-1200.jpg" alt="Traffic across 8 lanes" />
+		<t:image src="traffic.jpg" alt="Traffic across 8 lanes" />
 		<p>Beijing has the craziest traffic I’ve ever experienced: 4 lanes 
 		each direction, packed with cars, trucks, taxis, motorbikes, 
 		rickshaws, bicycles…and they all weave through each other with a 
@@ -108,18 +106,22 @@
 		<p>We got out of the car at our hotel near Renmin University.
 		I felt surprised at the strange sweetness as I breathed for 
 		the first time the thick, polluted air. The sun was a dull 
-		orange disc, dim enough to look at due to the yellowish smog.</p>
+		orange disc, dim enough to look at through the smog.</p>
 		
-		<t:image src="smog.jpg">The setting sun, dimmed by the smog.</t:image>
+		<t:image src="smog.jpg">The setting sun, dimmed by the smog</t:image>
 		
-		<p>We walked to Zhongguancun, where steel and glass shimmer in 
+		<p>We met Jenny and Chen at the hotel and walked with them to 
+		Zhongguancun, where steel and glass shimmer in 
 		every direction. Surrounded by China’s top institutions of 
 		higher education, including Renmin, Peking, and Tsinghua 
 		Universities, we were in a place often called <q>the Silicon 
 		Valley of China.</q> This was where I’d be spending most of my 
-		time, teaching human-centered design to college students from 
+		three weeks, teaching human-centered design to college students from 
 		all over China.</p>
 		
+		<t:image src="zhongguancun-night.jpg">Zhongguancun at night</t:image>
+		
+		<!-- TODO better transition -->
 		<p>With the summer sun and humid air steaming me like a pork 
 		and cabbage dumpling, I wandered through Zhongguancun’s maze 
 		of skyscrapers and urban parks. On Sunday, parents sat in the 
@@ -131,6 +133,15 @@
 		there was plenty of air-conditioned indoor space to cool off, 
 		grab a bite to eat, and gain the attention of ravenous solicitors
 		selling electronics of every sort.</p>
+		
+		<t:image-gallery id="zhIG">
+			<t:image src="zhongguancun-sign.jpg"></t:image>
+			<t:image src="zhongguancun-solicitors.jpg"></t:image>
+			<t:image src="electronics-mall.jpg"></t:image>
+			<t:image src="zhongguancun-malls.jpg"></t:image>
+			<t:image src="sky-plaza.jpg"></t:image>
+			<t:image src="zhongguancun-park.jpg"></t:image>
+		</t:image-gallery>
 	</section>
 	
 	<section class="">
@@ -160,6 +171,9 @@
 		the newer stations have glass walls lining the 
 		tracks<mdash/>quite appreciated when a train flies alongside a 
 		packed platform. Many platforms even seemed to have bathrooms!</p>
+		
+		<t:image src="subway-station.jpg">A very empty subway platform 
+		in Zhongguancun</t:image>
 		
 		<p>And then the trains. With wide trains and lots of places to 
 		hold, the trains are comfortable during the quiet midday and 
@@ -198,7 +212,7 @@
 		<em>People’s</em> Republic of China, the establishment of 
 		Communism in mainland China.</p>
 		
-		<t:tip>We needed our passports (or Chinese National ID’s) to 
+		<t:tip>We needed our passports (or Chinese National IDs) to 
 		buy tickets for the Forbidden City Palace Museum.</t:tip>
 		
 		<p>The museum was packed, certainly earning its status as the 
@@ -210,16 +224,18 @@
 		of the curiosities in the palaces.</p>
 		
 		<t:image-gallery id="igFC">
-			<t:image src="forbidden-walls-1200.jpg">Some of the walls were 
+			<t:image src="forbidden-city.jpg"></t:image>
+			<t:image src="door-relief.jpg"></t:image>
+			<t:image src="forbidden-walls.jpg">Some of the walls were 
 			incredibly high, plastered and painted red. This may have 
 			something to do with the fact that the palace was once 
 			forbidden.</t:image>
-			<t:image src="forbidden-lion-1200.jpg">All over Beijing, I saw many 
+			<t:image src="forbidden-lion.jpg">All over Beijing, I saw many 
 			doorways with lion statues on either side. In general, larger
 			statues show greater wealth, but the drooping ears 
 			on this lion also indicates that you are entering an area 
 			where politics must not be discussed.</t:image>
-			<t:image src="giant-pots-1200.jpg">The Forbidden City has 308 of 
+			<t:image src="giant-pots.jpg">The Forbidden City has 308 of 
 			these massive bronze (and some copper) pots. We had a fun time 
 			hypothesizing how they could have been used: that they 
 			held ice in the summer, fire in the winter, or that they 
@@ -227,23 +243,23 @@
 			water<mdash/>but the official sign says they held water for 
 			fighting fires. Good, considering the wood construction of 
 			the palaces.</t:image>
-			<t:image src="painted-ceiling-1200.jpg">I received many funny looks 
+			<t:image src="painted-ceiling.jpg">I received many funny looks 
 			when I looked at or took pictures of ceilings, so it may not 
 			be all that culturally acceptable<mdash/>but the ceilings 
 			were beautifully painted with bright primary colors and 
 			some even gilded.</t:image>
-			<t:image src="crowd-around-1200.jpg">A number of rooms could not 
+			<t:image src="crowd-around.jpg">A number of rooms could not 
 			be entered, and instead people crowd around the railing to 
 			peer in<mdash/>and make good use of their selfie sticks. 
 			A few times I joined the fray to take a picture. I felt 
 			like I was in a writhing solid mass of people.</t:image>
-			<t:image src="forbidden-garden-1200.jpg">After pushing through 
+			<t:image src="forbidden-garden.jpg">After pushing through 
 			a crowd to see inside a room, the palace gardens were a 
 			relief. There were still a lot of people, but the trees and 
 			remarkable stone statues hid some of them from view. The 
 			gardens are reportedly where there were more romantic 
 			happenings.</t:image>
-			<t:image src="forbidden-moat-1200.jpg">A 52-meter wide moat surrounds the palace 
+			<t:image src="moat.jpg">A 52-meter wide moat surrounds the palace 
 			complex, and if you manage to make it past the 
 			crocodiles (which I’m really just making up<mdash/>or am I?)
 			then there is a 7.9-meter wall for you to climb. Good luck.</t:image>
@@ -266,17 +282,26 @@
 		along the water seemed to be storefronts; one of them had a nice 
 		selection of kites.</p>
 		
-		<p>After we climbed up the ruggest stone stairs, we crossed the 
+		<t:image src="houhu-shops.jpg">Visitors walk along the edge of 
+		Houhu Lake</t:image>
+		
+		<p>After we climbed up the rugged stone stairs, we crossed the 
 		bridge and plaza to begin our journey up Longevity Hill.
 		The yellow tile roofs, red walls, and gray 
 		flagstone walkways dominate the hillside, but the architect 
 		artfully incorporated the stone of the hill: for example, 
 		using a steep stone face as a rough wall.</p>
 		
+		<t:image src="fused-architecture.jpg">Natural elements fuse 
+		with the walls. A young girl wearing a rainbow umbrella hat is 
+		posing for a picture.</t:image>
+		
 		<p>At the top of Longevity Hill is the green and yellow 
 		Temple of <!-- TODO --> around which lots of tourists ignored 
 		the <q>No Climbing</q> sign and clambered over the many boulders
 		surrounding the temple.</p>
+		
+		<t:image src="sea-of-wisdom.jpg"></t:image>
 		
 		<p>And walking down the south side of the hill, we were immersed 
 		in forest. A section of jagged rock had been cut out and tunneled 
@@ -285,7 +310,7 @@
 		painted covered walkway that stretches 728 meters, with over 
 		14,000 paintings on its wooden beams (I wonder who counted?).</p>
 		
-		<t:image src="long-corridor-1200.jpg" />
+		<t:image src="long-corridor.jpg" />
 		
 		<p>We had bought the extra ticket for the Temple of the 
 		Fragrant Buddha, and despite not really wanting to climb 
@@ -295,8 +320,7 @@
 		very large wooden statue of Buddha, as well as an excellent 
 		view of Kunming Lake and Beijing.</p>
 		
-		<t:image src="fragrant-buddha-1200.jpg">The Temple of the 
-		Fragrant Buddha</t:image>
+		<t:image src="kunming-lake.jpg"></t:image>
 		
 		<p>Being tired and sweaty from climbing a mountain twice, we 
 		didn’t explore too much more of the Summer Palace. We wandered 
@@ -304,10 +328,10 @@
 		gardens.</p>
 		
 		<t:image-gallery>
-			<t:image src="fragrant-buddha-p.jpg" class="p"></t:image>
-			<t:image src="rock-statues.jpg"></t:image>
 			<t:image src="giant-bonsai.jpg"></t:image>
-			<t:image src="kunming-lake.jpg"></t:image>
+			<t:image src="fragrant-buddha.jpg">The Temple of the 
+		Fragrant Buddha</t:image>
+			<t:image src="painted-eaves.jpg"></t:image>
 		</t:image-gallery>
 	</section>
 	
@@ -326,6 +350,9 @@
 		dropped us off, right in front of the restaurant! (Who puts a 
 		restaurant down an alley? A lot of places in China, that’s for 
 		sure!) We tipped him an extra 10.</p>
+		
+		<t:image src="rickshaw.jpg">Blurry proof of my rickshaw 
+		experience</t:image>
 	</section>
 		
 	<script src="/assets/js/image-gallery.min.js"></script>
