@@ -36,6 +36,11 @@ var MainServer = function() {
 		self.app = express();
 		self.app.disable('x-powered-by');
 		
+		// we're behind a load balancer on production
+		if (self.ipaddress != "127.0.0.1") {
+			self.app.set('trust proxy', true);
+		}
+		
 		// enable compression
 		self.app.use(compression());
 		
