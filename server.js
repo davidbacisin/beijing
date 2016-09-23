@@ -19,15 +19,9 @@ var MainServer = function() {
 	self.initialize = function() {
 		if (self.isInitialized) return;
 		//  Set the environment variables we need.
-        self.ipaddress = process.env.OPENSHIFT_NODEJS_IP;
+        self.ipaddress = process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1";
         self.port      = process.env.OPENSHIFT_NODEJS_PORT || 4765;
-
-        if (typeof self.ipaddress === "undefined") {
-            //  Show warning but continue with 127.0.0.1 - this
-            //  allows us to run/test the app locally.
-            console.warn('No OPENSHIFT_NODEJS_IP var, using 127.0.0.1');
-            self.ipaddress = "127.0.0.1";
-        }
+        self.isLocal   = (self.ipaddress == "127.0.0.1");
 		
 		// Set up exit code
 		process.on('exit', self.onExit);
@@ -35,11 +29,6 @@ var MainServer = function() {
 		// Set up express server
 		self.app = express();
 		self.app.disable('x-powered-by');
-		
-		// we're behind a load balancer on production
-		if (self.ipaddress != "127.0.0.1") {
-			self.app.set('trust proxy', true);
-		}
 		
 		// enable compression
 		self.app.use(compression());
@@ -50,8 +39,13 @@ var MainServer = function() {
 		// allow parsing of POST requests
 		//self.app.use(bodyParser.urlencoded({ extended: false }));
 		
-		// track request
-		self.app.use(analytics.middleware("UA-60957549-3"));
+		if (!self.isLocal) {
+			// we're behind a load balancer on production
+			self.app.set('trust proxy', true);
+			
+			// track requests
+			self.app.use(analytics.middleware("UA-60957549-3"));
+		}
 		
 		// request processing
 		self.app.get('/assets/:type/:name', on.asset);

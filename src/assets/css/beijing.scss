@@ -179,18 +179,18 @@ figcaption {
 	position: relative;
 	overflow: hidden;
 	padding-bottom: 66.67%;
-	
+		
 	img {
 		position: absolute;
 		top: 0;
 		left: 0;
 		width: 100%;
-		
-		// for portrait 2:3 images
-		&.p {
-			left: 22.2%;
-			width: 44.4%;
-		}
+	}
+	
+	// for portrait 2:3 images
+	&.p img {
+		left: 22.2%;
+		width: 44.4%;
 	}
 }
 

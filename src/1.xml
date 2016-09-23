@@ -1,6 +1,6 @@
 ﻿<html xmlns:t="http://www.davidbacisin.com/">
 	<head>
-		<title></title>
+		<title>A Trip to Beijing</title>
 		<meta name="description" content="" />
 	</head>
 	<body>
@@ -225,7 +225,7 @@
 		
 		<t:image-gallery id="igFC">
 			<t:image src="forbidden-city.jpg"></t:image>
-			<t:image src="door-relief.jpg"></t:image>
+			<t:image src="door-relief.jpg" portrait="portrait"></t:image>
 			<t:image src="forbidden-walls.jpg">Some of the walls were 
 			incredibly high, plastered and painted red. This may have 
 			something to do with the fact that the palace was once 
@@ -297,17 +297,17 @@
 		posing for a picture.</t:image>
 		
 		<p>At the top of Longevity Hill is the green and yellow 
-		Temple of <!-- TODO --> around which lots of tourists ignored 
-		the <q>No Climbing</q> sign and clambered over the many boulders
+		Hall of the Sea of Wisdom, around which lots of tourists ignored 
+		the <q>No<nbsp/>Climbing</q> sign and clambered over the many boulders
 		surrounding the temple.</p>
 		
-		<t:image src="sea-of-wisdom.jpg"></t:image>
+		<t:image src="sea-of-wisdom.jpg" portrait="portrait"></t:image>
 		
 		<p>And walking down the south side of the hill, we were immersed 
 		in forest. A section of jagged rock had been cut out and tunneled 
 		through, making for a fun game of Where Does This Tunnel Go?
 		At the base of the hill was the Long Corridor, an ornately 
-		painted covered walkway that stretches 728 meters, with over 
+		painted covered walkway that stretches 728<nbsp/>meters, with over 
 		14,000 paintings on its wooden beams (I wonder who counted?).</p>
 		
 		<t:image src="long-corridor.jpg" />
@@ -329,8 +329,8 @@
 		
 		<t:image-gallery>
 			<t:image src="giant-bonsai.jpg"></t:image>
-			<t:image src="fragrant-buddha.jpg">The Temple of the 
-		Fragrant Buddha</t:image>
+			<t:image src="fragrant-buddha.jpg" portrait="portrait">The 
+			Temple of the Fragrant Buddha</t:image>
 			<t:image src="painted-eaves.jpg"></t:image>
 		</t:image-gallery>
 	</section>

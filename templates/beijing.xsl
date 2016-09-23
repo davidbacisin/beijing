@@ -20,12 +20,18 @@
 <xsl:template match="t:nav">
 	<nav id="navMain">
 		<input type="checkbox" class="nav-toggle" />
-		<ul id="navMenu" class="collapsed">
-		<xsl:for-each select="//h2">
-			<li><a href="#"><xsl:value-of select="./text()" /></a></li>
+		<ul id="navMenu" class="uncollapsed">
+		<xsl:for-each select="(document('../src/1.xml') | document('../src/2.xml'))//h2">
+			<li><a href="#{translate(translate(./text(),'”“:.',''),' ','-')}"><xsl:value-of select="./text()" /></a></li>
 		</xsl:for-each>
 		</ul>
 	</nav>
+</xsl:template>
+
+<!-- make is so we can jump to main headings -->
+<xsl:template match="h2">
+	<a name="{translate(translate(./text(),'”“:.',''),' ','-')}"></a>
+	<h2><xsl:apply-templates select="./node()" /></h2>
 </xsl:template>
 
 <xsl:template match="t:svg">
@@ -38,7 +44,13 @@
 			<li>
 				<span class="caption"><xsl:apply-templates select="./node()" /></span>
 				<xsl:text> </xsl:text>
-				<a class="image-link" target="_blank" href="/assets/images/{@src}">View image</a>
+				<a class="image-link" target="_blank" href="/assets/images/{@src}">
+					<xsl:attribute name="class">
+						<xsl:text>image-link</xsl:text>
+						<xsl:if test="@portrait='portrait'"><xsl:text> p</xsl:text></xsl:if>
+					</xsl:attribute>
+					<xsl:text>View image</xsl:text>
+				</a>
 			</li>
 		</xsl:for-each>
 	</ul>
@@ -67,7 +79,12 @@
 
 <xsl:template match="t:image">
 	<figure class="image-fig">
-		<div class="image-container"></div>
+		<div>
+			<xsl:attribute name="class">
+				<xsl:text>image-container</xsl:text>
+				<xsl:if test="@portrait='portrait'"><xsl:text> p</xsl:text></xsl:if>
+			</xsl:attribute>
+		</div>
 		<xsl:if test="text() != ''">
 			<figcaption><xsl:apply-templates select="./node()" /></figcaption>
 		</xsl:if>
