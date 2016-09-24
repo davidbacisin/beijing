@@ -265,6 +265,124 @@ class JsProcessor {
 		}
 	}
 }
+class JpegProcessor {
+	constructor() {
+		if (!JpegProcessor._queue) {
+			JpegProcessor._queue = [];
+		}
+		if (!JpegProcessor.sizes) {
+			JpegProcessor.sizes = [
+				1800,
+				1200,
+				 600
+			];
+		}
+		if (!JpegProcessor.jimp) {
+			JpegProcessor.jimp = require("jimp");
+		}
+	}
+	
+	process(event, p) {
+		var srcPath = program.toSrcPath(p);
+		switch(event) {
+			case "add":
+			case "change":
+				JpegProcessor.processJpeg(srcPath, (err, imagePath) => {
+					if (err){
+						console.warn("[JpegProcessor] Error occured on " + imagePath + ": " + err);
+					}
+					else {
+						console.log("Updated image " + imagePath);
+					}
+				});
+				break;
+			case "unlink":
+				// remove the file from the destination
+				/*fs.unlink(dstPath, err => {
+					if (err) {
+						console.warn("Error while removing file <" + dstPath + ">: " + err.toString());
+					}
+					else {
+						console.log("Removed file to match source: " + dstPath);
+					}
+				});*/
+				console.warn("Not implemented: response to deleted jpeg");
+				break;
+		}
+	}
+	
+	static processJpeg(srcPath, callback) {
+		// only process one at a time, queuing the other ones
+		if (!JpegProcessor._processing) {
+			JpegProcessor._processing = true;
+			JpegProcessor.jimp.read(srcPath).then(image => {
+				// stateful object
+				let imageState = {
+					writesRemaining: 0,
+					srcPath: srcPath,
+					dstPaths: []
+				};
+				// resize and process
+				for (let size of JpegProcessor.sizes) {
+					JpegProcessor.resizeJpeg(image, imageState, size, callback);
+				}
+			}).catch((err, image) => {
+				callback(err, srcPath);
+			});
+		}
+		else {
+			JpegProcessor._queue.push(srcPath);
+		}
+	}
+	
+	static resizeJpeg(image, imageState, size, next) {
+		let dstPath = program.toDstPath(imageState.srcPath).replace(".jpg", "-" + size + ".jpg");
+		imageState.writesRemaining++;
+		imageState.dstPaths.push(dstPath);
+		image.clone().scaleToFit(size, size, JpegProcessor.jimp.RESIZE_BILINEAR)
+			.write(dstPath, JpegProcessor.getJimpCallback(imageState, dstPath, next));
+	}
+	
+	static getJimpCallback(imageState, path, next) {
+		return (err, image) => {
+			imageState.writesRemaining--;
+			if (err) {
+				next(err, path);
+			}
+			else if (imageState.writesRemaining <= 0) {
+				// then run jpegoptim
+				JpegProcessor.runJpegoptim(imageState.dstPaths, next);
+				// we're done processing (we don't care that jpegoptim might still be running in the background though)
+				JpegProcessor._processing = false;
+				// so move on to the next image in the queue
+				if (JpegProcessor._queue.length) {
+					JpegProcessor.processJpeg(JpegProcessor._queue.shift(), next);
+				}
+			}
+		};
+	}
+	
+	static runJpegoptim(dstPaths, callback) {
+		var args = [
+				"-T3", // skip files that have already been optimized
+				"--all-progressive",
+				"-m96" // max quality of 96%
+			];
+		if (!program.verbose)
+			args.push("-q"); // quiet output
+		// the image paths are the last arguments
+		Array.prototype.push.apply(args, dstPaths);
+		
+		var jpegoptim = spawn("jpegoptim", args);
+		if (program.verbose)
+			jpegoptim.stdout.on("data", chunk => { console.log(chunk.toString()) });
+		jpegoptim.stderr.on("data", chunk => { console.warn(chunk.toString()) });
+		jpegoptim.on("close", code => {
+			console.log("jpegoptim closed with code " + code);
+			callback(null, dstPaths);
+		});
+	}
+}
 
 program.loadConfiguration = function() {
 	// we need the config before we do anything else, so make it sync
@@ -289,6 +407,7 @@ program.start = function() {
 	program.processors.set("xml", new XmlProcessor());
 	program.processors.set("scss", new ScssProcessor());
 	program.processors.set("js", new JsProcessor());
+	program.processors.set("jpeg", new JpegProcessor());
 	
 	// watch src directory for changes
 	program.mainWatcher = chokidar.watch(program.src, { ignored: /[\/\\]\./ })
@@ -317,7 +436,10 @@ program.getProcessor = function(p) {
 			path.extname(p) == ".js"){
 			key = "js";
 		}
-		// room to expand to an image processor et al.
+		else if (p.startsWith(path.join(program.src, "assets", "images", "a")) &&
+			path.extname(p) == ".jpg"){
+			key = "jpeg";
+		}
 	}
 	else if (path.extname(p) == ".xml") {
 		key = "xml";
