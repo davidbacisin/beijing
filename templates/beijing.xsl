@@ -47,7 +47,7 @@
 				<a class="image-link" target="_blank" href="/assets/images/{@src}">
 					<xsl:attribute name="class">
 						<xsl:text>image-link</xsl:text>
-						<xsl:if test="@portrait='portrait'"><xsl:text> p</xsl:text></xsl:if>
+						<xsl:if test="@portrait='yes'"><xsl:text> p</xsl:text></xsl:if>
 					</xsl:attribute>
 					<xsl:text>View image</xsl:text>
 				</a>
@@ -82,7 +82,7 @@
 		<div>
 			<xsl:attribute name="class">
 				<xsl:text>image-container</xsl:text>
-				<xsl:if test="@portrait='portrait'"><xsl:text> p</xsl:text></xsl:if>
+				<xsl:if test="@portrait='yes'"><xsl:text> p</xsl:text></xsl:if>
 			</xsl:attribute>
 		</div>
 		<xsl:if test="text() != ''">

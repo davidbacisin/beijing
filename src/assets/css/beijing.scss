@@ -166,10 +166,10 @@ a.image-link {
 
 figure {
 	@extend %width-limit;
+	text-align: center;
 }
 
 figcaption {
-	text-align: center;
 	font-style: italic;
 }
 
