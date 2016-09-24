@@ -10,6 +10,7 @@ var fs = require('fs'),
 	
 program.version('0.1.0')
 	.option('-v, --verbose', 'Verbose output')
+	.option('--skip-images', 'Skip image optimization')
 	.parse(process.argv);
 
 // initialize
@@ -272,9 +273,11 @@ class JpegProcessor {
 		}
 		if (!JpegProcessor.sizes) {
 			JpegProcessor.sizes = [
-				1800,
+				  '',
 				1200,
-				 600
+				 600,
+				 480,
+				 't'
 			];
 		}
 		if (!JpegProcessor.jimp) {
@@ -336,11 +339,21 @@ class JpegProcessor {
 	}
 	
 	static resizeJpeg(image, imageState, size, next) {
-		let dstPath = program.toDstPath(imageState.srcPath).replace(".jpg", "-" + size + ".jpg");
+		let dstPath = program.toDstPath(imageState.srcPath);
+		
+		let workingImage = image.clone();
+		if (size == "t") {
+			workingImage = workingImage.cover(110, 110, JpegProcessor.jimp.HORIZONTAL_ALIGN_CENTER | JpegProcessor.jimp.VERTICAL_ALIGN_MIDDLE);
+			dstPath = dstPath.replace(".jpg", "-t.jpg");
+		}
+		else if (size != '') {
+			workingImage = workingImage.scaleToFit(size, size, JpegProcessor.jimp.RESIZE_BILINEAR);
+			dstPath = dstPath.replace(".jpg", "-" + size + ".jpg");
+		}
+		
 		imageState.writesRemaining++;
 		imageState.dstPaths.push(dstPath);
-		image.clone().scaleToFit(size, size, JpegProcessor.jimp.RESIZE_BILINEAR)
-			.write(dstPath, JpegProcessor.getJimpCallback(imageState, dstPath, next));
+		workingImage.write(dstPath, JpegProcessor.getJimpCallback(imageState, dstPath, next));
 	}
 	
 	static getJimpCallback(imageState, path, next) {
@@ -436,7 +449,8 @@ program.getProcessor = function(p) {
 			path.extname(p) == ".js"){
 			key = "js";
 		}
-		else if (p.startsWith(path.join(program.src, "assets", "images", "a")) &&
+		else if (!program.skipImages && 
+			p.startsWith(path.join(program.src, "assets", "images")) &&
 			path.extname(p) == ".jpg"){
 			key = "jpeg";
 		}

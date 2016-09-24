@@ -37,10 +37,10 @@ $font-size: (
 		@content;
 	}
 	@else if $type == xs-only {
-		@media (max-width: #{floor((26 + 2 * 1.618) * map-get($font-size, xs))}) { @content; }
+		@media (max-width: #{floor((26 + 2 * 0.5) * map-get($font-size, xs))}) { @content; }
 	}
 	@else {
-		@media (min-width: #{floor((26 + 2 * 1.618) * map-get($font-size, $type))}) { @content; }
+		@media (min-width: #{floor((26 + 2 * 1.6) * map-get($font-size, $type))}) { @content; }
 	}
 }
 

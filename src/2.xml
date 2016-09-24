@@ -34,6 +34,8 @@
 		have expected: a lush urban garden with trees and streams. And 
 		this became a noticeable pattern.</p>
 		
+		<t:image src="first-hutong.jpg">The first hutong</t:image>
+		
 		<p>The second hutong I visited with on a group tour. The Design 
 		Service Center in Beijing supports many entrepreneurial endeavors,
 		including a program that works to re-invigorate the community 
@@ -55,14 +57,14 @@
 		
 		<t:image-gallery>
 			<t:image src="public-restroom.jpg"></t:image>
-			<t:image src="junk-truck.jpg"></t:image>
+			<t:image src="junk-trucks.jpg"></t:image>
 			<t:image src="hutong-wall.jpg"></t:image>
 			<t:image src="hutong-sheds.jpg"></t:image>
 			<t:image src="hutong-restaurant.jpg"></t:image>
-			<t:image src="caged-bug.jpg"></t:image>
+			<t:image src="pet-bug.jpg"></t:image>
 			<t:image src="old-prison.jpg"></t:image>
 			<t:image src="hutong-traffic.jpg"></t:image>
-			<t:image src="hutong-people.jpg"></t:image>
+			<t:image src="hutong-life.jpg"></t:image>
 			<t:image src="hutong-bottles.jpg"></t:image>
 			<t:image src="hutong-pearls.jpg"></t:image>
 			<t:image src="hutong-bicycle.jpg"></t:image>
@@ -72,7 +74,8 @@
 			<t:image src="hutong-contrast.jpg"></t:image>
 			<t:image src="hutong-construction.jpg"></t:image>
 			<t:image src="hutong-near-798.jpg"></t:image>
-			
+			<t:image src="hutong-vineyard.jpg"></t:image>
+			lifeless-teddy.jpg
 			<t:image src="raised-thresholds.jpg">Most of the gates and 
 			doorways had raised wooden thresholds which I hear are bad 
 			luck to step on. I wonder how I’d get around if I were in a 
@@ -122,7 +125,7 @@
 		an occasional view of the beatiful valley below, we made it to 
 		The Wall.</p>
 		
-		<t:image src="great-wall-brick.jpg">A stone making up the base 
+		<t:image src="giant-bricks.jpg">A stone making up the base 
 		of the wall, much larger than my hand</t:image>
 		
 		<p>The stones were huge. We climbed thirty or so more stairs to 
@@ -133,6 +136,10 @@
 		towers. The Wall just kept going; we would walk to the next 
 		tower, and then the next, and still you can see the wall zig-zagging
 		across the mountain-top, continuing beyond the horizon.</p>
+		
+		<t:image src="beyond-horizon.jpg">The wall snakes far into the 
+		distance, beyond the horizon and beyond imagination. I count 
+		ten towers in this photo.</t:image>
 		
 		<p class="text-big" style="max-width:6em">
 			<span style="display:block;">yī</span>
@@ -155,7 +162,7 @@
 		through the trees suggested that passengers needed to use a 
 		hand brake around curves.</p>
 		
-		<t:image src="toboggan-1200.jpg"></t:image>
+		<t:image src="toboggan.jpg"></t:image>
 		
 		<p>Unfortunately, I didn't learn much more history than I 
 		already knew (built to keep out invading forces), but my visit 
@@ -164,9 +171,19 @@
 		still climb up it everyday.</p>
 		
 		<t:image-gallery id="gwIG">
-			<t:image src="great-wall-1200.jpg"></t:image>
-			<t:image src="mountain-1200.jpg"></t:image>
-			<t:image src="inside-tower-1200.jpg"></t:image>
+			<t:image src="great-wall.jpg"></t:image>
+			<t:image src="mutianyu-mountain.jpg"></t:image>
+			<t:image src="tower-arches.jpg" portrait="yes"></t:image>
+			<t:image src="steep-stairs.jpg"></t:image>
+			<t:image src="aqueduct.jpg"></t:image>
+			<t:image src="cannon.jpg"></t:image>
+			<t:image src="great-old-tower.jpg"></t:image>
+			<t:image src="gutters.jpg"></t:image>
+			<t:image src="mutianyu-flowers.jpg"></t:image>
+			<t:image src="mutianyu-slopes.jpg"></t:image>
+			<t:image src="mutianyu-stairs.jpg" portrait="yes"></t:image>
+			<t:image src="mutianyu-tower.jpg"></t:image>
+			<t:image src="tired-at-mutianyu.jpg" portrait="yes"></t:image>
 		</t:image-gallery>
 	</section>
 	

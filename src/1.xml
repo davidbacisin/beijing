@@ -352,14 +352,20 @@
 		collections, and even the three-storey opera stage.</p>
 		
 		<t:image-gallery>
+			<t:image src="summer-palace.jpg">The Temple of the Fragrant 
+			Buddha and Hall of the Sea of Wisdom, as viewed from lake level.</t:image>
 			<t:image src="giant-bonsai.jpg">I don’t know how to describe 
 			this any other way than a large bonsai tree in the middle 
 			of a courtyard.</t:image>
-			<t:image src="fragrant-buddha.jpg" portrait="yes">The 
-			Temple of the Fragrant Buddha, as viewed from lake level.</t:image>
 			<t:image src="painted-eaves.jpg">The wooden eaves of the 
 			opera stage are painted with bright blues, reds, greens, and 
 			gold.</t:image>
+			<t:image src="longevity-trees.jpg">Some wiggly-looking trees 
+			on Longevity Hill</t:image>
+			<t:image src="storm-grate.jpg">A cool geometric storm grate,
+			plus my wet shoes</t:image>
+			<t:image src="stone-tunnel.jpg">Several stone tunnels like 
+			this were fun to duck through</t:image>
 		</t:image-gallery>
 	</section>
 	
