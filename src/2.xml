@@ -8,138 +8,164 @@
 
 	<div style="padding-bottom:25%"></div>
 	<section class="dust">
+		<t:svg name="hutong.min.svg" />
+		
 		<h2>Life in a Hutong</h2>
-		<p>Speaking of alleys, the Chinese word for alley is hutong. 
-		But <em>hutong</em> means much more than that: the alleys are 
-		between the traditional courtyard residencies of the 
-		communities that live there. Often hundreds of years old, 
-		some hutong communities have come under government protection 
-		to prevent their replacement with high-rise apartments or 
-		commercial buildings. My first experience in a hutong, though, 
-		was other-worldly.</p>
+		<p>Speaking of alleys: on our way back from exploring the 
+		Forbidden City, Ge, Michael and I find ourselves walking right 
+		through one!</p>
 		
-		<p>Alleys in the United States have a reputation for dumpsters 
-		and seedy characters, so when Ge led Michael and I down an 
-		alley after our visit to the Forbidden City, I really didn’t 
-		know what to expect. We walked past gray walls on a dusty, 
-		packed dirt path, residents’ bikes and old furniture lining the 
-		edges, just wide enough in between to squeeze a car and 
-		sometimes a pedestrian. There were very few other people; but 
-		perhaps coming from the crowds of the Forbidden City made it 
-		seem emptier than it was. Two motorbikes, then a rickshaw, 
-		sped past us, and someone was selling fresh fruit and 
-		vegetables from a few shallow crates under a canopy. Rounding a 
-		curve, we exited the dusty maze of gray through a half-meter wide 
-		gap in fence<mdash/>into the most different environment I would 
-		have expected: a lush urban garden with trees and streams. And 
-		this became a noticeable pattern.</p>
+		<p>We walk single file between solid gray walls, hearing only 
+		our footsteps on the dusty asphalt. Two motorbikes, and 
+		then a rickshaw, honk and speed past us, narrowly missing us, the 
+		piles of old furniture, and parked cars. Some segments are 
+		barely wide enough to fit one car, let alone two side-by-side. 
+		I’m not sure whether I should have my DSLR camera out and 
+		visible, because alleys in the United States 
+		have a reputation for dumpsters and seedy characters, and now I 
+		really don’t know what to expect.</p>
 		
-		<t:image src="first-hutong.jpg">The first hutong</t:image>
+		<t:image src="first-hutong.jpg">My first experience in an alley 
+		in Beijing</t:image>
 		
-		<p>The second hutong I visited with on a group tour. The Design 
-		Service Center in Beijing supports many entrepreneurial endeavors,
-		including a program that works to re-invigorate the community 
-		within the Blue Dragon Hutong. The program encourages residents 
-		to create public art within the hutong to make it their own 
-		space and invite conversation, as well as encouraging residents 
-		to write poetry in marker on the windows of buildings surrounding
-		the hutong (but hutong residences themselves don’t have windows 
-		that face they alley).</p>
+		<p>But there are very few other people, and Ge acts like it is 
+		perfectly normal and safe to walk through an alley. Someone is 
+		selling fresh fruit and vegetables from a few shallow crates 
+		under a canopy. Another motorbike passes us and slips through a 
+		half-meter wide gap in the fence at the end of the alley; we 
+		follow<mdash/>into the most different environment I could have 
+		expected: a lush urban garden with trees and streams.</p>
 		
-		<p>My first view of the Blue Dragon Hutong included a large 
-		flatbed truck piled high with old bicycles and what appeared 
-		to be other scrap metal. Walking past the truck, we turned down 
-		the alley, painted the same color gray. As the tour guide was 
-		speaking Chinese, I first tried to understand what was happening 
-		based on the context and her gestures, and occasional translations
-		from friends<mdash/>but the other non-Chinese speakers and I 
-		spent most of the two hours looking around and taking pictures.</p>
+		<p>I have survived my first experience in a hutong.</p>
+		
+		<p><em>Hutong</em> is the Chinese word for alley, but it means 
+		much more than that, as I soon find out. It’s Saturday, and I’m
+		on a group tour of the Qinglong (<q>Azure Dragon</q>) Hutong.
+		The tour is in Mandarin, but a few friends translate the more 
+		interesting bits for us non-Chinese speaking folk.</p>
+		
+		<p>These alleys are between the traditional courtyard-style 
+		residencies of the people who live there. Often hundreds of 
+		years old, some hutong communities have come under government 
+		protection to prevent their replacement with high-rise 
+		apartments or commercial buildings. The Design Service Center of 
+		Beijing runs a program that encourages residents of Qinglong 
+		Hutong to create public art within the hutong to make it their 
+		own and promote community in the area. Interestingly, all 
+		hutong communities seem to be surrounded by brick walls, and all 
+		of them are painted the same color gray.</p>
+		
+		<t:image src="junk-trucks.jpg">My first view of the Qinglong 
+		Hutong includes a large flatbed truck piled high with old 
+		bicycles and what appears to be other scrap metal.</t:image>
+		
+		<p>The tour guide heads into the alley, stopping here and there 
+		to talk about points of interest. The other non-Chinese speakers 
+		and I spend most of the following two hours looking around and 
+		taking pictures.</p>
 		
 		<t:image-gallery>
-			<t:image src="public-restroom.jpg"></t:image>
-			<t:image src="junk-trucks.jpg"></t:image>
-			<t:image src="hutong-wall.jpg"></t:image>
-			<t:image src="hutong-sheds.jpg"></t:image>
-			<t:image src="hutong-restaurant.jpg"></t:image>
+			<t:image src="qinglong-marker.jpg">This blue-green sculpture 
+			marks the Qinglong Hutong. Directly next to it is a public 
+			restroom, which are common in and near hutongs.</t:image>
+			<t:image src="hutong-pearls.jpg">The resident of this house 
+			has strung up a giant pearl necklace to give the gray walls 
+			some more character.</t:image>
+			<t:image src="old-prison.jpg">This round tower is one of the 
+			few remains of an old prison. As Qinglong Hutong became more 
+			populated, the prison was moved far away.</t:image>
+			<t:image src="hutong-sheds.jpg">These short little buildings
+			are storage sheds for residents.</t:image>
+			<t:image src="hutong-restaurant.jpg" portrait="yes"></t:image>
 			<t:image src="pet-bug.jpg"></t:image>
-			<t:image src="old-prison.jpg"></t:image>
 			<t:image src="hutong-traffic.jpg"></t:image>
 			<t:image src="hutong-life.jpg"></t:image>
 			<t:image src="hutong-bottles.jpg"></t:image>
-			<t:image src="hutong-pearls.jpg"></t:image>
-			<t:image src="hutong-bicycle.jpg"></t:image>
-			<t:image src="hutong-ac.jpg"></t:image>
-			<t:image src="hutong-wires.jpg"></t:image>
-			<t:image src="hutong-roof-age.jpg"></t:image>
-			<t:image src="hutong-contrast.jpg"></t:image>
+			<t:image src="hutong-bicycle.jpg" portrait="yes"></t:image>
 			<t:image src="hutong-construction.jpg"></t:image>
-			<t:image src="hutong-near-798.jpg"></t:image>
 			<t:image src="hutong-vineyard.jpg"></t:image>
-			lifeless-teddy.jpg
-			<t:image src="raised-thresholds.jpg">Most of the gates and 
+			<t:image src="lifeless-teddy.jpg" portrait="yes">Someone 
+			left this de-stuffed teddy bear on a pile of trash. 
+			Everybody thought it was a little creepy.</t:image>
+			<t:image src="hutong-door.jpg" portrait="yes">Most of the gates and 
 			doorways had raised wooden thresholds which I hear are bad 
 			luck to step on. I wonder how I’d get around if I were in a 
 			wheelchair or on crutches.</t:image>
 		</t:image-gallery>
 		
-		<p>Conclusion: hutongs in China don’t live up to the bad 
-		reputation of alleys in the States. People there are friendly 
-		and tend to keep to themselves, and while the alleys may be a 
+		<p>After about 30<nbsp/>minutes, I feel pretty lost. And hot. 
+		Fortunately I brought extra water, and our guide knows the way.
+		Finally we return to the Design Service Center to debrief.
+		Conclusion? Hutongs in China don’t live up to the bad 
+		reputation of alleys in the States. People are friendly and 
+		tend to keep to themselves, and while they may be a 
 		little crowded with junk and traffic, the rich culture of the 
 		hutong makes for a warm and fuzzy, homey feeling.</p>
+		
+		<t:image src="hutong-near-798.jpg" portrait="yes">On the way 
+		to the 798<nbsp/>Arts District, I took a shortcut through this 
+		alley, which didn’t seem to be quite like a traditional 
+		residential hutong. It was strangely full of window and door 
+		frames.</t:image>
 	</section>
 		
 	<section class="graphite">
 		<t:svg name="great-wall.min.svg" />
 		
 		<h2>The Great Wall at Mutianyu</h2>
-		<p>The second Sunday, we had most of the day off from the 
-		design program, making it the day to check out the Great Wall. 
-		Ken and I had left the Saturday night out after KTV (karoake)
-		so that we could wake up at 7:00 for a full day of adventuring.
-		While most of the others slept in, we met up with Mandy and 
-		Jenny, who had nicely arranged for a carpool to Mutianyu, a 
-		section of the Great Wall that is a little further from Beijing
-		but as a result, less crowded.</p>
+		<p>It’s the second Sunday, and we have most of the day off from 
+		the design program, making it <em>the</em> day to check out the 
+		Great Wall. We had all gone out the night before for karoake at 
+		KTV, and while a few others went clubbing afterward, Ken and I 
+		had left so we could wake up at 7<nbsp/>am for a full day of 
+		adventuring.</p>
+		
+		<p>We meet up with Mandy and Jenny. They had nicely arranged for 
+		a carpool for the four of us to Mutianyu, a section of the 
+		Great Wall that is a little further from Beijing and therefore 
+		less crowded.</p>
 		
 		<t:image src="mutianyu-entrance.jpg">The welcome center and 
 		ticket booths for the Mutianyu section of the Great Wall</t:image>
 		
-		<p>With tickets in hand, we walked past all of the gift shops
-		(and a Burger King) to catch a bus. The bus careened up a 
-		switchback road to drop us off about a mile closer to the base 
-		of the mountain. We chuckled about the herd of people
-		wearing bamboo hats, assuming they were part of a tour group.</p>
+		<p>Tickets in hand, we walk past the gift shops (and a Burger 
+		King) to catch a bus. The bus careens up a switchback road to 
+		drop us off about a mile closer to the base of the mountain. 
+		We chuckle about the herd of people wearing bamboo hats, 
+		who appear to be part of a tour group.</p>
 		
 		<p>There are two ways up the mountain: stairs and chairlift. 
-		I had just recovered from a bout of food poisoning three days 
-		before, but I <em>was</em> feeling pretty darn good this 
-		morning<mdash/>and since the others wanted to hike up, I thought,
-		sure, I’m athletic, I’ll be able to handle it. And handle it I 
-		did, much better than a number of other tourists. The weather 
-		was hot, above 90⁰F and humid, so the four of us were soaked 
-		with sweat not even a third of the way up. My 1.5-liter water 
-		bottle I had bought that morning sure came in handy today, as 
-		halfway up, Jenny paid three times more for a bottle a third 
+		I’ve just recovered from a bout of food poisoning three days 
+		ago, but I’m feeling <em>pretty darn good</em> this 
+		morning<mdash/>and since the others want to hike up, I think,
+		sure, I’m athletic, I’ll be able to handle it.</p>
+		
+		<t:image src="tired-at-mutianyu.jpg" portrait="yes">This girl,
+		however, doesn’t seem quite able to handle it.</t:image>
+		
+		<p>Handle it I do, much better than a number of other tourists.
+		The weather is hot, above 90°F and humid, so the four of us are
+		soaked with sweat not even a third of the way up. My 1.5-liter 
+		water bottle I bought this morning has sure come in handy, as 
+		halfway up, Jenny pays three times more for a bottle a third 
 		the size. But finally, after weaving through dense forest with 
-		an occasional view of the beatiful valley below, we made it to 
+		an occasional view of the beatiful valley below, we make it to 
 		The Wall.</p>
 		
-		<t:image src="giant-bricks.jpg">A stone making up the base 
-		of the wall, much larger than my hand</t:image>
+		<t:image src="giant-bricks.jpg">A stone near the base of the 
+		wall, much larger than my hand</t:image>
 		
-		<p>The stones were huge. We climbed thirty or so more stairs to 
-		get to the walkway along the top<mdash/>from which we could see 
+		<p>The bricks are huge. We climb thirty or so more stairs to 
+		get to the walkway along the top<mdash/>from which we can see 
 		the entire valley on either side, lush with vegetation, and 
-		mountains in the distance. We strolled along the uneven square-ish
+		mountains in the distance. We stroll along the uneven square-ish
 		cobbles, peeking through crenellations and exploring several 
-		towers. The Wall just kept going; we would walk to the next 
-		tower, and then the next, and still you can see the wall zig-zagging
+		towers. The Wall just keeps going; we walk to the next 
+		tower, and then the next, and still we can see the Wall zig-zagging
 		across the mountain-top, continuing beyond the horizon.</p>
 		
-		<t:image src="beyond-horizon.jpg">The wall snakes far into the 
-		distance, beyond the horizon and beyond imagination. I count 
-		ten towers in this photo.</t:image>
+		<t:image src="beyond-horizon.jpg">The Great Wall snakes far into
+		the distance, no end in sight. I count ten towers in this photo.</t:image>
 		
 		<p class="text-big" style="max-width:6em">
 			<span style="display:block;">yī</span>
@@ -148,74 +174,74 @@
 			<span style="display:block;text-align:right">qiézi!</span>
 		</p>
 		
-		<p>Many, many times we heard <q>Yī, èr, sān, qiézi,</q> which 
-		literally translates to <q>One, two, three, eggplant,</q> 
-		whenever people were taking group photos. Just like the word 
-		<q>cheese</q> in English, <q>qiézi</q> (roughly chee ET zeh) 
+		<p>Many, many times, whenever people are taking group photos, 
+		we hear, <q>yī, èr, sān, qiézi,</q> which literally translates 
+		to, <q>one, two, three, eggplant.</q> Just like the word 
+		<q>cheese</q> in English, <q>qiézi</q> (roughly chee-ET-zeh) 
 		makes you show your smile when you say it.</p>
 		
-		<p>To get down from the wall, you can walk, take the chairlift, 
-		or <em>ride a toboggan</em>. We walked down, which was much 
-		easier than going up, but we caught a few entertaining glimpses
-		of the shiny stainless-steel toboggan chute. The toboggans 
-		appeared to be very minimal, and the signs that we could see 
-		through the trees suggested that passengers needed to use a 
-		hand brake around curves.</p>
+		<p>To get down from the wall, we could walk, take the chairlift, 
+		or <em>ride a toboggan</em>. We hike down, which is much 
+		easier than going up, but we catch a few entertaining glimpses
+		of the shiny metal toboggan chute. The toboggans 
+		appear to be very minimal, and the signs we can see 
+		through the trees suggest that passengers are responsible for 
+		braking around curves.</p>
 		
-		<t:image src="toboggan.jpg"></t:image>
+		<t:image src="toboggan.jpg">A man rides a toboggan down from the
+		Great Wall.</t:image>
 		
-		<p>Unfortunately, I didn't learn much more history than I 
-		already knew (built to keep out invading forces), but my visit 
-		to the Great Wall gave the perspective of how incredibly huge it 
-		was, and some empathy for its builders and even the workers who 
-		still climb up it everyday.</p>
+		<p>Unfortunately, I don’t learn much more history than I 
+		already know (i.e. built to keep out invading forces), but my 
+		visit to the Great Wall gives me the perspective of how 
+		incredibly huge it is, as well as some empathy for its builders 
+		and the workers who still climb up to it everyday.</p>
 		
 		<t:image-gallery id="gwIG">
 			<t:image src="great-wall.jpg"></t:image>
 			<t:image src="mutianyu-mountain.jpg"></t:image>
 			<t:image src="tower-arches.jpg" portrait="yes"></t:image>
 			<t:image src="steep-stairs.jpg"></t:image>
-			<t:image src="aqueduct.jpg"></t:image>
+			<t:image src="mutianyu-flowers.jpg" portrait="yes"></t:image>
 			<t:image src="cannon.jpg"></t:image>
-			<t:image src="great-old-tower.jpg"></t:image>
 			<t:image src="gutters.jpg"></t:image>
-			<t:image src="mutianyu-flowers.jpg"></t:image>
 			<t:image src="mutianyu-slopes.jpg"></t:image>
-			<t:image src="mutianyu-stairs.jpg" portrait="yes"></t:image>
-			<t:image src="mutianyu-tower.jpg"></t:image>
-			<t:image src="tired-at-mutianyu.jpg" portrait="yes"></t:image>
+			<t:image src="aqueduct.jpg"></t:image>
 		</t:image-gallery>
 	</section>
 	
 	<section>
+		<t:svg name="bus.min.svg" />
+		
 		<h2>Back to Beijing</h2>
-		<p>The Great Wall was not our only adventure that day: while 
-		our friends had set up the carpool to Mutianyu, there was no 
+		<p>The Great Wall is not our only adventure today: while 
+		our friends had set up the carpool to Mutianyu, they have no 
 		plan for getting back. After learning from the Welcome Center 
-		staff that the next bus would be a while, we wandered out and 
-		soon encountered an older man soliciting rides into town. Mandy 
-		and Jenny spoke with him (Ken and I clueless to what was 
-		happening), and soon enough we were climbing into the back of a 
-		small van. Before we pulled onto the road, the driver shouted for 
-		and negotiated with another passenger, who took the front seat.</p>
+		staff that the next bus would be a while, we wander out and 
+		soon encounter an older man soliciting rides into town. Mandy 
+		and Jenny speak with him (Ken and I clueless to what is 
+		happening), and soon enough we are climbing into the back of a 
+		small van. Before we pull onto the road, the driver shouts for 
+		and negotiates with another passenger, who takes the front seat.</p>
 		
-		<p>The ride was certainly fast. Our driver raced through the 
+		<p>The ride is certainly fast. Our driver races through the 
 		countryside, passing cars on the left <em>and</em> the 
-		right<mdash/>and once slamming on the brakes while passing 
-		using the <q>bike</q> lane because, well, there was a farmer 
-		chugging along with a cargo tricycle. But, we made it into town,
-		paid the driver his 40<nbsp/>yuan, and we got off on the side of 
-		the road. He pointed to the other side of the street, telling us 
-		that the crowd there was waiting for the bus.</p>
+		right<mdash/>and then slamming on the brakes while passing 
+		in the <q>bike</q> lane because, well, there’s a farmer 
+		chugging along on a motorized cargo tricycle. But, we make it 
+		into town in one piece, pay the driver his 40<nbsp/>yuan, and 
+		we get off on the side of the road. He points to the other side 
+		of the street, telling us that the crowd there is waiting for 
+		the bus.</p>
 		
-		<p>Despite not a single sign for a bus stop, we waited for 
-		about 15 minutes and sure enough, a public bus arrived! Being 
-		mid-afternoon on a Sunday (or just being in Beijing) meant that 
-		our bus got stuck in traffic for two hours on the Jingcheng 
-		Expressway. Finally, miraculously, after walking about three 
-		kilometers from the bus stop, we made it to a subway station.
-		Just over three hours after leaving the Great Wall, we made it 
-		back to Zhonguancun.</p>
+		<p>Despite not a single sign for a bus stop.</p>
+		
+		<p>We wait for about 15<nbsp/>minutes and sure enough, a public 
+		bus arrives! Being mid-afternoon on a Sunday (or maybe just 
+		being in Beijing) means that our bus gets stuck in traffic for 
+		two hours on the Jingcheng Expressway. Finally, miraculously, 
+		we find a subway station. Just over three hours after leaving 
+		the Great Wall, we’re back in Zhongguancun.</p>
 	</section>
 	
 	<section>
@@ -335,6 +361,8 @@
 	-->
 	
 	<section class="blue">
+		<t:svg name="olympics.min.svg" />
+		
 		<h2>Olympic parks</h2>
 		<p>Beijing hosted the 2008 Summer Olympics. What happens to a 
 		more than $2 billion USD Olympic complex 8 years after the games
@@ -475,9 +503,13 @@
 		Fortunately, the airport 
 		staff speak enough English to help foreign travelers, and I 
 		was on my way. Once again over the north Pacific<mdash/></p>
+		
+		<t:image src="pudong-runway.jpg"></t:image>
 	</section>
 	
 	<section class="graphite">
+		<t:svg name="end.min.svg" />
+		
 		<p class="text-center">
 			<mdash/>and until next time.<br/>
 			<span class="text-big">再见北京</span>
