@@ -152,6 +152,10 @@ section {
 	&.graphite > svg { color: $colorGraphite; }
 }
 
+.subsection {
+	padding: 1em 0 2em;
+}
+
 /*
 a.image-link {
 	&:link,

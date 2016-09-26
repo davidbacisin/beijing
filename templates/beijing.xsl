@@ -19,10 +19,18 @@
 
 <xsl:template match="t:nav">
 	<nav id="navMain">
-		<input type="checkbox" class="nav-toggle" />
-		<ul id="navMenu" class="uncollapsed">
-		<xsl:for-each select="(document('../src/1.xml') | document('../src/2.xml'))//h2">
-			<li><a href="#{translate(translate(./text(),'”“:.',''),' ','-')}"><xsl:value-of select="./text()" /></a></li>
+		<input id="navMenuToggle" type="checkbox" aria-hidden="true" />
+		<div id="navMenuHeader">
+			<label id="navMenuLabel" for="navMenuToggle" title="Table of contents">
+				<xsl:copy-of select="document('menu.min.svg')" /> 
+			</label>
+		</div>
+		<ul id="navMenu" class="collapsed dust">
+		<xsl:for-each select="document('../src/1.xml')//h2">
+			<li><a href="/page/1#{translate(translate(./text(),'”“:.',''),' ','-')}"><xsl:value-of select="./text()" /></a></li>
+		</xsl:for-each>
+		<xsl:for-each select="document('../src/2.xml')//h2">
+			<li><a href="/page/2#{translate(translate(./text(),'”“:.',''),' ','-')}"><xsl:value-of select="./text()" /></a></li>
 		</xsl:for-each>
 		</ul>
 	</nav>
@@ -31,7 +39,10 @@
 <!-- make is so we can jump to main headings -->
 <xsl:template match="h2">
 	<a name="{translate(translate(./text(),'”“:.',''),' ','-')}"></a>
-	<h2><xsl:apply-templates select="./node()" /></h2>
+	<h2>
+		<xsl:copy-of select="./@*" />
+		<xsl:apply-templates select="./node()" />
+	</h2>
 </xsl:template>
 
 <xsl:template match="t:svg">

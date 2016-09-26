@@ -2,40 +2,91 @@
 
 @import "variables.scss";
 
-$nav-menu-height: 1.5em;
+$nav-menu-label-height: 2.6em;
+$nav-menu-width: 16em;
 
 #navMain {
-	text-align: center;
-	margin: 0.5em;
+	margin: 0 0 1em;
+	padding-bottom: $nav-menu-label-height;
+}
+
+%lay-over-images {
+	z-index: 1;
+}
+
+#navMenuHeader {
+	@extend %lay-over-images;
+	
+	background: transparent;
+	transition: background 200ms ease;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
 }
 
 #navMenu {
+	@extend %lay-over-images;
+	
 	list-style: none;
-	padding: 0;
-	margin: 0.5rem 0;
-	overflow: hidden;
-	height: $nav-menu-height;
-	transition: height 300ms ease;
+	width: $nav-menu-width;
+	transition: left 200ms ease;
+	position: fixed;
+	top: $nav-menu-label-height;
+	left: 0;
+	bottom: 0;
+	overflow-y: auto;
+	padding: 1em 0;
+	margin: 0;
 	
 	&.collapsed {
-		height: 0;
+		left: -$nav-menu-width;
 	}
 	
-	> li {
-		display: inline;
-		padding: 0 0.5rem;
+	& > li {
+		padding: 0.2em 0.8em;
+	}
+	
+	a {
+		border-color: transparent;
+		
+		&:hover,
+		&:active,
+		&:focus {
+			border-color: currentColor;
+		}
 	}
 }
 
-.nav-toggle {
+#navMenuLabel {
+	@extend .graphite;
+	
+	display: block;
+	padding: 0.3em;
+	transition: color 200ms ease;
+	
+	&:hover,
+	&:focus,
+	&:active {
+		color: $colorDust;
+	}
+	
+	svg {
+		width: 2em;
+		height: 2em;
+	}
+}
+
+#navMenuToggle {
 	display: none;
 	
-	&:checked + #navMenu.collapsed {
-		height: $nav-menu-height;
+	&:checked ~ #navMenuHeader {
+		position: fixed;
+		bottom: 0;
+		background: rgba(0,0,0,0.6);
 	}
-}
-
-#navMain:hover > #navMenu.collapsed {
-	height: $nav-menu-height;
-	transition-delay: 300ms;
+	
+	&:checked ~ #navMenu.collapsed {
+		left: 0;
+	}
 }
