@@ -309,7 +309,7 @@
 		Before I had discovered the big bottles, I was going through 
 		about 4 bottles at 2.5 yuan each.</p>
 		
-		<t:image src="water-bottles.jpg">After not even a full day, I 
+		<t:image src="water-bottles.jpg" portrait="yes">After not even a full day, I 
 		had already downed these 4 small bottles.</t:image>
 		
 		<p>I never buy bottled water in the States because one, it costs 
@@ -362,16 +362,10 @@
 		</div>
 	</section>
 	
-	<!--
-	<section class="dust">
-		<h2>798 Arts District</h2>
-	</section>
-	-->
-	
 	<section class="blue">
 		<t:svg name="olympics.min.svg" />
 		
-		<h2>Olympic parks</h2>
+		<h2>Olympic Parks</h2>
 		<p>Beijing hosted the 2008 Summer Olympics. What happens to a 
 		more than $2 billion (USD) Olympic complex 8 years after the games
 		are over? It turns out that the Olympic complex is less of a 
@@ -441,13 +435,21 @@
 		and looking I never spot one while hearing the sound. Several 
 		other areas throughout the park also whirr with gusto.</p>
 		
-		<t:image src="cicada.jpg">I did manage to catch a photo of this 
-		cicada, though I didn’t hear any whirring at the time.</t:image>
+		<t:image src="bug.jpg">I did manage to catch a photo of this 
+		bug, though I didn’t hear any whirring at the time.</t:image>
 
 		<p>After about half an hour, I keep noticing all sorts of 
 		prohibitory signs that are simultaneously intrusive and
-		entertaining. They say things like, <q>No climbing,</q> 
-		<!--TODO look up park signs-->.</p>
+		entertaining. They say things like, <q>No littering,</q> 
+		<q>No fires permitted in garden,</q> <q>No swimming,</q>
+		<q>No stepping on the ice,</q> <q>No climbing,</q>
+		and my favorite, <q>No picking and digging fruit and wild 
+		vegetable.</q></p>
+		
+		<t:image src="parkmobile.jpg">You can rent a cool motorized cart
+		to get around Olympic Forest Park! They also have pedal-powered 
+		carts. The <q>No littering</q> sign on the left really completes
+		the picture for me.</t:image>
 		
 		<p>As the drizzle subsides, I decide to climb the hill that 
 		overlooks the lake. Why not, with a name like <!-- TODO name of hill -->.
@@ -478,12 +480,14 @@
 		the huge park, sometimes called the <q>lung</q> of Beijing, 
 		is a pleasant respite from the concrete and steel jungle of the 
 		dense city.</t:tip>
+		
+		<t:image src="forest.jpg">A peaceful grove of trees</t:image>
 	</section>
 	
 	<section class="yellow">
 		<t:svg name="lines.min.svg" />
 		
-		<h2>Heading home</h2>
+		<h2>Heading Home</h2>
 		<p>I am on my own for the last two days of my time in Beijing.
 		The design program ended Saturday and everyone has left, but at 
 		least I still can chat online with them. With my flight departing at 

@@ -1,9 +1,9 @@
 <html vocab="http://schema.org/" xml:lang="en" typeof="WebPage" role="Document"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8" /><title>A Trip to Beijing</title><meta name="description" content=""/><meta name="robots" content="noodp"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="og:title" content="A Trip to Beijing"/><link rel="canonical" href="http://beijing.davidbacisin.com/"/><meta name="og:type" content="website"/><meta name="og:url" content="http://beijing.davidbacisin.com/"/><meta name="og:description" content=""/><meta name="fb:admins" content="100004352949080"/><meta name="twitter:site" content="@DavidBacisin"/><meta name="twitter:creator" content="@DavidBacisin"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><link rel="apple-touch-icon" sizes="57x57" href="/assets/images/apple-touch-icon-57x57.png"/><link rel="apple-touch-icon" sizes="114x114" href="/assets/images/apple-touch-icon-114x114.png"/><link rel="apple-touch-icon" sizes="72x72" href="/assets/images/apple-touch-icon-72x72.png"/><link rel="apple-touch-icon" sizes="144x144" href="/assets/images/apple-touch-icon-144x144.png"/><link rel="apple-touch-icon" sizes="60x60" href="/assets/images/apple-touch-icon-60x60.png"/><link rel="apple-touch-icon" sizes="120x120" href="/assets/images/apple-touch-icon-120x120.png"/><link rel="apple-touch-icon" sizes="76x76" href="/assets/images/apple-touch-icon-76x76.png"/><link rel="apple-touch-icon" sizes="152x152" href="/assets/images/apple-touch-icon-152x152.png"/><link rel="icon" type="image/png" href="/assets/images/favicon-192x192.png" sizes="192x192"/><link rel="icon" type="image/png" href="/assets/images/favicon-160x160.png" sizes="160x160"/><link rel="icon" type="image/png" href="/assets/images/favicon-96x96.png" sizes="96x96"/><link rel="icon" type="image/png" href="/assets/images/favicon-16x16.png" sizes="16x16"/><link rel="icon" type="image/png" href="/assets/images/favicon-32x32.png" sizes="32x32"/><meta name="msapplication-TileColor" content="#00a300"/><meta name="msapplication-TileImage" content="/assets/images/mstile-144x144.png"/><link rel="stylesheet" type="text/css" href="/assets/css/beijing.css"/><link rel="publisher" href="//plus.google.com/106137059548724435394/"/></head><body><script>document.body.className = "js";</script>
-		<nav id="navMain"><input id="navMenuToggle" type="checkbox" aria-hidden="true"/><div id="navMenuHeader"><label id="navMenuLabel" for="navMenuToggle" title="Table of contents"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 64 64" version="1.1" fill="currentColor">
+		<nav id="navMain"><input id="navMenuToggle" type="checkbox" aria-hidden="true"/><label id="navMenuLabel" for="navMenuToggle" title="Table of contents"><div class="graphite"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 64 64" version="1.1" fill="currentColor">
     <path id="b" d="m 10,18 c 0,0 2,1 4,-4 h 36 c 2,5 4,4 4,4 v 0.5 c 0,0 0,.5 -2,.5 h -40 c -2,0 -2,-.5 -2,-.5 z"></path>
     <use x="0" y="31" xlink:href="#b"></use>
     <use x="0" y="15.5" xlink:href="#b"></use>
-</svg></label></div><ul id="navMenu" class="collapsed dust"><li><a href="/page/1#Welcome-to-Beijing">Welcome to Beijing</a></li><li><a href="/page/1#Crosstown-traffic">Crosstown traffic</a></li><li><a href="/page/1#Silicon-Valley">“Silicon Valley”</a></li><li><a href="/page/1#Heading-underground">Heading underground</a></li><li><a href="/page/1#The-Palaces">The Palaces</a></li><li><a href="/page/1#Rickety-rickshaws">Rickety rickshaws</a></li><li><a href="/page/2#Life-in-a-Hutong">Life in a Hutong</a></li><li><a href="/page/2#The-Great-Wall-at-Mutianyu">The Great Wall at Mutianyu</a></li><li><a href="/page/2#Back-to-Beijing">Back to Beijing</a></li><li><a href="/page/2#Interlude-The-Basics">Interlude: The Basics</a></li><li><a href="/page/2#Olympic-parks">Olympic parks</a></li><li><a href="/page/2#Heading-home">Heading home</a></li></ul></nav>
+</svg></div></label><ul id="navMenu" class="collapsed dust"><li><a href="/page/1#Welcome-to-Beijing">Welcome to Beijing</a></li><li><a href="/page/1#Crosstown-Traffic">Crosstown Traffic</a></li><li><a href="/page/1#Silicon-Valley">“Silicon Valley”</a></li><li><a href="/page/1#Heading-Underground">Heading Underground</a></li><li><a href="/page/1#The-Palaces">The Palaces</a></li><li><a href="/page/1#Rickety-Rickshaws">Rickety Rickshaws</a></li><li><a href="/page/2#Life-in-a-Hutong">Life in a Hutong</a></li><li><a href="/page/2#The-Great-Wall-at-Mutianyu">The Great Wall at Mutianyu</a></li><li><a href="/page/2#Back-to-Beijing">Back to Beijing</a></li><li><a href="/page/2#Interlude-The-Basics">Interlude: The Basics</a></li><li><a href="/page/2#Olympic-Parks">Olympic Parks</a></li><li><a href="/page/2#Heading-Home">Heading Home</a></li></ul></nav>
 
 	<div style="padding-bottom:25%"></div>
 	<section class="red">
@@ -97,7 +97,7 @@
 <path d="m 748,230.3 c 43.4,0 36.6,51 36.6,51 0,0 28.3,0.5 32.6,-2 4.2,-2.5 6.9,-3.7 5,-10.1 -1.7,-5.8 3,-3 3,-17.2 0,-14.1 -7.5,-40 -61.1,-45.9 -69.4,-7.6 -101,-48 -153.8,-51 -30.8,-1.8 -104.5,-7.8 -152.8,16.1 -38.2,18.9 -71.6,15.5 -71.6,15.5 0,0 0.5,30.9 -5.2,39.2 -3.5,5.1 -7,5.7 -7,5.7 0,0 -6.9,31.7 20.7,37.1 23.1,4.6 30.8,5.8 30.8,5.8 0,0 -3.4,-44.7 38.9,-44.7 42.3,0 38.2,50.3 38.2,50.3 l 206,1.2 c 0,0 -3.7,-51 39.7,-51 z"></path>
 <circle cx="464" cy="268" r="32"></circle><circle cx="748" cy="268" r="32"></circle></svg>
 	
-		<a name="Crosstown-traffic"></a><h2>Crosstown traffic</h2>
+		<a name="Crosstown-Traffic"></a><h2>Crosstown Traffic</h2>
 		<figure class="image-fig"><div class="image-container"></div><figcaption>Eight lanes of traffic near the 
 		798 Arts District</figcaption><a class="image-link" target="_blank" href="/assets/images/traffic.jpg">View image</a></figure>
 		<p>Beijing has the craziest traffic I’ve ever experienced: 4 lanes 
@@ -182,7 +182,7 @@
 <path d="m 318.6,278.46 3.37,16.88 430.54,0"></path>
 </svg>
 	
-		<a name="Heading-underground"></a><h2>Heading underground</h2>
+		<a name="Heading-Underground"></a><h2>Heading Underground</h2>
 		<p>From Zhongguancun, a ride on Line 4 with a transfer to 
 		Line 1 takes Ge, Michael, and I to The Palace Museum, 
 		better known by Westerners as The Forbidden City. First step? 
@@ -379,7 +379,7 @@
     <path d="m 620.4,160.5 c 0,-10.9 -60.4,-1.9 -21.2,4.1 20.2,3.1 21.2,3.1 21.2,-4.1 z" fill="currentColor"></path>
 </svg>
 		
-		<a name="Rickety-rickshaws"></a><h2>Rickety rickshaws</h2>
+		<a name="Rickety-Rickshaws"></a><h2>Rickety Rickshaws</h2>
 		<p>One evening, Ken and I head to meet Chen, Ge, and Mandy for 
 		dinner. After a long day of walking on the hottest day yet, we 
 		decide to catch a cab once off the subway — but several 
@@ -399,8 +399,12 @@
 	</section>
 	
 	<nav id="navPaging">
-		<a href="/page/2">Continue reading</a>
+		<a href="/page/2">Journey onward →</a>
 	</nav>
+	
+	<footer class="graphite">
+		Text, images, and all other content © David Bacisin 2016 
+	</footer>
 	
 	<script src="/assets/js/image-gallery.min.js"></script>
 	</body></html>

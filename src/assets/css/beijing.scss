@@ -75,36 +75,6 @@ table {
 	margin: 1em auto;
 }
 
-/* social media icons */
-.si-container {
-  text-align: center;
-}
-.si {
-  display: inline-block;
-  width: 1.618em;
-  height: 1.618em;
-  margin: 0.309em;
-  background-image: url(/assets/images/si.min.svg);
-  background-repeat: no-repeat;
-  background-size: auto 1.6em;
-  transition: opacity 200ms ease;
-  opacity: 0.5;
-
-  &:hover {
-	opacity: 1;
-  }
-
-}
-.si-facebook {
-  background-position: 0 0;
-}
-.si-google {
-  background-position: -2.618em 0;
-}
-.si-twitter {
-  background-position: -5.236em 0;
-}
-
 /* other styles */
 aside {
 	@extend %width-limit;
@@ -193,7 +163,7 @@ figcaption {
 	
 	// for portrait 2:3 images
 	&.p img {
-		left: 22.2%;
+		left: 27.8%;
 		width: 44.4%;
 	}
 }

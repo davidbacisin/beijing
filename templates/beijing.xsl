@@ -20,11 +20,11 @@
 <xsl:template match="t:nav">
 	<nav id="navMain">
 		<input id="navMenuToggle" type="checkbox" aria-hidden="true" />
-		<div id="navMenuHeader">
-			<label id="navMenuLabel" for="navMenuToggle" title="Table of contents">
+		<label id="navMenuLabel" for="navMenuToggle" title="Table of contents">
+			<div class="graphite">
 				<xsl:copy-of select="document('menu.min.svg')" /> 
-			</label>
-		</div>
+			</div>
+		</label>
 		<ul id="navMenu" class="collapsed dust">
 		<xsl:for-each select="document('../src/1.xml')//h2">
 			<li><a href="/page/1#{translate(translate(./text(),'”“:.',''),' ','-')}"><xsl:value-of select="./text()" /></a></li>
@@ -114,6 +114,12 @@
 	<xsl:call-template name="MainPage">
 		<xsl:with-param name="html" select="." />
 	</xsl:call-template>
+</xsl:template>
+
+<xsl:template match="t:footer">
+	<footer class="graphite">
+		Text, images, and all other content © David Bacisin 2016 
+	</footer>
 </xsl:template>
 
 </xsl:stylesheet>

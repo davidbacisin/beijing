@@ -15,14 +15,7 @@ $nav-menu-width: 16em;
 }
 
 #navMenuHeader {
-	@extend %lay-over-images;
-	
-	background: transparent;
-	transition: background 200ms ease;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
+
 }
 
 #navMenu {
@@ -30,7 +23,7 @@ $nav-menu-width: 16em;
 	
 	list-style: none;
 	width: $nav-menu-width;
-	transition: left 200ms ease;
+	transition: transform 200ms ease;
 	position: fixed;
 	top: $nav-menu-label-height;
 	left: 0;
@@ -40,7 +33,7 @@ $nav-menu-width: 16em;
 	margin: 0;
 	
 	&.collapsed {
-		left: -$nav-menu-width;
+		transform: translateX(-$nav-menu-width);
 	}
 	
 	& > li {
@@ -59,16 +52,27 @@ $nav-menu-width: 16em;
 }
 
 #navMenuLabel {
-	@extend .graphite;
+	@extend %lay-over-images;
 	
+	background: transparent;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
 	display: block;
-	padding: 0.3em;
-	transition: color 200ms ease;
+	transition: background 200ms ease;
+	
+	div {
+		padding: 0.3em;
+		transition: color 200ms ease;
+	}
 	
 	&:hover,
 	&:focus,
 	&:active {
-		color: $colorDust;
+		div {
+			color: $colorDust;
+		}
 	}
 	
 	svg {
@@ -80,13 +84,18 @@ $nav-menu-width: 16em;
 #navMenuToggle {
 	display: none;
 	
-	&:checked ~ #navMenuHeader {
+	&:checked ~ #navMenuLabel {
 		position: fixed;
 		bottom: 0;
 		background: rgba(0,0,0,0.6);
 	}
 	
 	&:checked ~ #navMenu.collapsed {
-		left: 0;
+		transform: translateX(0);
 	}
+}
+
+#navPaging {
+	text-align: center;
+	padding: 2em 0;
 }

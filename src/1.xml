@@ -90,7 +90,7 @@
 	<section class="yellow">
 		<t:svg name="car.min.svg" />
 	
-		<h2>Crosstown traffic</h2>
+		<h2>Crosstown Traffic</h2>
 		<t:image src="traffic.jpg">Eight lanes of traffic near the 
 		798<nbsp/>Arts District</t:image>
 		<p>Beijing has the craziest traffic I’ve ever experienced: 4 lanes 
@@ -165,7 +165,7 @@
 	<section class="">
 		<t:svg name="subway.min.svg" />
 	
-		<h2>Heading underground</h2>
+		<h2>Heading Underground</h2>
 		<p>From Zhongguancun, a ride on Line<nbsp/>4 with a transfer to 
 		Line<nbsp/>1 takes Ge, Michael, and I to The Palace Museum, 
 		better known by Westerners as The Forbidden City. First step? 
@@ -372,7 +372,7 @@
 	<section>
 		<t:svg name="rickshaw.min.svg" />
 		
-		<h2>Rickety rickshaws</h2>
+		<h2>Rickety Rickshaws</h2>
 		<p>One evening, Ken and I head to meet Chen, Ge, and Mandy for 
 		dinner. After a long day of walking on the hottest day yet, we 
 		decide to catch a cab once off the subway<mdash/>but several 
@@ -392,8 +392,10 @@
 	</section>
 	
 	<nav id="navPaging">
-		<a href="/page/2">Continue reading</a>
+		<a href="/page/2">Journey onward →</a>
 	</nav>
+	
+	<t:footer />
 	
 	<script src="/assets/js/image-gallery.min.js"></script>
 	</body>
