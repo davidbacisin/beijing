@@ -55,7 +55,7 @@
 <!-- The HTML element should be passed as a param -->
 <xsl:param name="html" />
 
-<html vocab="http://schema.org/" xml:lang="en">
+<html vocab="http://schema.org/" lang="en">
 	<!-- typeof attribute on root html element -->
 	<xsl:choose>
 		<xsl:when test="string-length($html/@typeof)">
@@ -71,7 +71,7 @@
 			<xsl:attribute name="role"><xsl:value-of select="$html/@role" /></xsl:attribute>
 		</xsl:when>
 		<xsl:otherwise>
-			<xsl:attribute name="role">Document</xsl:attribute>
+			<xsl:attribute name="role">document</xsl:attribute>
 		</xsl:otherwise>
 	</xsl:choose>
 	<!-- class attribute on root html element -->

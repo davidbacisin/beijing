@@ -6,7 +6,7 @@
 	<body>
 		<t:nav />
 	
-	<section>
+	<section style="padding-top:1em">
 		<div class="subsection yellow">
 		<p>One night, Jenny and Claire took us design mentors and faculty
 		out for a fancy dinner of traditional Beijing food. It was a 
@@ -94,7 +94,7 @@
 		
 		<div class="subsection">
 		<h3>Money</h3>
-		<t:image src="money-1200.jpg"></t:image>
+		<t:image src="money.jpg"></t:image>
 		<p>The currency of the People’s Republic of China is the 
 		renminbi, meaning <q>people’s currency</q> and abbreviated 
 		<abbr title="renminbi">RMB</abbr>. The <em>yuan</em> (元) is the 

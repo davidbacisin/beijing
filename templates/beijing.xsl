@@ -39,7 +39,7 @@
 
 <!-- make it so we can jump to main headings -->
 <xsl:template match="h2">
-	<a name="{translate(translate(./text(),'”“:.',''),' ','-')}"></a>
+	<a name="{translate(translate(./text(),'”“:.',''),' ','-')}" aria-hidden="true"></a>
 	<h2>
 		<xsl:copy-of select="./@*" />
 		<xsl:apply-templates select="./node()" />

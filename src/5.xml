@@ -6,7 +6,7 @@
 	<body>
 		<t:nav />
 	
-	<section class="red">
+	<section class="red" style="padding-top:1em">
 		<t:svg name="bus.min.svg" />
 		
 		<h2>Back to Beijing</h2>

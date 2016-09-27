@@ -6,7 +6,7 @@
 	<body>
 		<t:nav />
 	
-	<section class="red">
+	<section class="red" style="padding-top:1em">
 		
 		<p>About a week after the Forbidden City, we visit the 
 		Summer Palace in the northwest corner of Beijing. In the 
@@ -75,7 +75,7 @@
 		gardens, happening upon many beautiful courtyards, museum 
 		collections, and even the three-storey opera stage.</p>
 		
-		<t:image-gallery>
+		<t:image-gallery id="igSP">
 			<t:image src="summer-palace.jpg">The Temple of the Fragrant 
 			Buddha and Hall of the Sea of Wisdom, as viewed from lake level.</t:image>
 			<t:image src="giant-bonsai.jpg">I don’t know how to describe 

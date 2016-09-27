@@ -8,7 +8,7 @@
 
 	<div style="padding-bottom:25%" class="gray"></div>
 	
-	<section class="">
+	<section style="padding-top:1em">
 		<t:svg name="subway.min.svg" />
 	
 		<h2>Heading Underground</h2>

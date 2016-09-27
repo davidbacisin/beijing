@@ -7,7 +7,7 @@
 		<t:nav /> 
 
 	<div style="padding-bottom:25%"></div>
-	<section class="red">
+	<section class="red" style="padding-top:1em">
 		<t:svg name="gate.min.svg" />
 		
 		<h2>Welcome to Beijing</h2>
