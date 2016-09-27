@@ -1,0 +1,139 @@
+<html xmlns:t="http://www.davidbacisin.com/">
+	<head>
+		<title></title>
+		<meta name="description" content="" />
+	</head>
+	<body>
+		<t:nav />
+	
+	<section class="red">
+		<t:svg name="bus.min.svg" />
+		
+		<h2>Back to Beijing</h2>
+		<p>The Great Wall is not our only adventure today: while 
+		our friends had set up the carpool to Mutianyu, they have no 
+		plan for getting back. After learning from the Welcome Center 
+		staff that the next bus would be a while, we wander out and 
+		soon encounter an older man soliciting rides into town. Mandy 
+		and Jenny speak with him (Ken and I clueless to what is 
+		happening), and soon enough we are climbing into the back of a 
+		small van. Before we pull onto the road, the driver shouts for 
+		and negotiates with another passenger, who takes the front seat.</p>
+		
+		<p>The ride is certainly fast. Our driver races through the 
+		countryside, passing cars on the left <em>and</em> the 
+		right<mdash/>and then slamming on the brakes while passing 
+		in the <q>bike</q> lane because, well, there’s a farmer 
+		chugging along on a motorized cargo tricycle. But, we make it 
+		into town in one piece, pay the driver his 40<nbsp/>yuan, and 
+		we get off on the side of the road. He points to the other side 
+		of the street, telling us that the crowd there is waiting for 
+		the bus.</p>
+		
+		<p>Despite not a single sign for a bus stop.</p>
+		
+		<p>We wait for about 15<nbsp/>minutes and sure enough, a public 
+		bus arrives! Being mid-afternoon on a Sunday (or maybe just 
+		being in Beijing) means that our bus gets stuck in traffic for 
+		two hours on the Jingcheng Expressway. Finally, miraculously, 
+		we find a subway station. Just over three hours after leaving 
+		the Great Wall, we’re back in Zhongguancun.</p>
+	</section>
+	
+	<section>
+		<t:svg name="clouds.min.svg" />
+		
+		<h2 style="margin-top:2em;margin-bottom:2em">Interlude: The Basics</h2>
+		
+		<div class="subsection yellow">
+		<h3>Food</h3>
+		<p>I tried a lot of food while in China. Most of it was delicious.
+		Some of it was not.</p>
+		
+		<p>Breakfast usually consists of rice porridge with 
+		steamed buns and tea eggs<mdash/>hard-boiled eggs that have been 
+		cracked and brewed in a mixture of tea and soy sauce. I’m sad 
+		I didn’t try this until the end of the second week, because it 
+		was pretty darn tasty.</p>
+		
+		<p>Instead, for breakfast I typically went to one of the 
+		8<nbsp/>bakeries between my hotel and Zhongguancun. And by 8, I 
+		literally mean 8: Meetmatzo, Paris Baguette, With Wheat…but I 
+		don’t remember the names of the others because they were written
+		only in Chinese. A lot of loaves have a filling of some sort, 
+		which can be a surprise when you’re not expecting it. Pretty 
+		much everything was delicious.</p>
+		
+		<t:image src="with-wheat.jpg" portrait="yes">This loaf from With 
+		Wheat has pesto chicken baked inside.</t:image>
+		
+		<p>Most meals in China seem to involve rice. Rice is great. 
+		Rice is tasty. Rice is versatile. But sometimes, you’ve just 
+		had enough rice for the day. Ken, Karen, and I all got this 
+		same feeling one day, and I remembered that there was a pizza 
+		place nearby. We really enjoyed the cheese, sauce, and 
+		crust that evening.</p>
+		
+		<t:image src="pizza.jpg">Tube Station has the <q>biggest pizza
+		in Beijing.</q> It’s literally their slogan, and I don’t doubt 
+		its truth. This medium pizza is at least a foot-and-a-half in 
+		diameter, and their large is probably half a meter.</t:image>
+		
+		<p>Ken and I were ordering lunch one day and wanted it for 
+		takeout. Like usual, we pointed at the picture menus to order, 
+		but then we needed to communicate that we wanted to eat 
+		elsewhere. We resorted to translating <q>takeout</q> on a 
+		smartphone, but we later asked someone. They suggested we say
+		<q>dǎ bāo,</q> which means <q>in a bag.</q> It worked! Though 
+		we quickly adopted into English:</p>
+		
+		<p><q>Where’d you get that? It looks good.</q></p>
+		
+		<p><q>Oh, I dabao’d it from that one place with the green signs.</q></p>
+		
+		<p>The photo galleries below show some of the highlights from 
+		my food experience<mdash/>or at least those of which I took a 
+		picture.</p>
+		
+		<t:image-gallery id="f1IG">
+			<t:image src="bibimbap.jpg" portrait="yes">Bibimbap is Korean and is a mix 
+			of various veggies, mushrooms, and some kimchi on a bed of 
+			rice, usually with a fried egg on top. Unfortunately, I think 
+			this restaurant was the source of my food poisoning.</t:image>
+			<t:image src="fish-stew.jpg">This tasty fish stew was part 
+			of my first meal in China!</t:image>
+			<t:image src="hotpot.jpg" portrait="yes">In the baskets are tofu, lotus root,
+			broccoli, and other things that we dipped in the spicy red 
+			soup. The spice was very interesting, because it started out 
+			just <q>hot,</q> but the heat continues to build, even after 
+			you swallow. Eventually it tops out. The brown, sweet gelatin
+			soup (bottom) and plum juice (yellow cup) helped tame the heat.</t:image>
+			<t:image src="japanese-dinner.jpg">At Suzuki Kitchen, a 
+			Japanese restaurant, we shared a few dishes, including this 
+			chicken that had been cooked in a way that gave it the flaky 
+			texture of fish.</t:image>
+			<t:image src="nanjing-dinner.jpg" portrait="yes">After our excursion to 
+			the Great Wall, we enjoyed a taste of Nanjing. Pictured here 
+			are fried dumplings, <q>drunken</q> bullfrog stew, shellfish 
+			soup, and steamed buns.</t:image>
+			<t:image src="noodles.jpg" portrait="yes">Just called <q>noodles,</q> this 
+			soup can have a variety of ingredients. I had it twice while 
+			in China, and it was better this second time.</t:image>
+			<t:image src="scorpions-and-seahorses.jpg">Along Wangfujing 
+			<q>Snack Street,</q> all sorts of exotic foods were for sale,
+			including these fried scorpions and seahorses. I didn’t try 
+			one.</t:image>
+			<t:image src="wuyutai-tea.jpg">Wangfujing hosts many shops,
+			including Wuyutai Tea, where we got some tea-flavored 
+			soft-serve ice cream.</t:image>
+			<t:image src="candy-animal.jpg" portrait="yes">This man was on the side 
+			of the street making animal shapes out of sugar. I didn’t 
+			try one, but he had some pretty impressive shapes on display.
+			Some looked like blown glass.</t:image>
+		</t:image-gallery>
+		</div>
+	</section>
+	
+	<script src="/assets/js/image-gallery.min.js" defer="defer"></script>
+	</body>
+</html>

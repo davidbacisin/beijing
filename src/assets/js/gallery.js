@@ -1,28 +1,21 @@
 /* image gallery */
 (function(d){
 	
-function hasClass(el, className) {
+function hasClass(className, el) {
 	var list = el.classList;
 	return list && list.contains(className);
 }
-function addClass(el, className) {
-	el.classList.add(className);
-}
-function removeClass(el, className) {
-	el.classList.remove(className);
-}
-function nearestParentByClassName(el, className) {
-	var it = el.parentNode;
-	while (it && !hasClass(it,className)) it = it.parentNode;
+function nearestParentByClassName(className, it) {
+	it = it.parentNode;
+	while (it && !hasClass(className,it)) it = it.parentNode;
 	return it;
 }
-function nearestPreviousSiblingByClassName(el, className) {
-	var it = el.previousSibling;
-	while (it && !hasClass(it,className)) it = it.previousSibling;
+function nearestPreviousSiblingByClassName(className, it) {
+	it = it.previousSibling;
+	while (it && !hasClass(className,it)) it = it.previousSibling;
 	return it;
 }
-function removeAllChildren(el) {
-	var last;
+function removeAllChildren(el, last) {
 	while (last = el.lastChild) el.removeChild(last);
 }
 function getElementsByClassName(className, parent) {
@@ -39,19 +32,22 @@ function getElementById(id) {
 function createElement(tagName) {
 	return d.createElement(tagName);
 }
+function getAttribute(attrName, el) {
+	return el.getAttribute(attrName);
+}
 function getMaxImageSize() {
 	// on larger screens, the max width of the content is 572
 	// but, keep in mind the devicePixelRatio
 	var dpr = window.devicePixelRatio || 1;
 	var maxPhysicalWidth = dpr * (d.documentElement.clientWidth - 20);
-	if (maxPhysicalWidth < 481) {
-		return "480";
+	if (maxPhysicalWidth <= 480) {
+		return 480;
 	}
-	else if (maxPhysicalWidth < 601 || dpr == 1) {
-		return "600";
+	else if (maxPhysicalWidth <= 600 || dpr == 1) {
+		return 600;
 	}
 	else {
-		return "1200";
+		return 1200;
 	}
 	// never serve the 1800 version to the page; only if clicked for detail
 }
@@ -62,7 +58,7 @@ function getResolutionDependentImage(path) {
 /*
  * All gallery figures should be constructed to look like this:
  * 
-<figure class="gallery" id="{id}-fig">
+<figure class="image-fig" id="{id}-fig">
 	<div class="image-container">
 		<a href="/assets/images/{src-hi}" target="_blank">
 			<img src="/assets/images/{src}" />
@@ -80,17 +76,18 @@ function getResolutionDependentImage(path) {
  * 
  */
 
-var strImageContainer = "image-container";
-var figureTemplate = '<div class="image-container"></div>\
-<nav><a title="Previous">◀</a> \
+var strImageContainer = "image-container",
+	strImageLink = "image-link";
+var figureTemplate = '<div class="image-container{p}"></div>\
+<nav><a class="in prev" title="Previous">◀</a> \
 <span class="counter"><span class="current">1</span> of {count}</span> \
-<a title="Next">▶</a></nav>\
+<a class="in next" title="Next">▶</a></nav>\
 <figcaption>{caption}</figcaption>\
 <a class="image-link" href="{href}" target="_blank"></a>';
 
-function createImage(src) {
-	var img = new Image();
-		img.src = src;
+function createImage(src, img) {
+	img = new Image();
+	img.src = src;
 	return img;
 }
 
@@ -99,27 +96,34 @@ function setGalleryImage(link) {
 	setTimeout(function() {
 		try {
 			// find the corresponding figure
-			var galleryId = nearestParentByClassName(link, "gallery").id;
-			var figure = getElementById(galleryId + "-fig");
+			var gallery = nearestParentByClassName("gallery", link);
+			var figure = getElementById(gallery.id + "-fig");
 			// set the figure image
+			var linkImg = getElementsByTagName("img", link)[0];
 			var figureImg = getElementsByTagName("img", figure)[0];
-			figureImg.src = getResolutionDependentImage(getElementsByTagName("img", link)[0].src);
+			figureImg.style.display = "none";
+			figureImg.src = getResolutionDependentImage(linkImg.src);
 			// set if portrait
 			var container = getElementsByClassName(strImageContainer, figure)[0];
-			var op = hasClass(link,"p")? addClass: removeClass;
-			op(container, "p");
+			var op = hasClass("p", link)? container.classList.add: container.classList.remove;
+			op.call(container.classList, "p");
+			figureImg.style.display = "block";
 			// set the image link
 			var figureLink = getElementsByTagName("a", figure)[0];
-			figureLink.setAttribute("href", figureImg.src);
+			figureLink.setAttribute("href", linkImg.src.replace("-t.", "."));
 			// set the caption
-			var caption = nearestPreviousSiblingByClassName(link, "caption");
+			var caption = nearestPreviousSiblingByClassName("caption", link);
 			var figCaption = getElementsByTagName("figcaption", figure)[0];
 			figCaption.innerHTML = caption.innerHTML;
+			// set the index
+			var current = getElementsByClassName("current", figure)[0];
+			current.textContent = getAttribute("data-index", link);
 		}
-		catch (ex) {
-			//console.log("An exception occured while setting the gallery image:");
-			//console.log(ex);
-		}
+		/*catch (ex) {
+			console.log("An exception occured while setting the gallery image:");
+			console.log(ex);
+		}*/
+		finally{}
 	}, 0);
 }
 
@@ -127,10 +131,27 @@ d.body.addEventListener("click", function(e) {
 	var link = e.target,
 		parent = link.parentNode;
 	// if a child of the link was clicked, just set to the link
-	if (hasClass(parent, "image-link")) {
+	if (hasClass(strImageLink, parent)) {
 		setGalleryImage(parent);
 	}
-	else if (hasClass(link, "image-link")) {
+	else if (hasClass(strImageLink, link)) {
+		setGalleryImage(link);
+	}
+	else if (hasClass("in", link)) {
+		var index = parseInt(getElementsByClassName("current", parent)[0].textContent);
+		// find the corresponding thumbnail li's
+		var imageFigId = nearestParentByClassName("image-fig", parent).id;
+		var gallery = getElementById(imageFigId.replace("-fig", ""));
+		var thumbnails = getElementsByTagName("li", gallery);
+		// if next, index is already one ahead of zero-based position
+		// if prev, subtract two to get zero-based position
+		if (hasClass("prev", link))
+			index -= 2;
+		// wrap index
+		index = (index + thumbnails.length) % thumbnails.length;
+		// select link child
+		link = getElementsByClassName(strImageLink, thumbnails[index])[0];
+		// set the gallery image
 		setGalleryImage(link);
 	}
 });	
@@ -145,40 +166,13 @@ for (var i = 0; i < galleries.length; i++) {
 		figure.id = gallery.id + "-fig";
 	// get the first caption and first image link
 	var caption = getElementsByClassName("caption", gallery)[0],
-		imageLinks = getElementsByClassName("image-link", gallery),
+		imageLinks = getElementsByClassName(strImageLink, gallery),
 		imageLink = imageLinks[0];
 	// create the contents for the image viewer
 	var figContents = figureTemplate;
-	figContents = figContents.replace("{href}", imageLink.getAttribute("href"));
+	figContents = figContents.replace("{href}", getAttribute("href", imageLink));
 	figContents = figContents.replace("{count}", imageLinks.length);
-	/*
-	var imageContainer = createElement("div"),
-		imageNav = createElement("nav"),
-		imageNavPrev = createElement("a"),
-		imageNavNext = createElement("a"),
-		imageNavCounter = createElement("span"),
-		imageNavCurrent = createElement("span"),
-		figcaption = createElement("figcaption"),
-		figlink = imageLink.cloneNode(true);
-	// change the figlink path from the thumbnail to the resolution-appropriate image
-	var href = figlink.getAttribute("href");
-	figlink.setAttribute("href", href.replace(/-110\./, "-1200."));
-	// set up and append the image container
-	imageContainer.className = strImageContainer;
-	figure.appendChild(imageContainer);
-	// set up and append the nav
-	imageNavPrev.setAttribute("title", "Previous");
-	imageNavPrev.appendChild(d.createTextNode("◀"));
-	imageNavNext.setAttribute("title", "Next");
-	imageNavNext.appendChild(d.createTextNode("▶"));
-	imageNavCurrent.appendChild(d.createTextNode("1"));
-	imageNavCounter.appendChild(imageNavCurrent);
-	imageNavCounter.appendChild(d.createTextNode(" of " + imageLinks.length));
-	imageNav.appendChild(imageNavPrev);
-	imageNav.appendChild(imageNavCounter);
-	imageNav.appendChild(imageNavNext);
-	figure.appendChild(imageNav);
-	*/
+	figContents = figContents.replace("{p}", hasClass("p", imageLink)? " p": "");
 	// ensure the first caption and first link come from the same li
 	if (caption.parentNode === imageLink.parentNode) {
 		//var figcaption = createElement("figcaption");
@@ -199,8 +193,8 @@ var imageFigs = getElementsByClassName("image-fig");
 for (var i = 0; i < imageFigs.length; i++) {
 	var imageFig = imageFigs[i];
 	// get the image link
-	var figlink = getElementsByClassName("image-link", imageFig)[0],
-		href = figlink.getAttribute("href");
+	var figlink = getElementsByClassName(strImageLink, imageFig)[0],
+		href = getAttribute("href", figlink);
 	// create the image, with smaller resolution
 	var img = createImage(getResolutionDependentImage(href));
 	// prevent the figlink from being re-loaded below
@@ -216,13 +210,21 @@ for (var i = 0; i < imageFigs.length; i++) {
 }
 
 // finally, load the thumbnails
-var imageLinks = getElementsByClassName("image-link");
+var imageLinks = getElementsByClassName(strImageLink);
 for (var i = 0; i < imageLinks.length; i++) {
 	var link = imageLinks[i];
-	var img = createImage(link.getAttribute("href").replace(".jpg", "-t.jpg"));
+	var img = createImage(getAttribute("href", link).replace(".jpg", "-t.jpg"));
 	// empty the link contents
 	removeAllChildren(link);
+	// determine the index of the link
+	var index = 1, n = link.parentNode;
+	while (n = n.previousSibling) {
+		if (n.nodeName.toLowerCase() == "li") {
+			index++;
+		}
+	}
 	// add the image
+	link.setAttribute("data-index", index);
 	link.appendChild(img);
 	link.removeAttribute("href");
 	link.removeAttribute("target");

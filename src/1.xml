@@ -4,14 +4,14 @@
 		<meta name="description" content="" />
 	</head>
 	<body>
-		<t:nav />
+		<t:nav /> 
 
 	<div style="padding-bottom:25%"></div>
 	<section class="red">
 		<t:svg name="gate.min.svg" />
 		
 		<h2>Welcome to Beijing</h2>
-		<p>It is 3:23 pm. I’ve just gotten off a 12 ½ hour flight from 
+		<p>It is 3:23 pm. I’ve just gotten off a 12<nbsp/>½ hour flight from 
 		Chicago, after learning what a <q>short-checked bag</q> is and 
 		stepping onto a Boeing<nbsp/>747 for the first time. I had spent
 		an hour and a half in Chicago waiting for my luggage to show up 
@@ -102,7 +102,7 @@
 		and everything else wiggles between.</p>
 	</section>
 	
-	<section class="graphite">
+	<section class="gray">
 		<t:svg name="zhongguancun.min.svg" />
 		
 		<h2>“Silicon Valley”</h2>
@@ -162,241 +162,9 @@
 		</t:image-gallery>
 	</section>
 	
-	<section class="">
-		<t:svg name="subway.min.svg" />
-	
-		<h2>Heading Underground</h2>
-		<p>From Zhongguancun, a ride on Line<nbsp/>4 with a transfer to 
-		Line<nbsp/>1 takes Ge, Michael, and I to The Palace Museum, 
-		better known by Westerners as The Forbidden City. First step? 
-		Subway security.</p>
-		
-		<p>Every subway station has an X-ray machine, through which you’re 
-		asked to put any bags you’re carrying. If you leave a water bottle 
-		in your bag, the security personnel ask you to remove it 
-		and hand it over for them to test in another sensor machine of
-		some sort. Alternatively, you can just carry the water bottle 
-		and visibly take a sip, I guess to show that it’s not some 
-		dangerous chemical. Some stations also have walk-through metal 
-		detectors, followed by personnel to pat you down with handheld 
-		detectors. <em>Security</em>.</p>
-		
-		<p>The turnstiles open with a wave of a transit card. Beijing’s 
-		subway fare system varies by distance traveled, with a minimum 
-		charge of 3<nbsp/>yuan and a maximum of 8. Even after a 
-		50<nbsp/>minute ride across the city, I had only spent 6 yuan, 
-		about 1<nbsp/>US dollar.</p>
-		
-		<p>The wide platforms accomodate rush hour crowds, and many of 
-		the newer stations have glass walls lining the 
-		tracks<mdash/>quite appreciated when a train flies alongside a 
-		packed platform. Many platforms even have bathrooms!</p>
-		
-		<t:image src="subway-station.jpg">A quite empty subway platform 
-		at night in Zhongguancun</t:image>
-		
-		<p>And then the trains! With wide trains and lots of places to 
-		hold, the trains are comfortable during the quiet midday and 
-		not bad at rush hour depending on whether or not you believe 
-		in a <q>personal bubble.</q> TV screens show public 
-		announcements and subway stations, and ads can be watched through 
-		the train windows, projected onto the tunnel walls. Maps of 
-		the line above each door have LED indicators for the current, 
-		next, and upcoming stations. Announcements are thankfully 
-		in both Mandarin and English.</p>
-		
-		<p>With the high chance of traffic jams and general lack of 
-		car, the subway became my main form of transportation around 
-		Beijing. Good thing it is so well-maintained!</p>
-	</section>
-
-	<section class="red">
-		<t:svg name="palace.min.svg" />
-		
-		<h2>The Palaces</h2>
-		<p>We come out of the subway and see little besides a line of 
-		people and a security checkpoint<mdash/>but once through, there 
-		it is: Tiananmen gate with a massive portrait of none other than 
-		Mao Zedong. We weave through the many tourists (who mostly 
-		appear to be from other parts of China), stopping occasionally 
-		to take pictures.</p>
-		
-		<p>Time for a brief history lesson:
-		since the fifteenth century, the Emperor of China and his 
-		family and servants lived within the massive complex of the 
-		Forbidden City, and no one was allowed in or out without 
-		explicit imperial permission<mdash/>that is, until 1925, when 
-		Feng Yuxiang led a coup and established the Republic of China, 
-		transforming the palace into a museum. The portrait of Mao 
-		commemorates him standing on Tiananmen and proclaiming the 
-		<em>People’s</em> Republic of China, the establishment of 
-		Communism in mainland China.</p>
-		
-		<t:tip>We needed our passports (or Chinese National IDs) to 
-		buy tickets for the Forbidden City Palace Museum.</t:tip>
-		
-		<p>The museum is packed, certainly earning its status as the 
-		most visited museum in the world<mdash/>but fortunately, 
-		180<nbsp/>acres is plenty of space. After exploring about 
-		two-thirds of the museum, and getting lost in the maze of 
-		red walls and yellow roofs, we call it a day and go to 
-		get lunch. The photo gallery and captions below highlight some 
-		of the curiosities in the palaces.</p>
-		
-		<t:image-gallery id="igFC">
-			<t:image src="forbidden-city.jpg">The Hall of Supreme 
-			Harmony is the grandest in the palace complex. Pollution creates 
-			a haze that dilutes the bright colors of the wooden structure.</t:image>
-			<t:image src="door-relief.jpg" portrait="yes">Sculpted dragons 
-			amid clouds on a wooden palace door</t:image>
-			<t:image src="forbidden-walls.jpg">Some of the walls are 
-			incredibly high, and all of them are plastered and 
-			painted red. This may have something to do with the fact 
-			that the palace was once forbidden.</t:image>
-			<t:image src="crowd-around.jpg">A number of rooms could not 
-			be entered, and instead people crowd around the railing to 
-			peer in<mdash/>and make good use of their selfie sticks. 
-			A few times I joined the fray to take a picture. I felt 
-			like I was in a writhing solid mass of people.</t:image>
-			<t:image src="painted-ceiling.jpg">I received many funny looks 
-			when I looked at or took pictures of ceilings<mdash/>but the 
-			ceilings are beautifully painted with bright primary colors 
-			and some even gilded.</t:image>
-			<t:image src="forbidden-lion.jpg">All over Beijing, I saw many 
-			doorways with lion statues on either side. In general, larger
-			statues show greater wealth, but the drooping ears 
-			on this lion in the Forbidden City indicate that you are 
-			entering an area where politics must not be discussed.</t:image>
-			<t:image src="forbidden-garden.jpg">After pushing through 
-			a crowd to see inside a room, the palace gardens are a 
-			relief. There are still a lot of people, but the trees and 
-			remarkable stone statues hide some of them from view.</t:image>
-			<t:image src="giant-pots.jpg">The Forbidden City has 308 of 
-			these massive bronze (and some copper) pots. We had a fun time 
-			hypothesizing how they could have been used: that they 
-			held ice in the summer, fire in the winter, or that they 
-			were trash cans, that they just held drinking 
-			water<mdash/>but the official sign says they held water for 
-			fighting fires.</t:image>
-			<t:image src="moat.jpg">A 52-meter wide moat surrounds the palace 
-			complex, and if you manage to make it past the 
-			crocodiles (which I’m really just making up<mdash/>or am I?)
-			then there is a 7.9-meter wall for you to climb. Good luck.</t:image>
-		</t:image-gallery>
-		
-		<p>About a week after the Forbidden City, we visit the 
-		Summer Palace in the northwest corner of Beijing. In the 
-		thirteenth century, the emperor of the Jin Dynasty moved the 
-		capital here, building a palace on what is today called 
-		Longevity Hill. After many years of being built, destroyed, 
-		and re-built, the area is now a public park.</p>
-		
-		<p>UNESCO describes the Summer Palace, a World Heritage site, 
-		as <q>a masterpiece of Chinese landscape garden 
-		design</q><mdash/>and indeed it is. We enter the park from 
-		the north end, first taking some steep stone stairs down to the 
-		canal-like Houhu Lake. It starts to rain, so we carefully 
-		navigate the railing-less waterside walkway while hiding under 
-		the small overhangs of storefronts. One of the stores has a nice 
-		selection of kites.</p>
-		
-		<t:image src="houhu-shops.jpg">Visitors walk along the edge of 
-		Houhu Lake</t:image>
-		
-		<p>After we climb back up the rugged stairs, we cross the 
-		bridge and plaza to begin our journey up Longevity Hill.
-		The yellow tile roofs, red walls, and gray 
-		flagstone walkways dominate the hillside, but the architect 
-		artfully incorporated many natural elements: for example, 
-		using roughly hewn blocks as part of a wall.</p>
-		
-		<t:image src="fused-architecture.jpg">Natural elements fuse 
-		with the walls. A young girl wearing a rainbow umbrella hat has 
-		climbed these rocks to pose for a picture.</t:image>
-		
-		<p>At the top of Longevity Hill is the green and yellow 
-		Hall of the Sea of Wisdom, around which lots of tourists ignore 
-		the <q>No<nbsp/>climbing</q> sign and clamber over the many boulders
-		surrounding the temple.</p>
-		
-		<t:image src="sea-of-wisdom.jpg" portrait="yes">The entire Hall 
-		of the Sea of Wisdom is covered with Buddha sculptures painted 
-		yellow and green, as seen here.</t:image>
-		
-		<p>And walking down the south side of the hill, we are immersed 
-		in forest. Several buildings dot the hillside, mostly shaded 
-		by the trees.</p>
-		
-		<p>At the base of the hill is the Long Corridor, an ornately 
-		painted covered walkway that stretches 728<nbsp/>meters, with over 
-		14,000 paintings on its wooden beams. I wonder who counted?</p>
-		
-		<t:image src="long-corridor.jpg">Many tour groups walk along 
-		the Long Corridor, and the railings are popular for sitting.</t:image>
-		
-		<p>We had bought the extra ticket for the Temple of the 
-		Fragrant Buddha, and despite not really wanting to climb 
-		Longevity Hill again, we reason that it isn’t often that 
-		we’ll be in Beijing…and so we climb the 260-something stairs 
-		to the huge pagoda. It doesn’t smell very fragrant, but there 
-		is a very large wooden statue of Buddha, as well as an excellent 
-		view of Kunming Lake and Beijing.</p>
-		
-		<t:image src="kunming-lake.jpg">Kunming Lake and beyond as seen 
-		from the Temple of the Fragrant Buddha</t:image>
-		
-		<p>Being tired and sweaty from climbing a mountain twice, we 
-		don’t explore too much more of the Summer Palace. We wander 
-		around the base of Longevity Hill, through various palaces and 
-		gardens, happening upon many beautiful courtyards, museum 
-		collections, and even the three-storey opera stage.</p>
-		
-		<t:image-gallery>
-			<t:image src="summer-palace.jpg">The Temple of the Fragrant 
-			Buddha and Hall of the Sea of Wisdom, as viewed from lake level.</t:image>
-			<t:image src="giant-bonsai.jpg">I don’t know how to describe 
-			this any other way than a large bonsai tree in the middle 
-			of a courtyard.</t:image>
-			<t:image src="painted-eaves.jpg">The wooden eaves of the 
-			opera stage are painted with bright blues, reds, greens, and 
-			gold.</t:image>
-			<t:image src="longevity-trees.jpg">Some wiggly-looking trees 
-			on Longevity Hill</t:image>
-			<t:image src="storm-grate.jpg">A cool geometric storm grate,
-			plus my wet shoes</t:image>
-			<t:image src="stone-tunnel.jpg">Several stone tunnels like 
-			this were fun to duck through</t:image>
-		</t:image-gallery>
-	</section>
-	
-	<section>
-		<t:svg name="rickshaw.min.svg" />
-		
-		<h2>Rickety Rickshaws</h2>
-		<p>One evening, Ken and I head to meet Chen, Ge, and Mandy for 
-		dinner. After a long day of walking on the hottest day yet, we 
-		decide to catch a cab once off the subway<mdash/>but several 
-		cabbies wave us away. As we return to the sidewalk, an older man 
-		hails us from his rickshaw: we look at each other, decide that 
-		his price of 60 yuan is far too much, and so we start mapping 
-		how to walk. Not giving up so easily, the man calls us 
-		again<mdash/>we haggle<mdash/>and a few minutes later we are 
-		careening down a car-packed street for 30<nbsp/>yuan. He shouts
-		at a driver to squeeze through a jam, turns down a narrow alley,
-		and drops us off, right in front of the restaurant! (Who puts a 
-		restaurant down an alley? A lot of places in China, that’s for 
-		sure!) Impressed, Ken pays him an extra 10<nbsp/>yuan.</p>
-		
-		<t:image src="rickshaw.jpg">Swerving through traffic in a 
-		gas-powered rickshaw</t:image>
-	</section>
-	
-	<nav id="navPaging">
+	<nav id="navPaging" class="gray">
 		<a href="/page/2">Journey onward →</a>
 	</nav>
-	
-	<t:footer />
-	
-	<script src="/assets/js/image-gallery.min.js"></script>
+
 	</body>
 </html>

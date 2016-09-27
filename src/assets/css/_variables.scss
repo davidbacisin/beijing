@@ -6,10 +6,10 @@ $colorRed:					#b23;
 $colorYellow:				#ff7;
 $colorBlue:					#065e6d;
 $colorDust:					#fec;
-$colorGraphite:				#222;
+$colorGray:					#222;
 $colorSnow:					#fcf9fb;
 
-$colorForeground:			$colorGraphite;
+$colorForeground:			$colorGray;
 $colorHeading:				$colorForeground;
 $colorHeadingSubtle:		lighten($colorHeading, 40%);
 $colorBackground:			$colorSnow;
@@ -27,8 +27,7 @@ $font-size: (
 	xs:		18px,
 	sm:		19px,
 	md:		20px,
-	lg:		21px,
-	xl:		22px,
+	lg:		22px,
 	print:	12pt
 );
 @mixin media($type){

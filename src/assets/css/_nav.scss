@@ -1,12 +1,10 @@
 /* _nav.scss */
 
-@import "variables.scss";
-
 $nav-menu-label-height: 2.6em;
 $nav-menu-width: 16em;
 
 #navMain {
-	margin: 0 0 1em;
+	margin: 0;
 	padding-bottom: $nav-menu-label-height;
 }
 
@@ -14,11 +12,7 @@ $nav-menu-width: 16em;
 	z-index: 1;
 }
 
-#navMenuHeader {
-
-}
-
-#navMenu {
+#menu {
 	@extend %lay-over-images;
 	
 	list-style: none;
@@ -51,7 +45,7 @@ $nav-menu-width: 16em;
 	}
 }
 
-#navMenuLabel {
+#menuL {
 	@extend %lay-over-images;
 	
 	background: transparent;
@@ -78,24 +72,25 @@ $nav-menu-width: 16em;
 	svg {
 		width: 2em;
 		height: 2em;
+		color: currentColor;
 	}
 }
 
-#navMenuToggle {
+#menuT {
 	display: none;
 	
-	&:checked ~ #navMenuLabel {
+	&:checked ~ #menuL {
 		position: fixed;
 		bottom: 0;
 		background: rgba(0,0,0,0.6);
 	}
 	
-	&:checked ~ #navMenu.collapsed {
+	&:checked ~ #menu.collapsed {
 		transform: translateX(0);
 	}
 }
 
 #navPaging {
 	text-align: center;
-	padding: 2em 0;
+	padding: 0 0 6em;
 }

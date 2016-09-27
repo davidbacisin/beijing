@@ -141,3 +141,7 @@ exports.sitemap = function (req, res) {
 exports.robots = function (req, res) {
 	streamAsset("./dist/robots.txt", res);
 }
+
+exports.favicon = function (req, res) {
+	streamAsset("./dist/favicon.ico", res);
+}

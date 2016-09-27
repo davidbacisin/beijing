@@ -1,7 +1,6 @@
 /* main.scss */
 
 @import "variables";
-@import "fonts";
 
 html {
 	text-rendering: optimizeLegibility;
@@ -20,16 +19,15 @@ html, body {
 	padding:0;
 }
 
-body,
-input,
-button {
+body {
 	font-family: $fontStackContent;
 	line-height: 1.6;
 	color: $colorForeground;
 	background-color: $colorBackground;
 }
 
-section { // IE doesn't recognize some HTML5 elements. Make sure they're blocks.
+section,
+aside { // IE doesn't recognize some HTML5 elements. Make sure they're blocks.
 	display: block;
 }
 
@@ -60,83 +58,53 @@ blockquote:after {
 	content: '\201d';
 }
 
-/* manually specify sup and sub positions
-so that it does not affect line-height */
-sup, sub {
-	position: relative;
-	vertical-align: baseline;
-	top: -0.6em;
-}
-sub {
-	top: 0.6em;
-}
-
-table {
-	margin: 1em auto;
-}
-
 /* other styles */
 aside {
 	@extend %width-limit;
 	
 	box-sizing: border-box;
 	padding: 1em 3em;
-	
-	> h4 {
-		display: inline;
-		font-style: italic;
-		font-size: 1em;
-	}
 }
 
 .red,
 .blue,
-.graphite {
+.gray {
 	color: $colorSnow;
 }
 .red { background: $colorRed; }
 .blue { background: $colorBlue; }
 .dust { background: $colorDust; }
 .yellow { background: $colorYellow; }
-.graphite { background: $colorGraphite; }
+.gray { background: $colorGray; }
+
+svg {
+	// set the default color of the SVG to match the default background
+	color: $colorBackground;
+	
+	.red > & { color: $colorRed; }
+	.blue > & { color: $colorBlue; }
+	.dust > & { color: $colorDust; }
+	.yellow > & { color: $colorYellow; }
+	.gray > & { color: $colorGray; }
+}
 
 section {
 	padding: 0 0 2em;
 	
 	&:after {
-		content: ' ';
+		content: $contentBlank;
 		display: block;
 		padding-bottom: 25%;
 	}
 	
 	> svg {
 		margin-top: -25%;
-		// set the default color of the SVG to match the default background
-		color: $colorBackground;
 	}
-	
-	&.red > svg { color: $colorRed; }
-	&.blue > svg { color: $colorBlue; }
-	&.dust > svg { color: $colorDust; }
-	&.yellow > svg { color: $colorYellow; }
-	&.graphite > svg { color: $colorGraphite; }
 }
 
 .subsection {
 	padding: 1em 0 2em;
 }
-
-/*
-a.image-link {
-	&:link,
-	&:visited,
-	&:hover,
-	&:focus,
-	&:active {
-		border: none;
-	}
-}
-*/
 
 figure {
 	@extend %width-limit;
@@ -176,6 +144,10 @@ figcaption {
 		top: 0.5em;
 		left: 1em;
 	}
+	
+	nav {
+		padding: .5em 0 .1em;
+	}
 }
 
 .gallery {
@@ -200,7 +172,7 @@ figcaption {
 		max-width: 16.7em;
 		
 		&:after {
-			content: ' ';
+			content: $contentBlank;
 			display: block;
 			clear: both;
 		}

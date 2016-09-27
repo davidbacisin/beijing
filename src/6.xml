@@ -1,0 +1,280 @@
+<html xmlns:t="http://www.davidbacisin.com/">
+	<head>
+		<title></title>
+		<meta name="description" content="" />
+	</head>
+	<body>
+		<t:nav />
+	
+	<section>
+		<div class="subsection yellow">
+		<p>One night, Jenny and Claire took us design mentors and faculty
+		out for a fancy dinner of traditional Beijing food. It was a 
+		beautifully decorated restaurant most of which were very good 
+		and deserve to be in their own gallery, below.</p>
+		
+		<t:image-gallery id="f2IG">
+			<t:image src="date-cake.jpg">A mildly sweet date cake</t:image>
+			<t:image src="steamed-veggies.jpg">Some colorful steamed 
+			veggies with mushrooms and red kidney beans</t:image>
+			<t:image src="beef-tendon.jpg">When you cook beef tendon for 
+			a long time, it becomes gelatinous and smooth, like a big piece 
+			of fat. I didn’t like the texture, or the way it flopped 
+			around.</t:image>
+			<t:image src="gelatinous-rice.jpg">On the other hand, the 
+			gelatinous rice bars were quite good in both flavor and 
+			texture. Rice becomes gelatinous after you cook and pound 
+			it enough.</t:image>
+			<t:image src="eggplant.jpg">A delicious eggplant dish</t:image>
+			<t:image src="roast-duck.jpg">At the end of the meal, we were
+			served the roast duck. You take a circular rice wrapper (top),
+			dip a slice of duck in the soy sauce, and put that slice in 
+			the middle of the wrapper with a few pieces of cucumber and 
+			green onion. Then you wrap it up and eat it! The sugar (center 
+			bowl) is for dipping the fatty roast skin into, if you like.</t:image>
+		</t:image-gallery>
+		</div>		
+		<div class="subsection blue">
+		<h3>Water</h3>
+		<p><q>Don’t drink the water!</q> my family told me before I left.</p>
+		
+		<p><q>Do you know not to drink the tap water?</q> the design 
+		program organizers told me when I arrived.</p>
+		
+		<p>One of the most frustrating parts of my experience in China 
+		was the fact that the tap water just isn’t safe to drink. 
+		The reason? It contains a delightful mix of bacteria and heavy 
+		metals.</p>
+		
+		<p>Some people drink boiled tap water, but boiling doesn’t 
+		take care of the heavy metals<mdash/>so I spent a considerable amount 
+		of time and money going to the store to buy bottled water. I was 
+		quite happy to discover the 1.5 liter bottles, which are 
+		a little big to carry around but well worth the saved money 
+		and effort: I drank about 2 liters total per day, meaning I had 
+		to only buy one or two 1.5 L bottles at 3.5 yuan.
+		Before I had discovered the big bottles, I was going through 
+		about 4 bottles at 2.5 yuan each.</p>
+		
+		<t:image src="water-bottles.jpg" portrait="yes">After not even a full day, I 
+		had already downed these 4 small bottles.</t:image>
+		
+		<p>I never buy bottled water in the States because one, it costs 
+		anywhere from 300 to 2000 times more than tap water; two, the 
+		tap water in northeast Ohio (where I live) regularly exceeds 
+		health and safety standards; and three, all of those extra 
+		bottles are extremely wasteful, even if they are recycled. 
+		Recycling helps, but it still takes a lot of energy to process
+		all that plastic! Having worked on several environmental 
+		sustainability projects in the past, I felt like I was just 
+		<em>slaughtering</em> the environment with how many bottles I 
+		bought in China. Sob.</p>
+		</div>
+		
+		<div class="subsection dust">
+		<h3>Smog</h3>
+		<p>On that note, the smog was probably tied for the most
+		frustrating part of my experience. I could actually <em>see</em>
+		it through the window when I arrived, but I didn’t <em>smell</em>
+		it until I finally got out of the air conditioning. It was 
+		heavy to breathe, and sweet<mdash/>sweet in a way 
+		you don’t ever want air to be, sweet with a mix of car exhaust 
+		and cigarette smoke. Those first few days were probably the worst
+		out of my three weeks, since a rainstorm on the fourth day 
+		cleared up the sky quite a bit.</p>
+		
+		<p>Beijing is particularly prone to dense smog because the city 
+		is surrounded by a mountain range that tends to block the 
+		wind<mdash/>not to mention the population over 20 million and 
+		traffic jams caused by the roughly 6 million registered cars. 
+		Very few people wear breathing masks, and even I started to get 
+		used to breathing the air after a few days. I’d rather not 
+		think about all the pollution I inhaled.</p>
+		</div>
+		
+		<div class="subsection">
+		<h3>Money</h3>
+		<t:image src="money-1200.jpg"></t:image>
+		<p>The currency of the People’s Republic of China is the 
+		renminbi, meaning <q>people’s currency</q> and abbreviated 
+		<abbr title="renminbi">RMB</abbr>. The <em>yuan</em> (元) is the 
+		base unit; there are 10<nbsp/>jiao (角) to 1<nbsp/>yuan; and 
+		there are 10<nbsp/>fen (分) to 1<nbsp/>jiao. I never saw any 
+		prices or coins in terms of fen, probably because they have so little 
+		value. Today, the exchange rate fluctuates between 6 to 7<nbsp/>yuan 
+		per 1<nbsp/>United States dollar<mdash/>but with that in mind, 
+		the cost of living in China is also considerably lower.
+		A regular 18-ounce bottle of water is typically priced at 2 or 
+		3<nbsp/>yuan, or 30 to 46<nbsp/>US cents.</p>
+		</div>
+	</section>
+	
+	<section class="blue">
+		<t:svg name="olympics.min.svg" />
+		
+		<h2>Olympic Parks</h2>
+		<p>Beijing hosted the 2008 Summer Olympics. What happens to a 
+		more than $2 billion (USD) Olympic complex 8 years after the games
+		are over? It turns out that the Olympic complex is less of a 
+		corpse and more of a thriving tourist attraction.</p>
+		
+		<p>On the first day I am there, a Wednesday <!--TODO confirm-->,
+		there are hundreds of other tourists from all over China, plus 
+		a handful of foreigners. The Bird’s Nest stadium, pictured below,
+		is open for tours for a price of 50<nbsp/>yuan, and in the recent 
+		past it’s been used to host sporting events and concerts. 
+		</p>
+		
+		<t:image src="birds-nest.jpg">The Beijing National Stadium was 
+		designed by architecture firm Herzog &amp; de<nbsp/>Meuron, with 
+		consulting from famed Chinese artist Ai<nbsp/>Weiwei. Its appearance 
+		earns it the nickname, <q>The Bird’s Nest.</q></t:image>
+		
+		<p>We walk across the vast expanse of asphalt, over to the 
+		aquatic center, nicknamed <q>The Water Cube.</q> The
+		blue plastic façade makes the building look like a square blob 
+		of soap bubbles. The panels are even translucent to let 
+		through light. Since the Olympics, the building has been 
+		transformed into a water park, but we don’t go inside to check 
+		it out.</p>
+		
+		<t:tip>If you, like us, forgot to bring a bathing suit, a few 
+		vendors on the Olympic Green have some for sale.</t:tip>
+		
+		<t:image src="water-cube.jpg">The Beijing National Aquatic 
+		Center, or Water Cube, now contains a water park open to the 
+		public.</t:image>
+		
+		<p>Heading further north, we wander past a few more (less 
+		architectually-interesting) buildings, check out the public art,
+		and gaze up at the Ling Long pagoda.</p>
+		
+		<t:image-gallery id="ogIG">
+			<t:image src="olympic-lamps.jpg" portrait="yes"></t:image>
+			<t:image src="olympic-runner.jpg">Larger-than-life-sized 
+			sculpture of a woman running with the Olympic torch</t:image>
+			<t:image src="ling-long-pagoda.jpg" portrait="yes">Ling Long Pagoda was 
+			used by broadcast television crews during the 2008 Olympics</t:image>
+		</t:image-gallery>
+		
+		<p>A little more than a week after visiting the Olympic Green,
+		I decide to spend a morning exploring the 680-hectare Olympic 
+		Forest Park. It is cloudy today, with a forecast for rain, 
+		so I suspect it will be less popular than usual. I, however, 
+		have a very enjoyable time wandering around by myself.</p>
+		
+		<p>Along the edge of the large, southern lake of the park, a few 
+		people are feeding the koi fish<mdash/>and what a strange 
+		sight it is! Hundreds of fish swarm all into one spot, 
+		some of them rising much further above the surface of the water 
+		than I ever would have expected.</p>
+		
+		<t:image src="koi-frenzy.jpg">Koi swarm near the edge of the 
+		lake, where people are tossing food pellets.</t:image>
+		
+		<p>After recovering from my shock at the fish frenzy, I start 
+		walking around the lake when the dull whirring sound I’d 
+		been hearing could no longer be considered <q>dull.</q> Turning 
+		down one path, it sounds like a million insects chirping, 
+		singing…shrieking? The whirr is loud enough to be painful, yet 
+		pleasant: for a moment I forget that I’m in a bustling, smoggy
+		city. I suspect the sound comes from cicadas, but after looking 
+		and looking I never spot one while hearing the sound. Several 
+		other areas throughout the park also whirr with gusto.</p>
+		
+		<t:image src="bug.jpg">I did manage to catch a photo of this 
+		bug, though I didn’t hear any whirring at the time.</t:image>
+
+		<p>After about half an hour, I keep noticing all sorts of 
+		prohibitory signs that are simultaneously intrusive and
+		entertaining. They say things like, <q>No littering,</q> 
+		<q>No fires permitted in garden,</q> <q>No swimming,</q>
+		<q>No stepping on the ice,</q> <q>No climbing,</q>
+		and my favorite, <q>No picking and digging fruit and wild 
+		vegetable.</q></p>
+		
+		<t:image src="parkmobile.jpg">You can rent a cool motorized cart
+		to get around Olympic Forest Park! They also have pedal-powered 
+		carts. The <q>No littering</q> sign on the left really completes
+		the picture for me.</t:image>
+		
+		<p>As the drizzle subsides, I decide to climb the hill that 
+		overlooks the lake. Why not, with a name like <!-- TODO name of hill -->.
+		Unlike the highly-maintained areas that I have just walked through,
+		the path up the hill has been left to be (slightly) more wild.
+		The aroma of pine trees wash over me as I pass through a 
+		grove, and I stop at the first landing for a short time<mdash/>but,
+		the trees are too tall to see over and I don’t want to disturb 
+		the woman doing yoga, so I continue up the path. By the top, 
+		I am even sweatier than I had been at the Great Wall, but it 
+		is well-worth the view of the Olympic Green and city beyond.</p>
+		
+		<t:image src="olympic-vista.jpg">A hazy view from the top of 
+		a hill in Olympic Forest Park.</t:image>
+		
+		<p>Wanting to finish walking around the lake, I head back 
+		toward the subway stop, getting slightly lost in the extensive
+		serpentine paths of the park. At one point, I cross paths with 
+		a mother and her son<mdash/>and after about a minute of them 
+		conversing in Chinese while I take pictures of the scenery, he 
+		runs over to me to say <q>Hello!</q> His (English) name is Jack 
+		and he is 8 years old; and I think he was very excited to practice 
+		his English with a foreigner. It’s a great way to end my adventure.</p>
+		
+		<t:tip>The Olympic Green and Forest Park are accessible via 
+		4<nbsp/>stops along line<nbsp/>8 of the subway. While the sports 
+		complex offers interesting architecture and entertainment, 
+		the huge park, sometimes called the <q>lung</q> of Beijing, 
+		is a pleasant respite from the concrete and steel jungle of the 
+		dense city.</t:tip>
+		
+		<t:image src="forest.jpg">A peaceful grove of trees</t:image>
+	</section>
+	
+	<section class="yellow">
+		<t:svg name="lines.min.svg" />
+		
+		<h2>Heading Home</h2>
+		<p>I am on my own for the last two days of my time in Beijing.
+		The design program ended Saturday and everyone has left, but at 
+		least I still can chat online with them. With my flight departing at 
+		8:00<nbsp/>am Tuesday, I need to find a way to the 
+		airport<mdash/>but the subway opening at 6<nbsp/>am will be too late.</p>
+		
+		<p>Hacking together a translation, I show the hotel 
+		receptionist my phone, hoping Google Translate is accurate 
+		enough and that my VPN won’t cut out. (A Virtual Private 
+		Network is needed to access a number of Western websites, 
+		including Google, because of <q>The Great Firewall.</q>)
+		A few badly translated words from the receptionist’s phone 
+		and a few more confusing looks and finally nods from each of us,
+		I go back up to my room feeling mostly confident that she 
+		will have a taxi ready for me the next morning at 5 a.m.</p>
+		
+		<p>It’s 4:30<nbsp/>am. I’m excited to go home, sad to leave, and 
+		nervous about navigating the in-between. I triple-check my 
+		luggage and check out of the hotel. And there, in the little 
+		parking lot in front of the hotel, is a taxi!</p>
+		
+		<p>I show the driver a map destination of airport terminal 3,
+		he nods, and we are off. An hour and 122<nbsp/>yuan 
+		later<mdash/>after all, it is quite far across the city<mdash/>I 
+		am checking into my flight to Chicago, with a layover in Shanghai.
+		Fortunately, the airport staff speak enough English to help 
+		foreign travelers.</p>
+		
+		<t:image src="pudong-runway.jpg">Waiting to board this 747 at 
+		Shanghai Pudong International Airport</t:image>
+		
+		<p>After three short weeks, I’m once again over the north Pacific<mdash/></p>
+	</section>
+	
+	<section class="gray">
+		<t:svg name="end.min.svg" />
+		
+		<p style="text-align:center"><mdash/>zaijian, Beijing. Until next time.</p>
+	</section>
+	
+	<script src="/assets/js/image-gallery.min.js" defer="defer"></script>
+	</body>
+</html>

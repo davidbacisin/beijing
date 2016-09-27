@@ -54,16 +54,14 @@ var MainServer = function() {
 		});
 		self.app.get('/page/:pageId', function (req, res) {
 			var pageId = parseInt(req.params.pageId);
-			if (pageId >= 1 && pageId <= 3) {
+			if (pageId >= 1 && pageId <= 9) {
 				on.page("/" + pageId.toString(), req, res);
 			}
 			else {
 				on.notFound(req.path, res);
 			}
 		});
-		self.app.get('/sitemap.xml', on.sitemap);
-		self.app.get('/robots.txt', on.robots);
-		//self.app.get('/google[0-9a-f]+.html', on.googleSiteAuth);
+		self.app.get('/favicon.ico', on.favicon);
 		
 		// simple status page for HAProxy pings
 		self.app.get('/status', (req, res) => {
