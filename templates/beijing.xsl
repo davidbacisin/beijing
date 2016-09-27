@@ -33,6 +33,21 @@
 		<xsl:for-each select="document('../src/2.xml')//h2">
 			<li><a href="/page/2#{translate(translate(./text(),'”“:.',''),' ','-')}"><xsl:value-of select="./text()" /></a></li>
 		</xsl:for-each>
+		<xsl:for-each select="document('../src/3.xml')//h2">
+			<li><a href="/page/3#{translate(translate(./text(),'”“:.',''),' ','-')}"><xsl:value-of select="./text()" /></a></li>
+		</xsl:for-each>
+		<xsl:for-each select="document('../src/4.xml')//h2">
+			<li><a href="/page/4#{translate(translate(./text(),'”“:.',''),' ','-')}"><xsl:value-of select="./text()" /></a></li>
+		</xsl:for-each>
+		<xsl:for-each select="document('../src/5.xml')//h2">
+			<li><a href="/page/5#{translate(translate(./text(),'”“:.',''),' ','-')}"><xsl:value-of select="./text()" /></a></li>
+		</xsl:for-each>
+		<xsl:for-each select="document('../src/6.xml')//h2">
+			<li><a href="/page/6#{translate(translate(./text(),'”“:.',''),' ','-')}"><xsl:value-of select="./text()" /></a></li>
+		</xsl:for-each>
+		<xsl:for-each select="document('../src/7.xml')//h2">
+			<li><a href="/page/7#{translate(translate(./text(),'”“:.',''),' ','-')}"><xsl:value-of select="./text()" /></a></li>
+		</xsl:for-each>
 		</ul>
 	</nav>
 </xsl:template>
@@ -50,9 +65,13 @@
 	<xsl:apply-templates select="document(concat('../src/assets/images/', @name))" />
 </xsl:template>
 
-<!-- normalize all text nodes in svg, since they don't do anything 
-<xsl:template match="svg:svg//text()"><xsl:value-of select="normalize-space(.)" /></xsl:template>
--->
+<!-- Tell assistive tech to ignore the SVGs -->
+<xsl:template match="svg:svg">
+	<svg aria-hidden="true" role="presentation" xmlns="http://www.w3.org/2000/svg">
+		<xsl:copy-of select="./@*" />
+		<xsl:apply-templates select="./node()" />
+	</svg>
+</xsl:template> 
 
 <xsl:template match="t:image-gallery">
 	<ul class="gallery" id="{@id}">
@@ -115,7 +134,8 @@
 	</aside>
 </xsl:template>
 
-<xsl:template match="text()[normalize-space(.)='']"></xsl:template>
+<!-- Remove text nodes that are only whitespace, unless they are in a paragraph -->
+<xsl:template match="text()[normalize-space(.)='' and not(ancestor::p)]"></xsl:template>
 
 <xsl:template match="html">
 	<xsl:call-template name="MainPage">

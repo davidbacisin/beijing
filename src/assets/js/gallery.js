@@ -79,9 +79,9 @@ function getResolutionDependentImage(path) {
 var strImageContainer = "image-container",
 	strImageLink = "image-link";
 var figureTemplate = '<div class="image-container{p}"></div>\
-<nav><a class="in prev" title="Previous">◀</a> \
+<nav><a class="in prev" title="Previous" href="#">◀</a> \
 <span class="counter"><span class="current">1</span> of {count}</span> \
-<a class="in next" title="Next">▶</a></nav>\
+<a class="in next" title="Next" href="#">▶</a></nav>\
 <figcaption>{caption}</figcaption>\
 <a class="image-link" href="{href}" target="_blank"></a>';
 
@@ -132,12 +132,15 @@ d.body.addEventListener("click", function(e) {
 		parent = link.parentNode;
 	// if a child of the link was clicked, just set to the link
 	if (hasClass(strImageLink, parent)) {
+		e.preventDefault();
 		setGalleryImage(parent);
 	}
 	else if (hasClass(strImageLink, link)) {
+		e.preventDefault();
 		setGalleryImage(link);
 	}
 	else if (hasClass("in", link)) {
+		e.preventDefault();
 		var index = parseInt(getElementsByClassName("current", parent)[0].textContent);
 		// find the corresponding thumbnail li's
 		var imageFigId = nearestParentByClassName("image-fig", parent).id;

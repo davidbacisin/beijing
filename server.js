@@ -1,6 +1,5 @@
 var express = require('express'),
 	compression = require('compression'),
-	//bodyParser = require('body-parser'),
 	cookieParser = require('cookie-parser'),
 	fs = require('fs'),
 	on = require('./server-events'),
@@ -66,6 +65,11 @@ var MainServer = function() {
 		// simple status page for HAProxy pings
 		self.app.get('/status', (req, res) => {
 			res.send('Alive');
+		});
+		
+		// 404 handler
+		self.app.use((req, res, next) => {
+			res.status(404).send('Not found. Try the <a href="/">home page</a>.');
 		});
 
 		self.isInitialized = true;

@@ -100,6 +100,9 @@ section {
 	
 	> svg {
 		margin-top: -25%;
+		// set the width and height for IE and Safari
+		width: 100%;
+		height: 25vw;
 	}
 }
 

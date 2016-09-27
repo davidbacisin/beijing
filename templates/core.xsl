@@ -55,7 +55,7 @@
 <!-- The HTML element should be passed as a param -->
 <xsl:param name="html" />
 
-<html vocab="http://schema.org/" lang="en">
+<html vocab="http://schema.org/" lang="en" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<!-- typeof attribute on root html element -->
 	<xsl:choose>
 		<xsl:when test="string-length($html/@typeof)">
@@ -84,7 +84,7 @@
 		<!-- page title-->
 		<title><xsl:apply-templates select="$html/head/title/node()" /></title>
 		<!-- page description -->
-		<meta name="description" content="{$html/head/meta[@name='description']/@content}" />
+		<meta name="description" content="Take a journey to Beijing. David Bacisin tells of his three weeks in the capital of the People's Republic of China, complete with illustrations and photographs." />
 		<!-- robots meta tag(s) -->
 		<meta name="robots" content="noodp" />
 		<xsl:copy-of select="$html/head/meta[@name='robots']" />
