@@ -67,7 +67,7 @@
 
 <!-- Tell assistive tech to ignore the SVGs -->
 <xsl:template match="svg:svg">
-	<svg aria-hidden="true" role="presentation" xmlns="http://www.w3.org/2000/svg">
+	<svg aria-hidden="true" role="presentation">
 		<xsl:copy-of select="./@*" />
 		<xsl:apply-templates select="./node()" />
 	</svg>
