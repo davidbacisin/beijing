@@ -98,6 +98,10 @@ section {
 		padding-bottom: 25%;
 	}
 	
+	&.last:after {
+		display: none;
+	}
+	
 	> svg {
 		margin-top: -25%;
 		// set the width and height for IE and Safari
@@ -172,7 +176,7 @@ figcaption {
 		/* this max width ensures 3 columns of images on large screens 
 		as well as screen as narrow as 320px. On the rare even smaller 
 		screens, the floated li's will collapse into two (not as pretty
-		but functional) 2 columns  */
+		but functional) columns  */
 		max-width: 16.7em;
 		
 		&:after {

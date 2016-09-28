@@ -93,7 +93,7 @@
 		frames.</t:image>
 	</section>
 	
-	<section class="gray">
+	<section class="gray last">
 		<t:svg name="great-wall.min.svg" />
 		
 		<h2>The Great Wall at Mutianyu</h2>
@@ -207,8 +207,8 @@
 		</t:image-gallery>
 	</section>
 	
-	<nav id="navPaging" class="red">
-		<a href="/page/5">Return to Beijing →</a>
+	<nav id="navPaging" class="gray">
+		<a href="/page/5">Head back to the city →</a>
 	</nav>
 	
 	</body>

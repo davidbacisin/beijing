@@ -5,157 +5,7 @@
 	<body>
 		<t:nav />
 	
-	<section style="padding-top:1em">
-		<div class="subsection yellow">
-		<p>One night, Jenny and Claire took us design mentors and faculty
-		out for a fancy dinner of traditional Beijing food. It was a 
-		beautifully decorated restaurant most of which were very good 
-		and deserve to be in their own gallery, below.</p>
-		
-		<t:image-gallery id="f2IG">
-			<t:image src="date-cake.jpg">A mildly sweet date cake</t:image>
-			<t:image src="steamed-veggies.jpg">Some colorful steamed 
-			veggies with mushrooms and red kidney beans</t:image>
-			<t:image src="beef-tendon.jpg">When you cook beef tendon for 
-			a long time, it becomes gelatinous and smooth, like a big piece 
-			of fat. I didn’t like the texture, or the way it flopped 
-			around.</t:image>
-			<t:image src="gelatinous-rice.jpg">On the other hand, the 
-			gelatinous rice bars were quite good in both flavor and 
-			texture. Rice becomes gelatinous after you cook and pound 
-			it enough.</t:image>
-			<t:image src="eggplant.jpg">A delicious eggplant dish</t:image>
-			<t:image src="roast-duck.jpg">At the end of the meal, we were
-			served the roast duck. You take a circular rice wrapper (top),
-			dip a slice of duck in the soy sauce, and put that slice in 
-			the middle of the wrapper with a few pieces of cucumber and 
-			green onion. Then you wrap it up and eat it! The sugar (center 
-			bowl) is for dipping the fatty roast skin into, if you like.</t:image>
-		</t:image-gallery>
-		</div>		
-		<div class="subsection blue">
-		<h3>Water</h3>
-		<p><q>Don’t drink the water!</q> my family told me before I left.</p>
-		
-		<p><q>Do you know not to drink the tap water?</q> the design 
-		program organizers told me when I arrived.</p>
-		
-		<p>One of the most frustrating parts of my experience in China 
-		was the fact that the tap water just isn’t safe to drink. 
-		The reason? It contains a delightful mix of bacteria and heavy 
-		metals.</p>
-		
-		<p>Some people drink boiled tap water, but boiling doesn’t 
-		take care of the heavy metals<mdash/>so I spent a considerable amount 
-		of time and money going to the store to buy bottled water. I was 
-		quite happy to discover the 1.5 liter bottles, which are 
-		a little big to carry around but well worth the saved money 
-		and effort: I drank about 2 liters total per day, meaning I had 
-		to only buy one or two 1.5 L bottles at 3.5 yuan.
-		Before I had discovered the big bottles, I was going through 
-		about 4 bottles at 2.5 yuan each.</p>
-		
-		<t:image src="water-bottles.jpg" portrait="yes">After not even a full day, I 
-		had already downed these 4 small bottles.</t:image>
-		
-		<p>I never buy bottled water in the States because one, it costs 
-		anywhere from 300 to 2000 times more than tap water; two, the 
-		tap water in northeast Ohio (where I live) regularly exceeds 
-		health and safety standards; and three, all of those extra 
-		bottles are extremely wasteful, even if they are recycled. 
-		Recycling helps, but it still takes a lot of energy to process
-		all that plastic! Having worked on several environmental 
-		sustainability projects in the past, I felt like I was just 
-		<em>slaughtering</em> the environment with how many bottles I 
-		bought in China. Sob.</p>
-		</div>
-		
-		<div class="subsection dust">
-		<h3>Smog</h3>
-		<p>On that note, the smog was probably tied for the most
-		frustrating part of my experience. I could actually <em>see</em>
-		it through the window when I arrived, but I didn’t <em>smell</em>
-		it until I finally got out of the air conditioning. It was 
-		heavy to breathe, and sweet<mdash/>sweet in a way 
-		you don’t ever want air to be, sweet with a mix of car exhaust 
-		and cigarette smoke. Those first few days were probably the worst
-		out of my three weeks, since a rainstorm on the fourth day 
-		cleared up the sky quite a bit.</p>
-		
-		<p>Beijing is particularly prone to dense smog because the city 
-		is surrounded by a mountain range that tends to block the 
-		wind<mdash/>not to mention the population over 20 million and 
-		traffic jams caused by the roughly 6 million registered cars. 
-		Very few people wear breathing masks, and even I started to get 
-		used to breathing the air after a few days. I’d rather not 
-		think about all the pollution I inhaled.</p>
-		</div>
-		
-		<div class="subsection">
-		<h3>Money</h3>
-		<t:image src="money-1200.jpg"></t:image>
-		<p>The currency of the People’s Republic of China is the 
-		renminbi, meaning <q>people’s currency</q> and abbreviated 
-		<abbr title="renminbi">RMB</abbr>. The <em>yuan</em> (元) is the 
-		base unit; there are 10<nbsp/>jiao (角) to 1<nbsp/>yuan; and 
-		there are 10<nbsp/>fen (分) to 1<nbsp/>jiao. I never saw any 
-		prices or coins in terms of fen, probably because they have so little 
-		value. Today, the exchange rate fluctuates between 6 to 7<nbsp/>yuan 
-		per 1<nbsp/>United States dollar<mdash/>but with that in mind, 
-		the cost of living in China is also considerably lower.
-		A regular 18-ounce bottle of water is typically priced at 2 or 
-		3<nbsp/>yuan, or 30 to 46<nbsp/>US cents.</p>
-		</div>
-	</section>
-	
-	<section class="blue">
-		<t:svg name="olympics.min.svg" />
-		
-		<h2>Olympic Parks</h2>
-		<p>Beijing hosted the 2008 Summer Olympics. What happens to a 
-		more than $2 billion (USD) Olympic complex 8 years after the games
-		are over? It turns out that the Olympic complex is less of a 
-		corpse and more of a thriving tourist attraction.</p>
-		
-		<p>On the first day I am there, a Wednesday <!--TODO confirm-->,
-		there are hundreds of other tourists from all over China, plus 
-		a handful of foreigners. The Bird’s Nest stadium, pictured below,
-		is open for tours for a price of 50<nbsp/>yuan, and in the recent 
-		past it’s been used to host sporting events and concerts. 
-		</p>
-		
-		<t:image src="birds-nest.jpg">The Beijing National Stadium was 
-		designed by architecture firm Herzog &amp; de<nbsp/>Meuron, with 
-		consulting from famed Chinese artist Ai<nbsp/>Weiwei. Its appearance 
-		earns it the nickname, <q>The Bird’s Nest.</q></t:image>
-		
-		<p>We walk across the vast expanse of asphalt, over to the 
-		aquatic center, nicknamed <q>The Water Cube.</q> The
-		blue plastic façade makes the building look like a square blob 
-		of soap bubbles. The panels are even translucent to let 
-		through light. Since the Olympics, the building has been 
-		transformed into a water park, but we don’t go inside to check 
-		it out.</p>
-		
-		<t:tip>If you, like us, forgot to bring a bathing suit, a few 
-		vendors on the Olympic Green have some for sale.</t:tip>
-		
-		<t:image src="water-cube.jpg">The Beijing National Aquatic 
-		Center, or Water Cube, now contains a water park open to the 
-		public.</t:image>
-		
-		<p>Heading further north, we wander past a few more (less 
-		architectually-interesting) buildings, check out the public art,
-		and gaze up at the Ling Long pagoda.</p>
-		
-		<t:image-gallery id="ogIG">
-			<t:image src="olympic-lamps.jpg" portrait="yes"></t:image>
-			<t:image src="olympic-runner.jpg">Larger-than-life-sized 
-			sculpture of a woman running with the Olympic torch</t:image>
-			<t:image src="ling-long-pagoda.jpg" portrait="yes">Ling Long Pagoda was 
-			used by broadcast television crews during the 2008 Olympics</t:image>
-		</t:image-gallery>
-		
+	<section class="blue" style="padding-top:1em">
 		<p>A little more than a week after visiting the Olympic Green,
 		I decide to spend a morning exploring the 680-hectare Olympic 
 		Forest Park. It is cloudy today, with a forecast for rain, 
@@ -268,10 +118,14 @@
 		<p>After three short weeks, I’m once again over the north Pacific<mdash/></p>
 	</section>
 	
-	<section class="gray">
+	<section class="gray last">
 		<t:svg name="end.min.svg" />
 		
-		<p style="text-align:center"><mdash/>zaijian, Beijing. Until next time.</p>
+		<p style="text-align:center"><mdash/><em>zài jiàn</em>, Beijing. Until next time.</p>
+		
+		<p style="margin-top:6em">Special thanks to the many people who made this trip possible, 
+		including the organizers of Jiang China Design, my supportive friends,
+		and especially my family. <em>Xiè xie.</em></p>
 	</section>
 	
 	<script src="/assets/js/image-gallery.min.js" defer="defer"></script>

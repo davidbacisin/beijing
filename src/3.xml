@@ -114,7 +114,7 @@
 		gas-powered rickshaw</t:image>
 	</section>
 	
-	<section class="dust">
+	<section class="dust last">
 		<t:svg name="hutong.min.svg" />
 		
 		<h2>Life in a Hutong</h2>
@@ -147,7 +147,7 @@
 	</section>
 	
 	<nav id="navPaging" class="dust">
-		<a href="/page/4">But what is a hutong?</a>
+		<a href="/page/4">Will I survive round two?</a>
 	</nav>
 
 	</body>

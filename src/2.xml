@@ -55,7 +55,7 @@
 		Beijing. Good thing it is so well-maintained!</p>
 	</section>
 	
-	<section class="red">
+	<section class="red last">
 		<t:svg name="palace.min.svg" />
 		
 		<h2>The Palaces</h2>

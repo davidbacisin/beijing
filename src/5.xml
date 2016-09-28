@@ -39,7 +39,7 @@
 		the Great Wall, we’re back in Zhongguancun.</p>
 	</section>
 	
-	<section>
+	<section class="last">
 		<t:svg name="clouds.min.svg" />
 		
 		<h2 style="margin-top:2em;margin-bottom:2em">Interlude: The Basics</h2>
@@ -90,49 +90,38 @@
 		
 		<p><q>Oh, I dabao’d it from that one place with the green signs.</q></p>
 		
-		<p>The photo galleries below show some of the highlights from 
-		my food experience<mdash/>or at least those of which I took a 
-		picture.</p>
+		<p>One night, Jenny and Claire took us design mentors and faculty
+		out for a fancy dinner of traditional Beijing food. It was a 
+		beautifully decorated restaurant with very good food. Jenny and 
+		Claire ordered 10<nbsp/>dishes to share amongst 8 people. A few 
+		of them are shown in the gallery below.</p>
 		
-		<t:image-gallery id="f1IG">
-			<t:image src="bibimbap.jpg" portrait="yes">Bibimbap is Korean and is a mix 
-			of various veggies, mushrooms, and some kimchi on a bed of 
-			rice, usually with a fried egg on top. Unfortunately, I think 
-			this restaurant was the source of my food poisoning.</t:image>
-			<t:image src="fish-stew.jpg">This tasty fish stew was part 
-			of my first meal in China!</t:image>
-			<t:image src="hotpot.jpg" portrait="yes">In the baskets are tofu, lotus root,
-			broccoli, and other things that we dipped in the spicy red 
-			soup. The spice was very interesting, because it started out 
-			just <q>hot,</q> but the heat continues to build, even after 
-			you swallow. Eventually it tops out. The brown, sweet gelatin
-			soup (bottom) and plum juice (yellow cup) helped tame the heat.</t:image>
-			<t:image src="japanese-dinner.jpg">At Suzuki Kitchen, a 
-			Japanese restaurant, we shared a few dishes, including this 
-			chicken that had been cooked in a way that gave it the flaky 
-			texture of fish.</t:image>
-			<t:image src="nanjing-dinner.jpg" portrait="yes">After our excursion to 
-			the Great Wall, we enjoyed a taste of Nanjing. Pictured here 
-			are fried dumplings, <q>drunken</q> bullfrog stew, shellfish 
-			soup, and steamed buns.</t:image>
-			<t:image src="noodles.jpg" portrait="yes">Just called <q>noodles,</q> this 
-			soup can have a variety of ingredients. I had it twice while 
-			in China, and it was better this second time.</t:image>
-			<t:image src="scorpions-and-seahorses.jpg">Along Wangfujing 
-			<q>Snack Street,</q> all sorts of exotic foods were for sale,
-			including these fried scorpions and seahorses. I didn’t try 
-			one.</t:image>
-			<t:image src="wuyutai-tea.jpg">Wangfujing hosts many shops,
-			including Wuyutai Tea, where we got some tea-flavored 
-			soft-serve ice cream.</t:image>
-			<t:image src="candy-animal.jpg" portrait="yes">This man was on the side 
-			of the street making animal shapes out of sugar. I didn’t 
-			try one, but he had some pretty impressive shapes on display.
-			Some looked like blown glass.</t:image>
+		<t:image-gallery id="f2IG">
+			<t:image src="date-cake.jpg">A mildly sweet date cake</t:image>
+			<t:image src="steamed-veggies.jpg">Some colorful steamed 
+			veggies with mushrooms and red kidney beans</t:image>
+			<t:image src="beef-tendon.jpg">When you cook beef tendon for 
+			a long time, it becomes gelatinous and smooth, like a big piece 
+			of fat. I didn’t like the texture, or the way it flopped 
+			around.</t:image>
+			<t:image src="gelatinous-rice.jpg">On the other hand, the 
+			gelatinous rice bars were quite good in both flavor and 
+			texture. Rice becomes gelatinous after you cook and pound 
+			it enough.</t:image>
+			<t:image src="eggplant.jpg">A delicious eggplant dish</t:image>
+			<t:image src="roast-duck.jpg">At the end of the meal, we were
+			served the roast duck. You take a circular rice wrapper (top),
+			dip a slice of duck in the soy sauce, and put that slice in 
+			the middle of the wrapper with a few pieces of cucumber and 
+			green onion. Then you wrap it up and eat it! The sugar (center 
+			bowl) is for dipping the fatty roast skin into, if you like.</t:image>
 		</t:image-gallery>
 		</div>
 	</section>
 	
-	<script src="/assets/js/image-gallery.min.js" defer="defer"></script>
+	<nav id="navPaging">
+		<a href="/page/6">Feast your eyes on more food →</a>
+	</nav>
+	
 	</body>
 </html>

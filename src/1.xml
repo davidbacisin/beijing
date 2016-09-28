@@ -101,7 +101,7 @@
 		and everything else wiggles between.</p>
 	</section>
 	
-	<section class="gray">
+	<section class="gray last">
 		<t:svg name="zhongguancun.min.svg" />
 		
 		<h2>“Silicon Valley”</h2>
@@ -162,7 +162,7 @@
 	</section>
 	
 	<nav id="navPaging" class="gray">
-		<a href="/page/2">Journey onward →</a>
+		<a href="/page/2">Continue to The Forbidden City →</a>
 	</nav>
 
 	</body>
