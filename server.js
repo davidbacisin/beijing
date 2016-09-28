@@ -34,10 +34,7 @@ var MainServer = function() {
 		
 		// enable parsing of cookies 
 		self.app.use(cookieParser());
-		
-		// allow parsing of POST requests
-		//self.app.use(bodyParser.urlencoded({ extended: false }));
-		
+				
 		if (!self.isLocal) {
 			// we're behind a load balancer on production
 			self.app.set('trust proxy', true);
@@ -87,8 +84,3 @@ var MainServer = function() {
 var mainServer = new MainServer();
 mainServer.initialize();
 mainServer.start();
-
-/* TODO
- * caching
- * redirects
- */

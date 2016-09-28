@@ -72,9 +72,6 @@ class XmlProcessor {
 			// create the canonical url regex based on the given source and destination directories
 			XmlProcessor._canonicalUrlRegex = new RegExp(program.src + "|" + program.dst + "|(\/home)?\.xml", "g");
 		}
-		XmlProcessor.sitemap = require("./lib/sitemap");
-		this._sitemapTimeout = 0;
-		this.secondsToWaitBeforeSitemap = 120;
 	}
 	
 	process(event, p) {
@@ -82,7 +79,6 @@ class XmlProcessor {
 			dstPath = program.toDstPath(p);
 		switch(event) {
 			case "add":
-				this.triggerSitemapBuilder();
 			case "change":
 				XmlProcessor.transformXml(srcPath, (code, data) => {
 					if (code === 0){
@@ -95,7 +91,6 @@ class XmlProcessor {
 				});
 				break;
 			case "unlink":
-				this.triggerSitemapBuilder();
 				// remove the file from the destination
 				fs.unlink(dstPath, err => {
 					if (err) {
@@ -107,12 +102,6 @@ class XmlProcessor {
 				});
 				break;
 		}
-	}
-	
-	triggerSitemapBuilder() {
-		// update the sitemap after the timeout to reduce execution frequency
-		clearTimeout(this._sitemapTimeout);
-		this._sitemapTimeout = setTimeout(XmlProcessor.sitemap.build, this.secondsToWaitBeforeSitemap * 1000);
 	}
 	
 	static transformXml(filename, callback) {
