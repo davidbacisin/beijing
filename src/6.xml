@@ -137,7 +137,7 @@
 		are over? It turns out that the Olympic complex is less of a 
 		corpse and more of a thriving tourist attraction.</p>
 		
-		<p>On the first day I am there, a Wednesday <!--TODO confirm-->,
+		<p>On the first day I am there, a Tuesday,
 		there are hundreds of other tourists from all over China, plus 
 		a handful of foreigners. The Bird’s Nest stadium, pictured below,
 		is open for tours for a price of 50<nbsp/>yuan, and in the recent 
@@ -169,11 +169,12 @@
 		and gaze up at the Ling Long pagoda.</p>
 		
 		<t:image-gallery id="ogIG">
-			<t:image src="olympic-lamps.jpg" portrait="yes"></t:image>
-			<t:image src="olympic-runner.jpg">Larger-than-life-sized 
-			sculpture of a woman running with the Olympic torch</t:image>
 			<t:image src="ling-long-pagoda.jpg" portrait="yes">Ling Long Pagoda was 
 			used by broadcast television crews during the 2008 Olympics</t:image>
+			<t:image src="olympic-runner.jpg">Larger-than-life-sized 
+			sculpture of a woman running with the Olympic torch</t:image>
+			<t:image src="olympic-lamps.jpg" portrait="yes">A lamppost 
+			on the Olympic Green</t:image>
 		</t:image-gallery>
 	</section>
 	

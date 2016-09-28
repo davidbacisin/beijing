@@ -4,13 +4,14 @@
 	</head>
 	<body>
 		<t:nav />
-	
-	<section class="red" style="padding-top:1em">
+		
+	<div style="padding-bottom:25%"></div>
+	<section class="red" style="margin-top:1em">
 		<t:svg name="bus.min.svg" />
 		
 		<h2>Back to Beijing</h2>
 		<p>The Great Wall is not our only adventure today: while 
-		our friends had set up the carpool to Mutianyu, they have no 
+		our friends had set up the carpool <em>to</em> Mutianyu, they have no 
 		plan for getting back. After learning from the Welcome Center 
 		staff that the next bus would be a while, we wander out and 
 		soon encounter an older man soliciting rides into town. Mandy 
@@ -75,14 +76,14 @@
 		
 		<t:image src="pizza.jpg">Tube Station has the <q>biggest pizza
 		in Beijing.</q> It’s literally their slogan, and I don’t doubt 
-		its truth. This medium pizza is at least a foot-and-a-half in 
-		diameter, and their large is probably half a meter.</t:image>
+		its truth. This medium pizza is at least 20<nbsp/>inches in 
+		diameter, and their large is probably 30 or more.</t:image>
 		
 		<p>Ken and I were ordering lunch one day and wanted it for 
 		takeout. Like usual, we pointed at the picture menus to order, 
 		but then we needed to communicate that we wanted to eat 
 		elsewhere. We resorted to translating <q>takeout</q> on a 
-		smartphone, but we later asked someone. They suggested we say
+		smartphone, but we later asked a friend. She suggested we say
 		<q>dǎ bāo,</q> which means <q>in a bag.</q> It worked! Though 
 		we quickly adopted into English:</p>
 		

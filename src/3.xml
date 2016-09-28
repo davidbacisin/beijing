@@ -83,11 +83,11 @@
 			<t:image src="painted-eaves.jpg">The wooden eaves of the 
 			opera stage are painted with bright blues, reds, greens, and 
 			gold.</t:image>
-			<t:image src="longevity-trees.jpg">Some wiggly-looking trees 
+			<t:image src="longevity-trees.jpg" portrait="yes">Some wiggly-looking trees 
 			on Longevity Hill</t:image>
 			<t:image src="storm-grate.jpg">A cool geometric storm grate,
 			plus my wet shoes</t:image>
-			<t:image src="stone-tunnel.jpg">Several stone tunnels like 
+			<t:image src="stone-tunnel.jpg" portrait="yes">Several stone tunnels like 
 			this were fun to duck through</t:image>
 		</t:image-gallery>
 	</section>
