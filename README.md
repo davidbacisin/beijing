@@ -15,7 +15,7 @@ and photographs.
 * Server-side Google Analytics allows tracking without downloading extra bytes to the client
 * Pure CSS and checkbox-based menu enables toggling site menu visibility even with Javascript disabled
 * Images:
- * wrapped in `figure`s with `figcaption`s, meeting accessibility requirements for images (http://lists.w3.org/Archives/Public/public-html/2011Apr/0451.html)
+ * wrapped in `figures` with `figcaptions`, meeting accessibility requirements for images (http://lists.w3.org/Archives/Public/public-html/2011Apr/0451.html)
  * Without Javascript, images will appear as captions followed by links to the image
  * Lazy-loaded by Javascript, at a resolution appropriate for the device
  * Clicking an image opens the high resolution version
