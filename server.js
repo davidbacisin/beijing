@@ -18,8 +18,10 @@ var MainServer = function() {
 	self.initialize = function() {
 		if (self.isInitialized) return;
 		//  Set the environment variables we need.
-        self.ipaddress = process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1";
-        self.port      = process.env.OPENSHIFT_NODEJS_PORT || 4765;
+        //self.ipaddress = process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1";
+        //self.port      = process.env.OPENSHIFT_NODEJS_PORT || 4765;
+		self.ipaddress = "127.0.0.1";
+		self.port	   = process.env.PORT;
         self.isLocal   = (self.ipaddress == "127.0.0.1");
 		
 		// Set up exit code
@@ -27,7 +29,7 @@ var MainServer = function() {
 		
 		// Set up express server
 		self.app = express();
-		self.app.disable('x-powered-by');
+		//self.app.disable('x-powered-by');
 		
 		// enable compression
 		self.app.use(compression());
@@ -66,7 +68,9 @@ var MainServer = function() {
 		
 		// 404 handler
 		self.app.use((req, res, next) => {
-			res.status(404).send('Not found. Try the <a href="/">home page</a>.');
+			res.status(404)
+			   .type("text/html")
+			   .send('Not found. Try the <a href="/">home page</a>.');
 		});
 
 		self.isInitialized = true;
