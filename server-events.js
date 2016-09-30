@@ -1,27 +1,7 @@
 "use strict";
 
 var fs = require('fs'),
-	path = require('path'),
-	functionsPath = './functions',
-	functions = require(functionsPath);
-
-// watch functions.js for changes
-(function () {
-	fs.watch(functionsPath + ".js", function (event, filepath) {
-		switch (event) {
-			case "change":
-				// reload the functions
-				try {
-					delete require.cache[path.resolve(filepath)];
-					functions = require(functionsPath);
-				}
-				catch (e) {
-					on.error("Could not reload <" + functionsPath + ">", e);
-				}
-				break;
-		}
-	});
-})();
+	path = require('path');
 
 // error reporting function
 exports.error = function (message, exception, response) {
@@ -68,13 +48,7 @@ exports.page = function (reqPath, req, res) {
 	fs.readFile(distPath, { encoding: 'utf8' }, function (err, data) {
 		if (data) {
 			try { // prevent the server from crashing when there is an error
-				// handle any relevant processing instructions
-				data = data.replace(/<\?server\s+([a-zA-Z]+)\?>/g, function (match, c1) {
-					return (functions.hasOwnProperty(c1)? functions[c1].apply(null, [req, res]) : '');
-				});
-				// make sure one of the called functions hasn't already sent data (usually a redirect)
-				if (!res.headersSent)
-					res.send(data);
+				res.send(data);
 				res.end();
 			}
 			catch(e) {
@@ -132,14 +106,6 @@ exports.asset = function (req, res) {
 	var translatedPath = "./dist" + req.path;
 	
 	streamAsset(translatedPath, res);
-}
-
-exports.sitemap = function (req, res) {
-	streamAsset("./dist/sitemap.xml", res);
-}
-
-exports.robots = function (req, res) {
-	streamAsset("./dist/robots.txt", res);
 }
 
 exports.favicon = function (req, res) {
